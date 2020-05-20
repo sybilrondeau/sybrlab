@@ -1,0 +1,18 @@
+.header {
+	width: 95vw;
+	margin: 0 auto;
+	height: 100vh;
+	display: grid;
+	justify-items: center;
+	grid-gap: 30px;
+	text-align: center;
+
+	&__title {
+		align-self: end;
+	}
+
+	&__punchline {
+		font-size: 3rem;
+		align-self: start;
+	}
+}

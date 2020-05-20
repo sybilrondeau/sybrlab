@@ -1,0 +1,38 @@
+.section {
+	height: 80vh;
+	display: grid;
+	grid-template-columns: 1;
+    grid-template-rows: 1;
+    // border: 1px solid pink;
+
+	&__svg {
+		font-family: 'Work Sans', sans-serif;
+		font-size: 1.5rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		fill : var(--grey-light);
+		padding: 0;
+		grid-row: 1 / -1;
+		grid-column: 1 / -1;
+
+		&--01 {
+			letter-spacing: .22rem;
+		}
+
+		&--02 {
+			letter-spacing: .87rem;
+		}
+
+		&--03 {
+			letter-spacing: 1.26rem;
+		}
+
+		&--04 {
+			letter-spacing: .15rem;
+		}
+
+		&--05 {
+			letter-spacing: .46rem;
+		}
+	}
+}

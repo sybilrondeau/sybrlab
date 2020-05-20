@@ -2,9 +2,85 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>SybR Lab</title>
+	<title>SybR Lab - création de site web</title>
 </head>
 <body>
-	<h1>SybR Lab</h1>
+	<nav class="nav">
+		<div class="nav__logo">
+			<img src="./images/logo.png" alt="#">
+		</div>
+		<div class="nav__menu">
+			<ul>
+				<li>Formules</li>
+				<li>Equipe</li>
+				<li>Style</li>
+				<li>Portfolio</li>
+				<li>Contact</li>
+				<li class="nav__social">
+					<svg xmlns:xlink="http://www.w3.org/2000/svg" class="drum__image drum__image--01">
+					<use xlink:href="./images/sprite.svg#github-icon"></use>
+					</svg>
+				</li>
+				<li class="nav__social">
+					<svg xmlns:xlink="http://www.w3.org/2000/svg" class="drum__image drum__image--01">
+					<use xlink:href="./images/sprite.svg#instagram-icon"></use>
+					</svg>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<header class="header">
+		<h1 class="header__title">Je suis Sybil Rondeau,<br><span class="accent">Web</span> Developer & Designer</h1>
+		<p class="header__punchline">Votre site internet, unique, à votre image : une connexion avec son audience idéale.</p>
+	</header>
+
+	<div class="section">
+		<svg class="section__svg section__svg--01" viewbox="0 0 100 100">
+			<text x="0" y= "20">formules</text>
+		</svg>
+		<div class="formules">
+			<div class="formules__grid">
+				<h2 class="formules__title">01. wordpress</h2>
+				<p class="formules__text">
+					Les sites Wordpress sont réalisés à l'aide d'un framework. Ce sont des <strong>sites sur-mesure</strong> (pas d'achat de thème à prévoir) <strong>mais limités</strong> par les possibilités du framework.
+				</p>
+			</div>
+			<div class="formules__grid">
+				<h2 class="formules__title">02. sur-mesure</h2>
+				<p class="formules__text">
+					Les sites sur-mesure sont codés entièrement à la main pour laisser libre cours à la <strong>créativité</strong> ! Ils permettent d’aller plus loin en terme de design et de fonctionnalités. 
+				</p>
+			</div>
+			<div class="formules__grid">
+				<h2 class="formules__title">03. application</h2>
+				<p class="formules__text">
+					Les applications sont des <strong>logiciels</strong> applicatifs hébergés par des serveurs et accessibles via un navigateur. Un équilibre entre design et fonctionnalités permet une <strong>expérience utilisateur</strong> de qualité.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="section">
+		<svg class="section__svg section__svg--02" viewbox="0 0 100 100">
+			<text x="0" y= "20">équipe</text>
+		</svg>
+	</div>
+	<div class="section">
+		<svg class="section__svg section__svg--03" viewbox="0 0 100 100">
+			<text x="0" y= "20">style</text>
+		</svg>
+	</div>
+	<div class="section">
+		<svg class="section__svg section__svg--04" viewbox="0 0 100 100">
+			<text x="0" y= "20">portfolio</text>
+		</svg>
+	</div>
+	<div class="section">
+		<svg class="section__svg section__svg--05"viewbox="0 0 100 100">
+			<text x="0" y= "20">contact</text>
+		</svg>
+	</div>
+
+	<script src="./index.js"></script>
 </body>
 </html>
