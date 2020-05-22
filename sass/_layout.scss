@@ -1,9 +1,8 @@
 .section {
-	height: 80vh;
-	display: grid;
-	grid-template-columns: 1;
-    grid-template-rows: 1;
-    // border: 1px solid pink;
+    position: relative;
+    margin-bottom: 10rem;
+   	padding-top: 20rem;
+   	z-index: 0;
 
 	&__svg {
 		font-family: 'Work Sans', sans-serif;
@@ -12,8 +11,8 @@
 		text-transform: uppercase;
 		fill : var(--grey-light);
 		padding: 0;
-		grid-row: 1 / -1;
-		grid-column: 1 / -1;
+		position: absolute;
+		z-index: 0;
 
 		&--01 {
 			letter-spacing: .22rem;

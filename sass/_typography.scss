@@ -1,43 +1,23 @@
 @font-face {
 	font-family: 'Playfair Display';
-	font-weight: 400 - 900;
+	font-weight: 400 900;
 	font-style: normal;
 	display: swap;
-	src: url('./fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-        url('./fonts/PlayfairDisplay-Regular.woff') format('woff');
-}
-
-@font-face {
-	font-family: 'Playfair Display';
-	font-weight: 400 - 900;
-	font-style: italic;
-	display: swap;
-	src: url('./fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
-        url('./fonts/PlayfairDisplay-Italic.woff') format('woff');
+	src: url('./fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2');
 }
 
 @font-face {
 	font-family: 'Muli';
-	font-weight: 200 - 900;
+	font-weight: 200 900;
 	font-style: normal;
 	display: swap;
-	src: url('./fonts/Muli-Regular.woff2') format('woff2'),
-        url('./fonts/Muli-Regular.woff') format('woff');
+	src: url('./fonts/Muli-VariableFont_wght.woff2') format('woff2');
 }
 
-@font-face {
-	font-family: 'Muli';
-	font-weight: 200 - 900;
-	font-style: italic;
-	display: swap;
-	src: url('./fonts/Muli-Italic.woff2') format('woff2'),
-        url('./fonts/Muli-Italic.woff') format('woff');
-}
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('./fonts/OpenSans-ExtraBold.woff2') format('woff2'),
-        url('./fonts/OpenSans-ExtraBold.woff') format('woff');
+    src: url('./fonts/OpenSans-ExtraBold.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
 }
@@ -45,30 +25,37 @@
 h1 {
 	font-family: 'Playfair Display', serif;
 	font-size: 6rem;
-	font-weight: 900;
+	font-variation-settings: 'wght' 900;
 }
 
 h2 {
 	font-family: 'Playfair Display', serif;
 	font-size: 4.5rem;
-	font-weight: 900;
-	text-transform: Capitalize;
+	font-variation-settings: 'wght' 900;
 }
 
 p {
 	font-family: 'Muli', sans-serif;
 	font-size: 1.6rem;
-	font-weight: 200;
+	font-weight: 400;
 	font-kerning: normal;
 	hyphens: auto;
 	color: var(--grey-medium);
 }
 
 strong {
-	font-weight: 900;
-	color: black;
+	font-weight: 800;
+	color: #222222;
 }
 
 .accent {
 	color: var(--yellow);
 }
+
+.big-numbers {
+	font-size: 6rem;
+}
+
+
+
+

@@ -1,0 +1,23 @@
+.formules-section {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: relative;
+	z-index: 10;
+
+	&__grid {
+		
+		.formules-section__title {
+			padding-top: 10rem;
+
+		}
+
+		.formules-section__text {
+			width: 25rem;
+			padding-top: 1.5rem;
+		}
+	}
+	
+}

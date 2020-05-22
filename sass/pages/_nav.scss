@@ -10,6 +10,7 @@
 	top: 0;
 	background-color: white;
 	border-bottom: 1px solid var(--grey-light);
+	z-index: 1000;
 
 	&__logo {
 		justify-self: start;
@@ -27,10 +28,21 @@
 
 			li {
 			font-family: 'muli', sans-serif;
+			font-size: 1.2rem;
+			font-weight: 600;
 			list-style: none;
 			display: inline;
-			font-size: 1rem;
 			text-transform: uppercase;
+
+				a:link, a:visited {
+					text-decoration: none;
+					color: var(--grey-dark);
+				}
+
+				a:hover {
+					text-decoration: line-through;
+
+				}
 			}
 		}
 	}

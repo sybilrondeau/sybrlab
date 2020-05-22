@@ -1,0 +1,27 @@
+.section__contact {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	z-index: 10;
+	padding-top: 8rem;
+
+	&--text {
+		padding-left: 10rem;
+		text-align: center;
+		
+		p {
+			padding-top: 2rem;
+			font-size: 1.8rem;
+		}
+
+	}
+
+	&--photo {
+		
+		img {
+			width: 30rem;
+			border-radius: .5rem;
+		}
+	}
+}
