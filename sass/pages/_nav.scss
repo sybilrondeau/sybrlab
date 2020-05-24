@@ -14,10 +14,9 @@
 
 	&__logo {
 		justify-self: start;
-
-		img {
-			width: 10rem;
-		}
+		display: flex;
+		justify-content: start;
+  		align-items: flex-start;
 	}
 
 	&__menu {
@@ -25,6 +24,7 @@
 		ul {
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
 
 			li {
 			font-family: 'muli', sans-serif;
@@ -47,8 +47,11 @@
 		}
 	}
 
-	&__social {
+	&__social svg{
 		justify-self: end;
+		fill: var(--grey-dark);
+		width: 20px;
+		height: 20px;
 		
 		svg {
 			width: 2rem;
@@ -56,3 +59,13 @@
 		}
 	}
 }
+
+#logosyb {
+  height: 60px;
+  width: 70px;
+  margin-left: 50px;
+}
+
+#logoR {
+  height: 30px;
+width: 30px;}
