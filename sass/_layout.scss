@@ -1,45 +1,66 @@
 .container {
 	display: flex;
+	min-height: 100vh;
 }
 
 .sections {
 	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-// .section {
-//     position: relative;
-//     margin-bottom: 10rem;
-//    	padding-top: 20rem;
-//    	z-index: 0;
+.nav-left {
+	width: 8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3rem 0;
 
-// 	&__svg {
-// 		font-family: 'Work Sans', sans-serif;
-// 		font-size: 1.5rem;
-// 		font-weight: 900;
-// 		text-transform: uppercase;
-// 		fill : var(--grey-light);
-// 		padding: 0;
-// 		position: absolute;
-// 		z-index: 0;
+	&__top svg {
+		height: 30px;
+		width: 30px;
+	}
 
-// 		&--01 {
-// 			letter-spacing: .22rem;
-// 		}
+	&__bottom {
 
-// 		&--02 {
-// 			letter-spacing: .87rem;
-// 		}
+		ul li {
+			list-style: none;
+			padding-top: 1rem;
 
-// 		&--03 {
-// 			letter-spacing: 1.26rem;
-// 		}
+			svg {
+				width: 2rem;
+				height: 2rem;
+			}
+		}
+	}
 
-// 		&--04 {
-// 			letter-spacing: .15rem;
-// 		}
+}
 
-// 		&--05 {
-// 			letter-spacing: .46rem;
-// 		}
-// 	}
-// }
+.nav-right {
+	width: 8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: space-around;
+
+	li {
+		list-style: none;
+		transform: rotate(90deg);
+		margin-top: 10rem;
+		margin-bottom: 10rem;
+		text-align: center;
+
+		a {
+			text-decoration: none;
+			color: var(--grey-dark);
+			font-size: 1.2rem;
+			text-transform: uppercase;
+		}
+
+		a:hover {
+			color: var(--yellow);
+		}
+	}
+}

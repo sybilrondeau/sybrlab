@@ -1,9 +1,9 @@
 @font-face {
-	font-family: 'Playfair Display';
-	font-weight: 400 900;
+	font-family: 'Exo';
+	font-weight: 100 900;
 	font-style: normal;
 	display: swap;
-	src: url('./fonts/PlayfairDisplay-VariableFont_wght.woff2') format('woff2');
+	src: url('./fonts/Exo-VariableFont_wght.woff2') format('woff2');
 }
 
 @font-face {
@@ -15,21 +15,14 @@
 }
 
 
-@font-face {
-    font-family: 'Open Sans';
-    src: url('./fonts/OpenSans-ExtraBold.woff2') format('woff2');
-    font-weight: 800;
-    font-style: normal;
-}
-
 h1 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Exo', sans-serif;
 	font-size: 6rem;
 	font-variation-settings: 'wght' 900;
 }
 
 h2 {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Exo', serif;
 	font-size: 4.5rem;
 	font-variation-settings: 'wght' 900;
 }
@@ -45,15 +38,11 @@ p {
 
 strong {
 	font-weight: 800;
-	color: #222222;
+	color: var(--grey-dark);
 }
 
 .accent {
 	color: var(--yellow);
-}
-
-.big-numbers {
-	font-size: 6rem;
 }
 
 
