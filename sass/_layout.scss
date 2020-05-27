@@ -51,12 +51,13 @@
 		margin-top: 10rem;
 		margin-bottom: 10rem;
 		text-align: center;
+		font-size: 1.2rem;
+		text-transform: uppercase;
+		font-family: 'Exo', sans-serif;
 
 		a {
 			text-decoration: none;
 			color: var(--grey-dark);
-			font-size: 1.2rem;
-			text-transform: uppercase;
 		}
 
 		a:hover {
