@@ -3,4 +3,4 @@ if (module.hot) {
 }
 
 import './index.scss';
-import '../javascript/logo.js';
+import '../javascript/header.js';

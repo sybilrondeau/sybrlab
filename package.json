@@ -32,5 +32,9 @@
         ]
       }
     }
+  },
+  "dependencies": {
+    "gsap": "./gsap-bonus.tgz",
+    "javascript": "^1.0.0"
   }
 }
