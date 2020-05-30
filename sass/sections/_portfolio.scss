@@ -13,25 +13,35 @@
 			margin-bottom: 1rem;
 		}
 
+		ul li {
+			font-size: 1.6rem;
+		}
+
 		.portfolio__text--01 {
-			position: absolute;
-			top: 20rem;
-			right: 20rem;
 			opacity: 1;
 		}
 		
 		.portfolio__text--02 {
-			position: absolute;
-			top: 20rem;
-			right: 20rem;
 			opacity: 0;
 		}
 
 		.portfolio__text--03 {
+			opacity: 0;
+		}
+
+		.portfolio__text--04 {
+			opacity: 0;
+		}
+
+		.portfolio__text--05 {
+			opacity: 0;
+		}
+
+		.slide {
 			position: absolute;
 			top: 20rem;
-			right: 20rem;
-			opacity: 0;
+			left: 5rem;
+			margin-right: 10rem;
 		}
 	}
 
@@ -58,5 +68,17 @@
 		.portfolio__picture--03 {
 			opacity: 0;
 		}
+
+		.portfolio__picture--04 {
+			opacity: 0;
+		}
+
+		.portfolio__picture--05 {
+			opacity: 0;
+		}
 	}
+}
+
+.portfolio__text-parag {
+	margin: 1rem 0;
 }

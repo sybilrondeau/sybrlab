@@ -45,6 +45,19 @@ strong {
 	color: var(--primary);
 }
 
+ul li {
+	font-family:  'Muli', sans-serif;
+	color: var(--grey-dark);
+	list-style: none;
+}
 
+a {
+	color: var(--primary);
+	text-decoration: none;
+}
+
+a:hover {
+	animation: line .5s infinite;
+}
 
 
