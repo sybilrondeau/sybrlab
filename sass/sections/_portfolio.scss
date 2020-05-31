@@ -43,7 +43,7 @@
 			left: 5rem;
 			margin-right: 10rem;
 
-			p a {
+			p  a {
 				color: var(--primary);
 				text-decoration: none;
 				padding-bottom: .5rem;
@@ -51,22 +51,23 @@
 				position: relative;
 			}
 
-			p a:before {
+			p  a::after {
 				content: "";
 				position: absolute;
 				width: 100%;
-				height: 1px;
-				bottom: -px;
+				height: 1.2px;
+				bottom: 0;
 				left: 0;
 				background-color: var(--primary);
 				transform: scaleX(0);
+				transform-origin: bottom left;
 				opacity: 0;
-				transition: transform opacity 1s;
+				transition: transform opacity .3s;
 			}
 
-			p a:hover:before {
+			p  a:hover::after {
+				transform-origin: bottom right;
 				transform: scaleX(1);
-				transform-origin: left;
 				opacity: 1;
 			}
 		}
