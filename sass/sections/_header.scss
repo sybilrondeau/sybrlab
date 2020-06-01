@@ -29,9 +29,8 @@
 
 	&__scroll {
 		width: 100%;
-		bottom: 6rem;
 		position: absolute;
-		bottom: 5rem;
+		bottom: 10rem;
 		padding-top: 1rem;
 
 		.header__line {
@@ -46,8 +45,8 @@
 			top: 0;
 			left: 50%;
 			margin-left: -1px;
-			width: 1.2px;
-			height: 6rem;
+			width: 1.4px;
+			height: 8rem;
 			background-color: var(--grey-dark);
 			animation: scrollDown 2.4s cubic-bezier(1, 0, 0, 1) infinite;
 		}
