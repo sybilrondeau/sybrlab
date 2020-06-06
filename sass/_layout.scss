@@ -52,17 +52,26 @@
 		margin-top: 10rem;
 		margin-bottom: 10rem;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 1.6rem;
 		text-transform: uppercase;
 		font-family: 'Exo', sans-serif;
 
 		a {
 			text-decoration: none;
 			color: var(--grey-dark);
+			display: block;
+			transition: transform 1s;
 		}
 
 		a:hover {
 			color: var(--primary);
 		}
+
+		.active {
+			color: var(--primary);
+			display: block;
+			transform: translateY(1rem) scale(1.2) rotate(-90deg);
+		}
 	}
 }
+
