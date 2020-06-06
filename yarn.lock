@@ -2721,10 +2721,9 @@ grapheme-breaker@^0.3.2:
     brfs "^1.2.0"
     unicode-trie "^0.3.1"
 
-gsap@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.3.0.tgz#1d3c94ad0e4c46742f5f751250afbdd238364ec5"
-  integrity sha512-MIcLOH8HCGvjyuLpzNBMKK+GdoL9wmJU+8nwauSZkqTyDlI1ugD0Sbhu7HO3805u7NqSv811murbu6eipVhJqw==
+gsap@./gsap-bonus.tgz:
+  version "3.2.6"
+  resolved "./gsap-bonus.tgz#d20a1eb7da39db7f3636045e294fb1fd29375eb4"
 
 har-schema@^2.0.0:
   version "2.0.0"

@@ -2,7 +2,7 @@
 	// border: 1px solid pink;
 	width: 100%;
 	padding: 0 2em;
-	margin: 10rem 0 10rem;
+	margin: 10rem 0 30rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19,6 +19,17 @@
 		color: var(--grey-dark);
 		font-weight: 700;
 		line-height: 8rem;
+
+			svg {
+				width: 10rem;
+				margin-bottom: -1.6rem;
+
+				.draw {
+				    fill: #fff;
+				    stroke-width: 1px;
+				    stroke: black;
+				}
+			}
 		}
 	}
 }
