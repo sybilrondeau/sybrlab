@@ -8,8 +8,8 @@ const animSlides = gsap.timeline();
 animSlides.add("pic1")
 		.from(".portfolio__picture--02", {yPercent: 100})
 		.add("pic2")
-		.from(".portfolio__picture--04", {yPercent: 100})
-		.add("pic4")
+		.from(".portfolio__picture--03", {yPercent: 100})
+		.add("pic3")
 
 ScrollTrigger.create({
 	animation: animSlides,
@@ -26,7 +26,7 @@ const animText = gsap.timeline();
 animText.to(".slideText--01", {opacity: 0})
 		.from(".slideText--02", {yPercent: -30, opacity: 0})
 		.to(".slideText--02", {opacity: 0})
-		.from(".slideText--04", {yPercent: -30, opacity: 0})
+		.from(".slideText--03", {yPercent: -30, opacity: 0})
 	
 
 ScrollTrigger.create({
