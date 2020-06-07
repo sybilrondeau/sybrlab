@@ -1,40 +1,34 @@
 .formules {
 	// border: 1px solid pink;
 	width: 100%;
-	padding: 0 2em;
+	padding: 0 20rem;
 	margin: 10rem 0 30rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
+	p {
+	text-align: center;
+	font-size: 5rem;
+	font-family: 'Exo';
+	color: var(--grey-dark);
+	font-weight: 700;
+	line-height: 8rem;
 
-	&__content {
-		margin: 0 auto;
-		text-align: center;
+		svg {
+			width: 10rem;
+			margin-bottom: -1.6rem;
 
-		p {
-		width: 80rem;
-		font-size: 5rem;
-		font-family: 'Exo';
-		color: var(--grey-dark);
-		font-weight: 700;
-		line-height: 8rem;
-
-			svg {
-				width: 10rem;
-				margin-bottom: -1.6rem;
-
-				.draw {
-				    fill: #fff;
-				    stroke-width: 1px;
-				    stroke: black;
-				}
+			.draw {
+			    fill: #fff;
+			    stroke-width: 1px;
+			    stroke: black;
 			}
 		}
 	}
 }
 
-#text-wheel {
-	display: block;
-	width: 8rem;
-}
+// #text-wheel {
+// 	display: block;
+// 	width: 8rem;
+// }

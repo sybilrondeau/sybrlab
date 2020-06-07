@@ -2,14 +2,15 @@
 	width: 100%;
 	height: 100vh;
 	display: flex;
-	position: relative;
+	padding-left: 10rem;
 	margin-bottom: 100%;
 
 
 	&__text {
-		width: 50%;
+		flex: 0 1 50%;
 		height: 100vh;
 		position: relative;
+		padding: 0 5rem;
 
 		.slideText {
 			position: absolute;
@@ -59,7 +60,7 @@
 	}
 
 	&__picture {
-		width: 50%;
+		flex: 0 1 50%;
 		height: 100vh;
 		position: relative;
 		overflow: hidden;
