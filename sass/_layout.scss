@@ -47,6 +47,7 @@
 		text-align: center;
 		font-size: 1.6rem;
 		text-transform: uppercase;
+		font-weight: 600;
 		font-family: 'Exo', sans-serif;
 
 		a {
@@ -54,7 +55,7 @@
 			color: var(--grey-dark);
 			display: block;
 			transition: transform 1s;
-			transform-origin: right;
+			transform-origin: center;
 		}
 
 		a:hover {
@@ -64,8 +65,8 @@
 		.active {
 			color: var(--primary);
 			display: block;
-			transform: translateY(1rem) scale(1.2) rotate(-90deg);
-			transform-origin: right;
+			transform: translateY(4rem) scale(1.2) rotate(-90deg);
+			transform-origin: center;
 		}
 	}
 }

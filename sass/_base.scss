@@ -11,18 +11,21 @@ body {
 	overflow-x: hidden;
 	position: relative;
 	cursor: none;
+	background: var(--backg);
+	// animation: colorChange 4s linear infinite alternate both;
 }
 
 html {
 	font-size: 62.5%;
 	color: var(--grey-dark);
+	scroll-behavior: smooth;
 }
 
 .cursor {
-	width: 8rem;
-	height: 8rem;
+	width: 4rem;
+	height: 4rem;
 	border-radius: 50%;
-	background-color: var(--grey-light);
+	background-color: #DBDBDB;
 	position: absolute;
 	transform: translate(-50%, -50%);
 	z-index: -10;
