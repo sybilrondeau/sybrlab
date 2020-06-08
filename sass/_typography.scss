@@ -14,6 +14,13 @@
 	src: url('./fonts/Muli-VariableFont_wght.woff2') format('woff2');
 }
 
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: 800;
+	font-style: normal;
+	display: swap;
+	src: url('./fonts/OpenSans-ExtraBold.woff2') format('woff2');
+}
 
 h1, h2 {
 	font-family: 'Exo', sans-serif;
@@ -38,7 +45,7 @@ p {
 	font-weight: 400;
 	font-kerning: normal;
 	// hyphens: auto;
-	color: var(--grey-medium);
+	color: var(--grey-medium-dark);
 }
 
 strong {

@@ -2,10 +2,10 @@
 	// border: 1px solid pink;
 	width: 100%;
 	padding: 0 20rem;
-	margin: 10rem 0 30rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	margin: 5rem 0 30rem;
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
 
 	p {
 	text-align: center;
@@ -16,8 +16,8 @@
 	line-height: 8rem;
 
 		svg {
-			width: 10rem;
-			margin-bottom: -1.6rem;
+			width: 9rem;
+			margin-bottom: -2.2rem;
 
 			.draw {
 			    fill: #fff;
@@ -27,8 +27,3 @@
 		}
 	}
 }
-
-// #text-wheel {
-// 	display: block;
-// 	width: 8rem;
-// }

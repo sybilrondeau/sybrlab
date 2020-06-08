@@ -22,10 +22,10 @@ html {
 }
 
 .cursor {
-	width: 4rem;
-	height: 4rem;
+	width: 8rem;
+	height: 8rem;
 	border-radius: 50%;
-	background-color: #DBDBDB;
+	background-color: var(--grey-medium);
 	position: absolute;
 	transform: translate(-50%, -50%);
 	pointer-events: none;
@@ -35,4 +35,29 @@ html {
 
 .link-grow {
 	transform: scale(2) translate(-25%, -25%);
+}
+
+.title-highlight {
+	transform: scale(2) translate(-25%, -25%);
+	background-color: var(--primary);
+}
+
+.image-over {
+	background-color: transparent;
+	border: 1px solid var(--grey-medium);
+	backdrop-filter: hue-rotate(180deg);
+	// backdrop-filter: grayscale(100%) contrast(100%);
+	transform: scale(2) translate(-25%, -25%);
+}
+
+.big-numbers {
+	font-family: "Open Sans";
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 150px;
+    color: #DBDBDB;
+    position: absolute;
+    top: -.5em;
+    right: 0rem;
+    z-index: -1;
 }

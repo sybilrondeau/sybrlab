@@ -3,7 +3,7 @@
 	height: 100vh;
 	display: flex;
 	padding-left: 10rem;
-	margin-bottom: 100%;
+	margin-bottom: 80%;
 
 
 	&__text {
@@ -14,7 +14,7 @@
 
 		.slideText {
 			position: absolute;
-			top: 10rem;
+			top: 20rem;
 			left: 10rem;
 
 			h3 {
@@ -23,6 +23,13 @@
 
 			ul li {
 				font-size: 1.6rem;
+
+				svg {
+					width: 3rem;
+					height: 3rem;
+					margin-bottom: -1rem;
+					margin-right: 1rem;
+				}
 			}
 			
 			p {
