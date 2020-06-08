@@ -10,7 +10,7 @@ body {
 	box-sizing: border-box;
 	overflow-x: hidden;
 	position: relative;
-	cursor: none;
+	// cursor: none;
 	background: var(--backg);
 	// animation: colorChange 4s linear infinite alternate both;
 }
@@ -28,5 +28,11 @@ html {
 	background-color: #DBDBDB;
 	position: absolute;
 	transform: translate(-50%, -50%);
+	pointer-events: none;
 	z-index: -10;
+	transition: transform .2s;
+}
+
+.link-grow {
+	transform: scale(2) translate(-25%, -25%);
 }
