@@ -3,20 +3,24 @@ const titles = document.querySelectorAll(".title h2 span");
 const links = document.querySelectorAll("a");
 const imageSybil = document.querySelector(".contact__content");
 // const firstTitle = document.querySelector(".header__title");
-
+// const position = firstTitle.getBoundingClientRect();
 
 // custom cursor and clipath on titles
 
 window.addEventListener("mousemove", e => {
-	mouseCursor.style.top = e.pageY + "px";
-	mouseCursor.style.left = e.pageX + "px";
+	mouseCursor.style.top = (e.pageY-40) + "px";
+	mouseCursor.style.left = (e.pageX-40) + "px";
+	// firstTitle.style.setProperty('--x', (e.pageX-position.x) + "px");
+	// firstTitle.style.setProperty('--y', (e.pageY-position.y) + "px");
 });
 
 
-// const p = firstTitle.getBoundingClientRect();
+// console.log(position);
 // document.body.onmousemove = function(e) {
-// 	firstTitle.style.setProperty('--x', (e.clientX-p.top) + "px");
-// 	firstTitle.style.setProperty('--y', (e.clientY-p.left) + "px");
+// 	mouseCursor.style.left = (e.clientX) +'px';
+//   	mouseCursor.style.top = (e.clientY) +'px';
+// 	firstTitle.style.setProperty('--x', (e.clientX-position.x) + "px");
+// 	firstTitle.style.setProperty('--y', (e.clientY-position.y) + "px");
 // };
 
 

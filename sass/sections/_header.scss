@@ -22,12 +22,25 @@
 	// }
 	
 
-	&__title {
+	h1 {
 		text-align: center;
 		opacity: 0;
 		animation: fadeIn 1.3s forwards;
 		position: relative;
 	}
+
+	// h1::before {
+	// 	 position:absolute;
+	// 	 top:0;
+	// 	 left:0;
+	// 	  content:attr(data-text);
+	// 	  color:transparent;
+	// 	  background:#dbdbdb;
+	// 	  background: radial-gradient(circle at var(--x,-80px) var(--y,-80px), #fff 40px,black 40px);
+	// 	  background-clip: text;
+	// 	  margin: 0;
+	// 	  padding: 0;
+	// }
 
 	&__scroll {
 		flex: 0 1 100%;

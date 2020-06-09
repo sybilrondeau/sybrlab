@@ -3,14 +3,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".contact .contact__infos", {
+gsap.from(".box", {
 	scrollTrigger: { 
-		trigger: ".contact__content", 
-		start: "bottom 90%",
-		end: "20% top",
+		trigger: ".contact__content--text", 
+		start: "20% 80%",
+		end: "bottom top",
 		toggleActions: "play none none reset"
 	},
 	yPercent: 30, 
 	opacity: 0,
 	duration: 3,
+	stagger: .1
 });

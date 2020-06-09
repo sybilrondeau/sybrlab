@@ -22,14 +22,15 @@ html {
 }
 
 .cursor {
-	width: 8rem;
-	height: 8rem;
+	width: 80px;
+	height: 80px;
 	border-radius: 50%;
 	background-color: var(--grey-medium);
 	position: absolute;
-	transform: translate(-50%, -50%);
+	top: -40;
+	left: -40;
 	pointer-events: none;
-	z-index: -10;
+	z-index: -20;
 	transition: transform .2s;
 }
 
