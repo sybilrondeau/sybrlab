@@ -1,0 +1,14 @@
+.legal {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+
+	button {
+		border: none;
+		background: transparent;
+		font-family: "Muli";
+		font-size: 1rem;
+		text-align: center;
+	}
+}

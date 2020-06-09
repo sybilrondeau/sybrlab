@@ -24,6 +24,10 @@
 				width: 2rem;
 				height: 2rem;
 			}
+
+			svg:hover {
+				fill: var(--primary);
+			}
 		}
 	}
 
@@ -39,6 +43,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: space-around;
+	z-index: 1000;
 
 	li {
 		list-style: none;
@@ -90,6 +95,8 @@
     white-space: nowrap;
     overflow: hidden;
     position: absolute;
+    top: 0;
+    left: 0;
     }
 
     // h2::before {

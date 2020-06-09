@@ -6,7 +6,6 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from(".contact .contact__infos", {
 	scrollTrigger: { 
 		trigger: ".contact__content", 
-		markers: true, 
 		start: "bottom 90%",
 		end: "20% top",
 		toggleActions: "play none none reset"
