@@ -28,6 +28,8 @@ h1, h2 {
 	font-variation-settings: 'wght' 900;
 }
 
+
+
 .section-h2 {
 	text-align: center;
 	margin-bottom: 15rem;
@@ -56,6 +58,11 @@ strong {
 .accent {
 	color: var(--primary);
 }
+
+.text-black {
+	color: var(--grey-medium-dark) !important;
+}
+
 
 ul li {
 	font-family:  'Muli', sans-serif;
