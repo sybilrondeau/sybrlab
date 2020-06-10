@@ -19,6 +19,14 @@ html {
 	font-size: 62.5%;
 	color: var(--grey-dark);
 	scroll-behavior: smooth;
+
+	// @include respond(phone) {
+	// 	font-size: 50%;
+	// }
+
+	// @include respond(tablet) {
+	// 	font-size: 60%;
+	// }
 }
 
 .cursor {
@@ -27,8 +35,7 @@ html {
 	border-radius: 50%;
 	background-color: var(--grey-medium);
 	position: absolute;
-	top: -40;
-	left: -40;
+	transform: translate(-50%, -50%);
 	pointer-events: none;
 	z-index: -20;
 	transition: transform .2s;
