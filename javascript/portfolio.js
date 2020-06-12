@@ -22,11 +22,11 @@ const animTL = gsap.timeline({
 .from(".slideText--02", {yPercent: -30, opacity: 0}, "pic1")
 
 .add("pic2")
-// .from(".portfolio__picture--03", {yPercent: 100}, "pic2")
-// .to(".slideText--02", {opacity: 0}, "pic2")
-// .from(".slideText--03", {yPercent: -30, opacity: 0}, "pic2")
+.from(".portfolio__picture--03", {yPercent: 100}, "pic2")
+.to(".slideText--02", {opacity: 0}, "pic2")
+.from(".slideText--03", {yPercent: -30, opacity: 0}, "pic2")
 
 // .add("pic3")
 // .to(".slideText--03", {opacity: 0}, "pic3")
 
-// .add("end")
+.add("end")

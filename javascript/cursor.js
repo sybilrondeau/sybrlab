@@ -1,5 +1,5 @@
 const mouseCursor = document.querySelector(".cursor");
-const titles = document.querySelectorAll(".title h2 span");
+const titles = document.querySelectorAll(".marquee");
 const links = document.querySelectorAll("a");
 const imageSybil = document.querySelector(".contact__content");
 
