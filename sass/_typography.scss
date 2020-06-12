@@ -26,6 +26,10 @@ h1, h2 {
 	font-family: 'Exo', sans-serif;
 	font-size: 6rem;
 	font-variation-settings: 'wght' 900;
+
+	@include respond(phone) {
+		font-size: 4rem;
+	}
 }
 
 

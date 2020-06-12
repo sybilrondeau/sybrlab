@@ -19,10 +19,6 @@ html {
 	font-size: 62.5%;
 	color: var(--grey-dark);
 	scroll-behavior: smooth;
-	
-	@include media(">small", "<medium") {
-		font-size: 50%;
-	}
 }
 
 .cursor {
