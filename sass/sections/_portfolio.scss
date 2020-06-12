@@ -3,23 +3,39 @@
 	height: 100vh;
 	display: flex;
 	padding-left: 10rem;
-	margin-bottom: 80%;
+	margin: 5rem 0 60%;
 	overflow: hidden;
 
+	@include respond(phone) {
+		flex-direction: column-reverse;
+		height: auto;
+		// margin-bottom: 30rem;
+		padding-left: 0;
+		margin: 0 0 15rem;
+	}
 
-	&__text {
-		flex: 0 1 50%;
-		height: 100vh;
-		position: relative;
-		padding: 0 5rem;
 
 		.slideText {
+			flex: 0 1 50vw;
+			padding: 0 5rem;
 			position: absolute;
 			top: 20rem;
 			left: 10rem;
 
+			@include respond(phone) {
+				position: relative;
+				padding: 0;
+				flex: 0 1 100vw;
+				margin: 0;
+			}
+
+
 			h3 {
 				margin-bottom: 2.4rem;
+
+				@include respond(phone) {
+				margin-bottom: 1rem;
+				}
 			}
 
 			ul li {
@@ -36,6 +52,10 @@
 			p {
 				max-width: 40rem;
 				margin: 4rem auto;
+
+				@include respond(phone) {
+					margin: 2rem 0 0;
+				}
 			}
 
 			p  a {
@@ -62,34 +82,68 @@
 				transform-origin: top left;
 				transform: scaleX(1.4);
 			}
+
+			&.slideText--01 {
+				@include respond(phone) {
+					order: 6;
+				}
+			}
+
+			&.slideText--02 {
+				@include respond(phone) {
+					order: 4;
+				}			
+			}
+
+			&.slideText--03 {
+				@include respond(phone) {
+					order: 2;
+				}			
+			}
 		}
-	}
-
-	&__picture {
-		flex: 0 1 50%;
-		height: 100vh;
-		position: relative;
-		overflow: hidden;
-
 
 		.slide {
-			width: 100%;
+			flex: 0 1 50vw;
 			height: 100vh;
+			position: relative;
+			overflow: hidden;
 			position: absolute;
 			top: 0;
-			left: 0;
+			right: 0;
 			background-position: center;
 			background-size: cover;
+
+			@include respond(phone) {
+				position: relative;
+			}
+			
+			&.slide--01 {
+				background-image: url("./images/sybrlab.jpg");
+				width: 50vw;
+
+				@include respond(phone) {
+					order: 5;
+					width: 100vw;
+				}
+			}
+			&.slide--02 {
+				background-image: url("./images/sybil-site.jpg");
+				width: 50vw;
+
+					@include respond(phone) {
+					order: 3;
+					width: 100vw;
+				}
+			}
+			&.slide--03 {
+				background-image: url("./images/amime.jpg");
+				width: 50vw;
+
+					@include respond(phone) {
+					order: 1;
+					width: 100vw;
+				}
+			}
 		}
 
-		.portfolio__picture--01 {
-			background-image: url("./images/sybrlab.jpg");
-		}
-		.portfolio__picture--02 {
-			background-image: url("./images/sybil-site.jpg");
-		}
-		.portfolio__picture--03 {
-			background-image: url("./images/amime.jpg");
-		}
 	}
-}

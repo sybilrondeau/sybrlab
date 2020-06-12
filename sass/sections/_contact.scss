@@ -8,16 +8,25 @@
 	padding: 0 10rem;
 	margin-bottom: 10rem;
 
+	@include respond(phone) {
+		flex-direction: column;
+		height: auto;
+	}
+
 
 	&--img {
-		flex: 0 0 400px;
-		height: 400px;
+		width: 40rem;
+		height: 40rem;
 		object-fit: cover;
 		border-radius: 50%;
 		z-index: -200;
 		position: relative;
 		margin-right: rem;
 		margin-left: 10rem;
+
+		@include respond(phone) {
+			margin: 5rem auto;
+		}
 	}
 
 	&--text {

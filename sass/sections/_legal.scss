@@ -1,14 +1,10 @@
 .legal {
-	width: 100%;
+	width: 80%;
 	height: 8rem;
-	display: flex;
-	justify-content: center;
 	padding: 2rem;
+	margin: 0 auto;
 
-	button {
-		border: none;
-		background: transparent;
-		font-family: "Muli";
+	p {
 		font-size: 1rem;
 		text-align: center;
 	}
