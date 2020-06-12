@@ -94,15 +94,15 @@
 	    font-weight: 800;
 	    text-transform: uppercase;
 	    color: var(--grey-medium);
-	    width: var(--tw);
-	    text-shadow: var(--tw) 0 currentColor, 
-                 calc(var(--tw) * 2) 0 currentColor, 
-                 calc(var(--tw) * 3) 0 currentColor,
-                 calc(var(--tw) * 4) 0 currentColor,
-                 calc(var(--tw) * 5) 0 currentColor,
-                 calc(var(--tw) * 6) 0 currentColor;
+	    width: var(--width);
+	    text-shadow: var(--width) 0 currentColor, 
+                 calc(var(--width) * 2) 0 currentColor, 
+                 calc(var(--width) * 3) 0 currentColor,
+                 calc(var(--width) * 4) 0 currentColor,
+                 calc(var(--width) * 5) 0 currentColor,
+                 calc(var(--width) * 6) 0 currentColor;
 		will-change: transform;
-	    animation: marquee var(--ad) linear infinite;
+	    animation: marquee var(--duration) linear infinite;
 	}
 }
 
