@@ -79,6 +79,10 @@
 			display: block;
 			transform: translateY(4rem) scale(1.2) rotate(-90deg);
 			transform-origin: center;
+
+			@include respond(tab) {
+				transform: translateY(0) scale(1) rotate(0)
+			}
 		}
 	}
 }
@@ -123,4 +127,8 @@
     text-align: center;
     white-space: normal;
   }
+}
+
+.mt {
+	margin-top: 20rem;
 }

@@ -1,7 +1,7 @@
 const mouseCursor = document.querySelector(".cursor");
 const titles = document.querySelectorAll(".marquee");
 const links = document.querySelectorAll("a");
-const imageSybil = document.querySelector(".contact__content");
+const imageSybil = document.querySelector(".contact");
 
 // custom cursor and clipath on titles
 

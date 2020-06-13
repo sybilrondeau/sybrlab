@@ -31,6 +31,11 @@ html {
 	pointer-events: none;
 	z-index: -20;
 	transition: transform .2s;
+
+	@include respond(phone) {
+		width: 40px;
+		height: 40px;
+	}
 }
 
 .link-grow {
@@ -48,25 +53,4 @@ html {
 	backdrop-filter: hue-rotate(180deg);
 	// backdrop-filter: grayscale(100%) contrast(100%);
 	transform: scale(2) translate(-25%, -25%);
-}
-
-.big-numbers {
-	font-family: "Open Sans";
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 15rem;
-    color: #DBDBDB;
-    position: absolute;
-    top: -.5em;
-    right: 0rem;
-    z-index: -1;
-
-    @include respond(phone) {
-		right: 50%;
-		font-size: 10rem;
-
-    }
-
-
-
 }

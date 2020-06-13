@@ -1,4 +1,4 @@
-.contact__content {
+.contact {
 	// border: 1px solid pink;
 	width: 100%;
 	height: 60vh;
@@ -8,9 +8,12 @@
 	padding: 0 10rem;
 	margin-bottom: 10rem;
 
-	@include respond(phone) {
+	@include respond(tab) {
 		flex-direction: column;
 		height: auto;
+	}
+	@include respond(phone) {
+		padding: 0 6rem;
 	}
 
 
@@ -24,8 +27,10 @@
 		margin-right: rem;
 		margin-left: 10rem;
 
-		@include respond(phone) {
+		@include respond(tab) {
 			margin: 5rem auto;
+			width: 25rem;
+			height: 25rem;
 		}
 	}
 

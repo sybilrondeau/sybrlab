@@ -15,7 +15,7 @@ function handlePortfolio(mql) {
 				end: "+=100%",
 				scrub: 1,
 				pin: true,
-				pinSpacing: false,
+				pinSpacing: true,
 				snap: {snapTo: "labels", duration: {min: 0.2, max: 3}, delay: 0.5, ease: "power2.inOut"},
 				toggleClass: {targets:".nav-right li .nav-quoi", className: "active"},
 			}

@@ -27,7 +27,7 @@ h1, h2 {
 	font-size: 6rem;
 	font-variation-settings: 'wght' 900;
 
-	@include respond(phone) {
+	@include respond(tab) {
 		font-size: 4rem;
 	}
 }
@@ -44,8 +44,12 @@ h3 {
 	font-size: 4.5rem;
 	font-variation-settings: 'wght' 900;
 
-	@include respond(phone) {
+	@include respond(tab) {
 	  font-size: 4rem;
+	}
+
+	@include respond(tab) {
+	  font-size: 3rem;
 	}
 }
 
@@ -54,8 +58,12 @@ p {
 	font-size: 1.6rem;
 	font-weight: 400;
 	font-kerning: normal;
-	// hyphens: auto;
+	hyphens: auto;
 	color: var(--grey-medium-dark);
+
+	@include respond(tab) {
+		font-size: 1.4rem;
+	}
 }
 
 strong {
@@ -76,5 +84,28 @@ ul li {
 	font-family:  'Muli', sans-serif;
 	color: var(--grey-dark);
 	list-style: none;
+
+	@include respond(tab) {
+		font-size: 1.4rem;
+	}
+}
+
+.big-numbers {
+	font-family: "Open Sans";
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 15rem;
+    color: #DBDBDB;
+    position: absolute;
+    top: -.5em;
+    left: 10rem;
+    z-index: -1;
+
+    @include respond(tab) {
+		font-size: 10rem;
+    }
+    @include respond(phone) {
+		font-size: 8rem;
+	}
 }
 

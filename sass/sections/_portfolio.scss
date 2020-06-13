@@ -3,147 +3,160 @@
 	height: 100vh;
 	display: flex;
 	padding-left: 10rem;
-	margin: 5rem 0 60%;
+	margin: 5rem 0 0;
 	overflow: hidden;
+	position: relative;
+	flex-wrap: wrap;
 
-	@include respond(phone) {
-		flex-direction: column-reverse;
+	@include respond(tab) {
 		height: auto;
-		// margin-bottom: 30rem;
 		padding-left: 0;
-		margin: 0 0 15rem;
+		margin: 0 0 20rem;
 	}
 
 
-		.slideText {
-			flex: 0 1 50vw;
-			padding: 0 5rem;
-			position: absolute;
-			top: 20rem;
-			left: 10rem;
+	.slideText {
+		flex: 0 1 50%;
+		height: 100vh;
+		// padding: 0 5rem;
+		position: absolute;
+		left: 10rem;
+		top: 20rem;
 
-			@include respond(phone) {
-				position: relative;
-				padding: 0;
-				flex: 0 1 100vw;
-				margin: 0;
-			}
-
-
-			h3 {
-				margin-bottom: 2.4rem;
-
-				@include respond(phone) {
-				margin-bottom: 1rem;
-				}
-			}
-
-			ul li {
-				font-size: 1.6rem;
-
-				svg {
-					width: 3rem;
-					height: 3rem;
-					margin-bottom: -1rem;
-					margin-right: 1rem;
-				}
-			}
-			
-			p {
-				max-width: 40rem;
-				margin: 4rem auto;
-
-				@include respond(phone) {
-					margin: 2rem 0 0;
-				}
-			}
-
-			p  a {
-				color: var(--primary);
-				text-decoration: none;
-				position: relative;
-			}
-
-			p  a::after {
-				content: "";
-				position: absolute;
-				top: 50%;
-				left: 110%;
-				height: 1.4px;
-				background-color: var(--primary);
-				transform: scaleX(0);
-				transform-origin: top left;
-				transition: transform .5s cubic-bezier(1, 0, 0, 1);
-			}
-
-			p  a:hover::after {
-				width: 100%;
-				height: 1.4px;
-				transform-origin: top left;
-				transform: scaleX(1.4);
-			}
-
-			&.slideText--01 {
-				@include respond(phone) {
-					order: 6;
-				}
-			}
-
-			&.slideText--02 {
-				@include respond(phone) {
-					order: 4;
-				}			
-			}
-
-			&.slideText--03 {
-				@include respond(phone) {
-					order: 2;
-				}			
-			}
-		}
-
-		.slide {
-			flex: 0 1 50vw;
-			height: 100vh;
+		@include respond(tab) {
 			position: relative;
-			overflow: hidden;
-			position: absolute;
-			top: 0;
-			right: 0;
-			background-position: center;
-			background-size: cover;
+			top: 10rem;
+			left: 5rem;
+			padding: 0 2rem;
+			flex: 0 1 100vw;
+			margin: 0;
+		}
+		@include respond(phone) {
+			left: 0;
+			padding: 0 1rem;
+		}
 
-			@include respond(phone) {
-				position: relative;
-			}
-			
-			&.slide--01 {
-				background-image: url("./images/sybrlab.jpg");
-				width: 50vw;
 
-				@include respond(phone) {
-					order: 5;
-					width: 100vw;
-				}
-			}
-			&.slide--02 {
-				background-image: url("./images/sybil-site.jpg");
-				width: 50vw;
 
-					@include respond(phone) {
-					order: 3;
-					width: 100vw;
-				}
-			}
-			&.slide--03 {
-				background-image: url("./images/amime.jpg");
-				width: 50vw;
+		h3 {
+			margin-bottom: 2.4rem;
 
-					@include respond(phone) {
-					order: 1;
-					width: 100vw;
-				}
+			@include respond(tab) {
+			margin-bottom: 1rem;
 			}
 		}
 
+		ul li {
+			font-size: 1.6rem;
+
+			svg {
+				width: 3rem;
+				height: 3rem;
+				margin-bottom: -1rem;
+				margin-right: 1rem;
+			}
+		}
+		
+		p {
+			width: 40%;
+			margin: 4rem 0;
+
+			@include respond(tab) {
+				margin-top: 2rem;
+				width: 80%;
+			}
+		}
+
+		p  a {
+			color: var(--primary);
+			text-decoration: none;
+			position: relative;
+		}
+
+		p  a::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 110%;
+			height: 1.4px;
+			background-color: var(--primary);
+			transform: scaleX(0);
+			transform-origin: top left;
+			transition: transform .5s cubic-bezier(1, 0, 0, 1);
+		}
+
+		p  a:hover::after {
+			width: 100%;
+			height: 1.4px;
+			transform-origin: top left;
+			transform: scaleX(1.4);
+		}
+
+		&.slideText--01 {
+			@include respond(tab) {
+				order: 1;
+				height: 40rem;
+				// top: 10rem;
+			}
+		}
+
+		&.slideText--02 {
+			@include respond(tab) {
+				order: 3;
+				height: 50rem;
+				// top: 20rem;
+			}			
+		}
+
+		&.slideText--03 {
+			@include respond(tab) {
+				order: 5;
+				height: 40rem;
+				// top: 30rem;
+			}			
+		}
 	}
+
+	.slide {
+		flex: 0 1 50%;
+		height: 100vh;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-position: center;
+		background-size: cover;
+
+		@include respond(tab) {
+			position: relative;
+			right: 0;
+			flex-basis: 100vw;
+			height: 30rem;
+		}
+		
+		&.slide--01 {
+			background-image: url("./images/sybrlab.jpg");
+			width: 50vw;
+
+			@include respond(tab) {
+				order: 2;
+			}
+		}
+		&.slide--02 {
+			background-image: url("./images/sybil-site.jpg");
+			width: 50vw;
+
+				@include respond(tab) {
+				order: 4;
+			}
+		}
+		&.slide--03 {
+			background-image: url("./images/amime.jpg");
+			width: 50vw;
+
+				@include respond(tab) {
+				order: 6;
+			}
+		}
+	}
+}
