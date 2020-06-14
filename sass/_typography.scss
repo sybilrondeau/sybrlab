@@ -75,10 +75,13 @@ strong {
 	color: var(--primary);
 }
 
-.text-black {
+.text-grey-medium {
 	color: var(--grey-medium-dark) !important;
 }
 
+.text-black {
+	color: var(--grey-dark) !important;
+}
 
 ul li {
 	font-family:  'Muli', sans-serif;
