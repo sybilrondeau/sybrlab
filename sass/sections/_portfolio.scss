@@ -25,14 +25,14 @@
 
 		@include respond(tab) {
 			position: relative;
-			top: 10rem;
+			top: 5rem;
 			left: 5rem;
 			padding: 0 2rem;
 			flex: 0 1 100vw;
 			margin: 0;
 		}
 		@include respond(phone) {
-			left: 0;
+			left: 1rem;
 			padding: 0 1rem;
 		}
 
@@ -63,7 +63,11 @@
 
 			@include respond(tab) {
 				margin-top: 2rem;
-				width: 80%;
+				width: 70%;
+			}
+			@include respond(phone) {
+				margin-top: 2rem;
+				width: 90%;
 			}
 		}
 
@@ -94,25 +98,22 @@
 
 		&.slideText--01 {
 			@include respond(tab) {
-				order: 1;
+				// order: 1;
 				height: 40rem;
-				// top: 10rem;
 			}
 		}
 
 		&.slideText--02 {
 			@include respond(tab) {
-				order: 3;
+				// order: 3;
 				height: 50rem;
-				// top: 20rem;
 			}			
 		}
 
 		&.slideText--03 {
 			@include respond(tab) {
-				order: 5;
+				// order: 5;
 				height: 40rem;
-				// top: 30rem;
 			}			
 		}
 	}
@@ -129,8 +130,7 @@
 
 		@include respond(tab) {
 			position: relative;
-			right: 0;
-			flex-basis: 100vw;
+			flex: 0 1 100vw;
 			height: 30rem;
 		}
 		
@@ -139,7 +139,7 @@
 			width: 50vw;
 
 			@include respond(tab) {
-				order: 2;
+				// order: 2;
 			}
 		}
 		&.slide--02 {
@@ -147,7 +147,7 @@
 			width: 50vw;
 
 				@include respond(tab) {
-				order: 4;
+				// order: 4;
 			}
 		}
 		&.slide--03 {
@@ -155,7 +155,7 @@
 			width: 50vw;
 
 				@include respond(tab) {
-				order: 6;
+				// ord
 			}
 		}
 	}

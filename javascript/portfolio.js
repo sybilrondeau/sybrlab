@@ -3,7 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const mediaQueryList = window.matchMedia("(min-width: 50em)");
+const mediaQueryList = window.matchMedia("(min-width: 56.26em)");
 
 function handlePortfolio(mql) {
 	if (mql.matches) {

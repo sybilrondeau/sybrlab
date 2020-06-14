@@ -1,7 +1,7 @@
 .contact {
 	// border: 1px solid pink;
 	width: 100%;
-	height: 60vh;
+	height: 100%;
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
@@ -18,8 +18,8 @@
 
 
 	&--img {
-		width: 40rem;
-		height: 40rem;
+		width: 40%;
+		height: 40%;
 		object-fit: cover;
 		border-radius: 50%;
 		z-index: -200;
@@ -29,8 +29,8 @@
 
 		@include respond(tab) {
 			margin: 5rem auto;
-			width: 25rem;
-			height: 25rem;
+			// width: 20rem;
+			// height: 25rem;
 		}
 	}
 
