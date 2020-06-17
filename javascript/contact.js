@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".box", {
 	scrollTrigger: { 
-		trigger: ".contact__content--text", 
+		trigger: ".contact--text", 
 		start: "20% 80%",
 		end: "bottom top",
 		toggleActions: "play none none reset"
