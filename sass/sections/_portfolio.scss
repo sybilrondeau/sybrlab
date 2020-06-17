@@ -3,7 +3,6 @@
 	height: 100vh;
 	display: flex;
 	padding-left: 10rem;
-	margin: 5rem 0 0;
 	overflow: hidden;
 	position: relative;
 	flex-wrap: wrap;
@@ -11,7 +10,7 @@
 	@include respond(tab) {
 		height: auto;
 		padding-left: 0;
-		margin: 0 0 20rem;
+		margin: 0 0 20%;
 	}
 
 
@@ -28,7 +27,7 @@
 			top: 5rem;
 			left: 5rem;
 			padding: 0 2rem;
-			flex: 0 1 100vw;
+			flex: 0 1 100%;
 			margin: 0;
 		}
 		@include respond(phone) {
@@ -130,32 +129,32 @@
 
 		@include respond(tab) {
 			position: relative;
-			flex: 0 1 100vw;
+			flex: 0 1 100%;
 			height: 30rem;
 		}
 		
 		&.slide--01 {
 			background-image: url("./images/sybrlab.jpg");
-			width: 50vw;
+			width: 50%;
 
 			@include respond(tab) {
-				// order: 2;
+				
 			}
 		}
 		&.slide--02 {
 			background-image: url("./images/sybil-site.jpg");
-			width: 50vw;
+			width: 50%;
 
 				@include respond(tab) {
-				// order: 4;
+				
 			}
 		}
 		&.slide--03 {
 			background-image: url("./images/amime.jpg");
-			width: 50vw;
+			width: 50%;
 
 				@include respond(tab) {
-				// ord
+				
 			}
 		}
 	}
