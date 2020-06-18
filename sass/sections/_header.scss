@@ -20,13 +20,30 @@
 	// 		line-height: 4rem;
 	// 	}
 	// }
-	
 
-	h1 {
-		text-align: center;
-		opacity: 0;
-		animation: fadeIn 1.3s forwards;
-		position: relative;
+	@include respond(tab) {
+		padding: 0 2rem;
+	}
+
+	
+	&__title {
+		flex: 0 1 100%;
+
+		h1 {
+			text-align: center;
+			opacity: 0;
+			animation: fadeIn 1.3s forwards;
+			position: relative;
+			top: 30%;
+		}
+
+		@include respond(tab) {
+			top: 0%;
+		}
+
+		@include respond(phone) {
+			top: 0;
+		}
 	}
 
 	// h1::before {
@@ -46,7 +63,6 @@
 		flex: 0 1 100%;
 		position: absolute;
 		bottom: 10rem;
-		padding-top: 1rem;
 
 		.header__line {
 			display: block;

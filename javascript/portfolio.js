@@ -3,7 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const mediaQueryList = window.matchMedia("(min-width: 56.26em)");
+const mediaQueryList = window.matchMedia("(min-width: 56.26em)"); // à partir de 900px
 
 function handlePortfolio(mql) {
 	if (mql.matches) {
@@ -31,16 +31,41 @@ function handlePortfolio(mql) {
 		.to(".slideText--02", {opacity: 0}, "pic2")
 		.from(".slideText--03", {yPercent: -30, opacity: 0}, "pic2")
 
-		// .add("pic3")
-		// .to(".slideText--03", {opacity: 0}, "pic3")
-
 		.add("end")
+
 	} else {
-		ScrollTrigger.create({
-			trigger: ".portfolio",
-			start: "top bottom",
-			end: "bottom top", 
-			toggleClass: {targets:".nav-right li .nav-quoi", className: "active"}
+		gsap.from(".slideText--01", {
+		scrollTrigger: { 
+		trigger: ".slideText--01", 
+		start: "20% 100%",
+		end: "+=50%",
+		toggleActions: "play none none reset"
+		},
+		yPercent: 20, 
+		opacity: 0,
+		duration: 2,
+		});
+		gsap.from(".slideText--02", {
+		scrollTrigger: { 
+		trigger: ".slideText--02", 
+		start: "20% 100%",
+		end: "+=50%",
+		toggleActions: "play none none reset"
+		},
+		yPercent: 20, 
+		opacity: 0,
+		duration: 2,
+		});
+		gsap.from(".slideText--03", {
+		scrollTrigger: { 
+		trigger: ".slideText--03", 
+		start: "20% 100%",
+		end: "+=50%",
+		toggleActions: "play none none reset"
+		},
+		yPercent: 20, 
+		opacity: 0,
+		duration: 2,
 		});
 	}
 };

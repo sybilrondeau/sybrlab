@@ -28,6 +28,10 @@ h1, h2 {
 	font-variation-settings: 'wght' 900;
 
 	@include respond(tab) {
+		font-size: 5rem;
+	}
+
+	@include respond(phone) {
 		font-size: 4rem;
 	}
 }
@@ -48,7 +52,7 @@ h3 {
 	  font-size: 4rem;
 	}
 
-	@include respond(tab) {
+	@include respond(phone) {
 	  font-size: 3rem;
 	}
 }
@@ -60,10 +64,6 @@ p {
 	font-kerning: normal;
 	hyphens: auto;
 	color: var(--grey-medium-dark);
-
-	@include respond(tab) {
-		font-size: 1.4rem;
-	}
 }
 
 strong {
@@ -87,10 +87,6 @@ ul li {
 	font-family:  'Muli', sans-serif;
 	color: var(--grey-dark);
 	list-style: none;
-
-	@include respond(tab) {
-		font-size: 1.4rem;
-	}
 }
 
 .big-numbers {

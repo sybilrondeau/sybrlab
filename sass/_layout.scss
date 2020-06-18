@@ -10,13 +10,14 @@
 	z-index: 1000;
 	background: transparent;
 
-	@include respond(phone) {
+	@include respond(tab) {
 		display: none;
 	}
 
 	&__top svg {
 		height: 30px;
 		width: 3rem;
+		fill: var(--grey-dark);
 	}
 
 	&__top svg:hover {
@@ -39,7 +40,6 @@
 			}
 		}
 	}
-
 }
 
 .nav-right {
@@ -55,7 +55,7 @@
 	background: transparent;
 	z-index: 1000;
 
-	@include respond(phone) {
+	@include respond(tab) {
 		display: none;
 	}
 
@@ -87,6 +87,27 @@
 			display: block;
 			transform: translateY(4rem) scale(1.2) rotate(-90deg);
 			transform-origin: center;
+		}
+	}
+}
+
+.nav-phone {
+	display: none;
+
+	@include respond(tab) {
+		display: contents;
+		text-align: center;
+		margin: 1rem;
+	
+		ul li {
+			display: inline;
+			padding: 1rem;
+
+			svg {
+				width: 4rem;
+				height: 4rem;
+				fill: var(--grey-dark);
+			}
 		}
 	}
 }

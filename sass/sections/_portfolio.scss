@@ -16,7 +16,7 @@
 
 	.slideText {
 		flex: 0 1 50%;
-		height: 100vh;
+		// height: 100vh;
 		// padding: 0 5rem;
 		position: absolute;
 		left: 10rem;
@@ -136,26 +136,14 @@
 		&.slide--01 {
 			background-image: url("./images/sybrlab.jpg");
 			width: 50%;
-
-			@include respond(tab) {
-				
-			}
 		}
 		&.slide--02 {
 			background-image: url("./images/sybil-site.jpg");
 			width: 50%;
-
-				@include respond(tab) {
-				
-			}
 		}
 		&.slide--03 {
 			background-image: url("./images/amime.jpg");
 			width: 50%;
-
-				@include respond(tab) {
-				
-			}
 		}
 	}
 }
