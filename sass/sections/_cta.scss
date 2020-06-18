@@ -1,11 +1,16 @@
 .cta {
 	width: 80%;
-	height: 50vh;
+	height: 100vh;
 	margin: 0 auto;
 	text-align: center;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	flex-direction: column;
 
 	&__title {
 		font-size: 6rem;
+		margin-bottom: 2rem;
 	}
 
 	p {
