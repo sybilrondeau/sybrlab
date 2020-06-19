@@ -22,6 +22,10 @@
 		left: 10rem;
 		top: 20rem;
 
+		@include respond(deskBig) {
+			left: 20rem;
+		}
+
 		@include respond(tab) {
 			position: relative;
 			top: 5rem;
@@ -47,6 +51,10 @@
 
 		ul li {
 			font-size: 1.6rem;
+
+			@include respond(deskBig) {
+				font-size: 2rem;
+			}
 
 			svg {
 				width: 3rem;

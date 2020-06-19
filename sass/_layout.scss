@@ -15,9 +15,14 @@
 	}
 
 	&__top svg {
-		height: 30px;
+		height: 3rem;
 		width: 3rem;
 		fill: var(--grey-dark);
+
+		@include respond(deskBig) {
+			height: 4rem;
+			width: 4rem;
+		}
 	}
 
 	&__top svg:hover {
@@ -33,6 +38,11 @@
 			svg {
 				width: 2rem;
 				height: 2rem;
+				
+				@include respond(deskBig) {
+					height: 3rem;
+					width: 3rem;
+				}
 			}
 
 			svg:hover {
@@ -55,6 +65,10 @@
 	background: transparent;
 	z-index: 1000;
 
+	@include respond(deskBig) {
+		width: 15rem;
+	}
+
 	@include respond(tab) {
 		display: none;
 	}
@@ -69,6 +83,11 @@
 		text-transform: uppercase;
 		font-weight: 600;
 		font-family: 'Exo', sans-serif;
+
+		@include respond(deskBig) {
+			font-size: 2.4rem;
+			margin : 15rem 0;
+		}
 
 		a {
 			text-decoration: none;
@@ -117,6 +136,14 @@
 	font-size: 8vw;
 	z-index: 0;
 	position: relative;
+
+	@include respond(deskBig) {
+		font-size: 7vw;
+	}
+
+	@include respond(phone) {
+		font-size: 10vw;
+	}
 
 	span {
 		display: inline-block;
