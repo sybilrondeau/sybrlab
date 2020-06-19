@@ -134,16 +134,40 @@
 		}
 		
 		&.slide--01 {
-			background-image: url("./images/sybrlab.jpg");
+			background-image: url("./images/sybrlab-1920.jpg");
 			width: 50%;
+			@include respond(tab) {
+				background-image: url("./images/sybrlab-900.jpg");
+				width: 100%;
+			}
+			@include respond(phone) {
+				background-image: url("./images/sybrlab-500.jpg");
+				width: 100%;
+			}
 		}
 		&.slide--02 {
-			background-image: url("./images/sybil-site.jpg");
+			background-image: url("./images/sybil-site-1920.jpg");
 			width: 50%;
+			@include respond(tab) {
+				background-image: url("./images/sybil-site-900.jpg");
+				width: 100%;
+			}
+			@include respond(phone) {
+				background-image: url("./images/sybil-site-500.jpg");
+				width: 100%;
+			}
 		}
 		&.slide--03 {
-			background-image: url("./images/amime.jpg");
+			background-image: url("./images/amime-1920.jpg");
 			width: 50%;
+			@include respond(tab) {
+				background-image: url("./images/amime-900.jpg");
+				width: 100%;
+			}
+			@include respond(phone) {
+				background-image: url("./images/amime-500.jpg");
+				width: 100%;
+			}
 		}
 	}
 }

@@ -8,3 +8,4 @@ import '../javascript/nav.js';
 import '../javascript/cursor.js';
 //import '../javascript/header.js';
 import '../javascript/drawsvg.js';
+import '../javascript/picturefill.js';

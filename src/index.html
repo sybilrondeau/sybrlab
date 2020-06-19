@@ -139,9 +139,10 @@
 		<span>contact</span>
 	</div>
 	<div class="contact">
-		<div class="contact--img">
-			<img src="./images/sybil.jpg" alt="Sybil Rondeau">	
-		</div>
+		<picture class="contact--img">
+			<source srcset="./images/sybil.jpg" media="(min-width: 75em)">
+			<img src="./images/sybil-500.jpg" alt="Portrait de Sybil Rondeau">	
+		</picture>
 		<div class="contact--text">
 			<div class="box">
 				<h3>Parcours</h3>
@@ -168,9 +169,6 @@
 				</svg>
 				<svg xmlns:xlink="http://www.w3.org/2000/svg">
 					<use xlink:href="./images/spriteTec.svg#javascript"></use>
-				</svg>
-				<svg xmlns:xlink="http://www.w3.org/2000/svg">
-					<use xlink:href="./images/spriteTec.svg#php"></use>
 				</svg>
 				<svg xmlns:xlink="http://www.w3.org/2000/svg">
 					<use xlink:href="./images/spriteTec.svg#react"></use>
@@ -214,6 +212,7 @@
 			</li>
 		</ul>
 	</div>
+	<script>document.createElement("picture");</script>
 	<script src="./index.js"></script>
 </body>
 </html>
