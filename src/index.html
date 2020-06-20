@@ -7,7 +7,18 @@
 </head>
 <body>
 
-	<div class="cursor"></div>
+	<!-- <div class="cursor"></div> -->
+	<svg class="cursor" width="220" height="220" viewBox="0 0 220 220">
+			<defs>
+				<filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" 
+				filterUnits="objectBoundingBox">
+					<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp" />
+					<feOffset dx="-30" result="warpOffset" />
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset" />
+				</filter>
+			</defs>
+			<circle class="cursor__inner" cx="110" cy="110" r="60"/>
+		</svg>
 	<div class="nav-left">
 		<div class="nav-left__top">
 			<a href="https://www.sybrlab.com" alt="SybRlab" target="self"><svg xmlns:xlink="http://www.w3.org/2000/svg" id="logoR">
