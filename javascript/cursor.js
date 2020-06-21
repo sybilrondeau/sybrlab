@@ -1,7 +1,11 @@
+import { gsap } from "gsap";
+
 const mouseCursor = document.querySelector(".cursor");
 const titles = document.querySelectorAll(".marquee");
 const links = document.querySelectorAll("a");
-const imageSybil = document.querySelector(".contact--img");
+const contactDiv = document.querySelector(".contact");
+const ctaDiv = document.querySelector(".cta");
+const ctaTitle = document.querySelector(".cta h3");
 
 // custom cursor and clipath on titles
 
@@ -35,11 +39,45 @@ titles.forEach(title => {
 
 
 
-//effect on the last div (and picture)
+//effect on the last two div
 
-imageSybil.addEventListener("mouseleave", () => {
+contactDiv.addEventListener("mouseleave", () => {
 	mouseCursor.classList.remove("image-over");
 });
-imageSybil.addEventListener("mouseover", () => {
+contactDiv.addEventListener("mouseover", () => {
 	mouseCursor.classList.add("image-over");
 });
+
+ctaDiv.addEventListener("mouseleave", () => {
+	mouseCursor.classList.remove("image-over");
+});
+ctaDiv.addEventListener("mouseover", () => {
+	mouseCursor.classList.add("image-over");
+});
+
+//filter effect on the last title 
+
+ctaTitle.addEventListener("mouseleave", () => {
+	mouseCursor.classList.remove("filter-effect");
+});
+ctaTitle.addEventListener("mouseover", () => {
+	mouseCursor.classList.add("filter-effect");
+});
+
+
+const turbVal = { val: 0.000001 };
+const turb = document.querySelectorAll('#filter-1 feTurbulence')[0];
+	
+const noisyCursor = gsap.timeline({ 
+	paused: true, 
+	onUpdate: function() {
+  		turb.setAttribute('baseFrequency', '0 ' + turbVal.val); 
+	} 
+})
+.to(turbVal, 0.2, { val: 0.2 })
+.to(turbVal, 0.2, { val: 0.000001 });
+
+ctaTitle.addEventListener('mouseover', function() {
+  noisyCursor.restart();
+});
+

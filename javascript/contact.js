@@ -1,11 +1,11 @@
-import { gsap } from "gsap";
-import { SplitText } from "gsap/SplitText";
+// import { gsap } from "gsap";
+// import { SplitText } from "gsap/SplitText";
 
-gsap.registerPlugin(SplitText);
+// gsap.registerPlugin(SplitText);
 
-let split = new SplitText(".cta__title", {type: "chars", charsClass: "char++"});
+// let split = new SplitText(".cta__title", {type: "chars", charsClass: "char++"});
 
-// const int = split.chars[11];
-// gsap.to("int", 1, {y: -10});
+// // const int = split.chars[11];
+// // gsap.to("int", 1, {y: -10});
 
 

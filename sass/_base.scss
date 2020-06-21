@@ -32,15 +32,11 @@ html {
 	z-index: -20;
 	transition: transform .2s;
 
-	@include respond(phone) {
-		width: 40px;
-		height: 40px;
+	@media (any-pointer: none) {
+		display: none;
 	}
 }
 
-.cursor__inner {
-	fill: none;
-}
 
 .link-grow {
 	transform: scale(2) translate(-25%, -25%);
@@ -57,4 +53,8 @@ html {
 	backdrop-filter: hue-rotate(180deg);
 	// backdrop-filter: grayscale(100%) contrast(100%);
 	transform: scale(2) translate(-25%, -25%);
+}
+
+.filter-effect {
+	filter: url(#filter-1);
 }

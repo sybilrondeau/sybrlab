@@ -161,24 +161,22 @@
                  calc(var(--width) * 6) 0 currentColor;
 		will-change: transform;
 	    animation: marquee var(--duration) linear infinite;
+
+	    @media (prefers-reduced-motion: reduce) {
+			animation: none;
+			text-shadow: none;
+			width: auto;
+			display: block;
+			line-height: 1.5;
+			text-align: center;
+			white-space: normal;
+		}
 	}
 }
 
 @keyframes marquee {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .marquee span {
-    animation: none;
-    text-shadow: none;
-    width: auto;
-    display: block;
-    line-height: 1.5;
-    text-align: center;
-    white-space: normal;
-  }
 }
 
 .mt {
