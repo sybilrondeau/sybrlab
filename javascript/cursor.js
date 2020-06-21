@@ -65,6 +65,8 @@ ctaTitle.addEventListener("mouseover", () => {
 });
 
 
+// distortion
+
 const turbVal = { val: 0.000001 };
 const turb = document.querySelectorAll('#filter-1 feTurbulence')[0];
 	
