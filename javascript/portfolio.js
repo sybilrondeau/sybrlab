@@ -71,4 +71,4 @@ function handlePortfolio(mql) {
 };
 
 handlePortfolio(mediaQueryList);
-mediaQueryList.addListener(handlePortfolio);
+mediaQueryList.addEventListener('change', handlePortfolio);
