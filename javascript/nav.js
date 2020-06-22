@@ -13,7 +13,7 @@ ScrollTrigger.create({
 ScrollTrigger.create({
 	trigger: ".contact",
 	start: "top bottom",
-	end: "bottom top", 
+	end: "120% top", 
 	toggleClass: {targets:".nav-right li .nav-qui", className: "active"}
 });
 
