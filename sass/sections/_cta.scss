@@ -19,10 +19,13 @@
 	}
 	
 	svg {
+		// border: 1px solid #000;
 		position: absolute;
-		top: 0;
-		left: 0;
 		z-index: -30;
+
+		@include respond(phone) {
+			display: none;
+		}
 	}
 }
 
