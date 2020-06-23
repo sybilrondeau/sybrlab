@@ -46,6 +46,11 @@
 	}
 }
 
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
 // @keyframes colorChange {
 // 	0% {
 // 		background: #DEE3DE;
@@ -57,12 +62,3 @@
 // 		background: #E3E3E3;
 // 	}
 // }
-
-@keyframes linearText {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-100%, 0);
-  }
-}

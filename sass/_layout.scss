@@ -15,13 +15,13 @@
 	}
 
 	&__top svg {
-		height: 3rem;
-		width: 3rem;
+		height: 5rem;
+		width: 5rem;
 		fill: var(--grey-dark);
 
 		@include respond(deskBig) {
-			height: 4rem;
-			width: 4rem;
+			height: 6rem;
+			width: 6rem;
 		}
 	}
 
@@ -172,11 +172,6 @@
 			white-space: normal;
 		}
 	}
-}
-
-@keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
 }
 
 .mt {
