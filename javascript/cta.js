@@ -1,9 +1,11 @@
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { MotionPathHelper } from "gsap/MotionPathHelper";
+import { scrollTrigger } from "gsap/scrollTrigger";
 
 gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(MotionPathHelper);
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.to("#plane", { 
 	scrollTrigger: {
