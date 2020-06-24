@@ -9,10 +9,7 @@
 body {
 	box-sizing: border-box;
 	overflow-x: hidden;
-	// position: relative;
-	// cursor: none;
 	background: var(--backg);
-	// animation: colorChange 4s linear infinite alternate both;
 }
 
 html {
@@ -51,7 +48,6 @@ html {
 	background-color: transparent;
 	border: 1px solid var(--grey-medium);
 	backdrop-filter: hue-rotate(180deg);
-	// backdrop-filter: grayscale(100%) contrast(100%);
 	transform: scale(2) translate(-25%, -25%);
 }
 

@@ -9,6 +9,10 @@
 	flex-direction: column;
 	position: relative;
 
+	@include respond(phone) {
+		padding: 1rem;
+	}
+
 	&__title {
 		font-size: 6rem;
 		margin-bottom: 2rem;
@@ -19,7 +23,6 @@
 	}
 	
 	svg {
-		// border: 1px solid #000;
 		position: absolute;
 		z-index: -30;
 

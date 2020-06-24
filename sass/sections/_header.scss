@@ -7,19 +7,6 @@
 	align-items: center;
 	padding: 0 10rem;
 	position: relative;
-	// visibility: hidden;
-
-	// &__wrapper {
-	// 	visibility: hidden;
-	// 	// opacity: 0;
-	// 	// animation: fadeIn 1.3s forwards;
-	// 	.header__punchline {
-	// 		font-size: 2.5rem;
-	// 		margin-top: 5rem;
-	// 		text-align: center;
-	// 		line-height: 4rem;
-	// 	}
-	// }
 
 	@include respond(tab) {
 		padding: 0 2rem;
@@ -31,10 +18,13 @@
 		margin: 0 auto;
 		position: absolute;
 		top: 30%;
-		left: 45%;
 		
 		svg {
-			width: 250px;
+			width: 25rem;
+
+			@include respond(deskBig) {
+				width: 35rem;
+			}
 		}
 
 		#l, #a, #b2, #dot, #l2, #a2, #b3-top, #b3-bottom, #b3-rect {
@@ -51,29 +41,12 @@
 
 		h1 {
 			text-align: center;
-		}
 
-		@include respond(tab) {
-			top: 0;
-		}
-
-		@include respond(phone) {
-			top: 0;
+			@include respond(phone) {
+				padding: 1rem;
+			}
 		}
 	}
-
-	// h1::before {
-	// 	 position:absolute;
-	// 	 top:0;
-	// 	 left:0;
-	// 	  content:attr(data-text);
-	// 	  color:transparent;
-	// 	  background:#dbdbdb;
-	// 	  background: radial-gradient(circle at var(--x,-80px) var(--y,-80px), #fff 40px,black 40px);
-	// 	  background-clip: text;
-	// 	  margin: 0;
-	// 	  padding: 0;
-	// }
 
 	&__scroll {
 		flex: 0 1 100%;
@@ -98,6 +71,5 @@
 			animation: scrollDown 2.4s cubic-bezier(1, 0, 0, 1) infinite;
 		}
 	}
-
 }
 

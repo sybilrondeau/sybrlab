@@ -16,8 +16,6 @@
 
 	.slideText {
 		flex: 0 1 50%;
-		// height: 100vh;
-		// padding: 0 5rem;
 		position: absolute;
 		left: 10rem;
 		top: 20rem;
@@ -105,21 +103,18 @@
 
 		&.slideText--01 {
 			@include respond(tab) {
-				// order: 1;
 				height: 40rem;
 			}
 		}
 
 		&.slideText--02 {
 			@include respond(tab) {
-				// order: 3;
 				height: 50rem;
 			}			
 		}
 
 		&.slideText--03 {
 			@include respond(tab) {
-				// order: 5;
 				height: 40rem;
 			}			
 		}
