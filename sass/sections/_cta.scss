@@ -24,6 +24,7 @@
 	
 	svg {
 		position: absolute;
+		left: -10rem;
 		z-index: -30;
 
 		@include respond(phone) {
