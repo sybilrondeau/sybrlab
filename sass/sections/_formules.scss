@@ -27,17 +27,14 @@
 
 		svg {
 			width: 9rem;
+			fill: #F9F9F9; 
+			stroke: #000; 
+			stroke-width: 10;
 			margin-bottom: -2.2rem;
 
 			@include respond(tab) {
 				width: 5rem;
 				margin-bottom: -1.2rem;
-			}
-
-			.draw {
-			    fill: #fff;
-			    stroke-width: 1px;
-			    stroke: black;
 			}
 		}
 

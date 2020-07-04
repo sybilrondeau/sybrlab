@@ -9,6 +9,6 @@ gsap.from(".draw", {
 		start: "top 80%",
 		toggleActions: "play none none reset",
 	},
-	duration: 4, 
-	drawSVG: "20% 80%"
+	duration: 6, 
+	drawSVG: "50% 50%"
 });
