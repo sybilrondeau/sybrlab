@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 const slideTexts = gsap.utils.toArray(".slideText");
 
 // since the tweens alter the inline styles of these elements, we record their state here so that when ScrollTrigger reverts internally (like when switching breakpoints), they get fully reverted with no extra inline styles from tweens. 
-ScrollTrigger.saveStyles(".slide--02, .slideText--01, .slideText--02, .slideText--03, .slideText");
+ScrollTrigger.saveStyles(".slide--02, .slide--03, .slideText--01, .slideText--02, .slideText--03, .slideText");
 
 ScrollTrigger.matchMedia({
 

@@ -49,6 +49,7 @@
 
 		ul li {
 			font-size: 1.6rem;
+			margin-top: 5px;
 
 			@include respond(deskBig) {
 				font-size: 2rem;
@@ -73,6 +74,7 @@
 			@include respond(phone) {
 				margin-top: 2rem;
 				width: 90%;
+				font-size: 1.4rem;
 			}
 		}
 
