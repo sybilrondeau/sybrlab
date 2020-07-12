@@ -7,7 +7,7 @@ gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(MotionPathHelper);
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to("#plane", { 
+gsap.to(".plane", { 
 	scrollTrigger: {
 		trigger: ".cta",
 		start: "top 20%",
