@@ -24,7 +24,7 @@ ScrollTrigger.matchMedia({
 				pin: true,
 				pinSpacing: true,
 				snap: {snapTo: "labels", duration: {min: 0.2, max: 3}, delay: 0.5, ease: "power2.inOut"},
-				toggleClass: {targets:".nav-right li .nav-quoi", className: "active"},
+				toggleClass: {targets:".nav-right li .nav-portfolio", className: "active"},
 			}
 		})
 
