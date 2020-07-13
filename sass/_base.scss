@@ -15,7 +15,7 @@ body {
 html {
 	font-size: 62.5%;
 	color: var(--grey-dark);
-	scroll-behavior: smooth;
+	scroll-behavior: smooth !important;
 }
 
 .cursor {

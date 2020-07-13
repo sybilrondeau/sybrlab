@@ -5,7 +5,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 
-
 ScrollTrigger.create({
 	trigger: ".formules",
 	start: "top bottom",
