@@ -48,13 +48,6 @@ contactDiv.addEventListener("mouseover", () => {
 	mouseCursor.classList.add("image-over");
 });
 
-ctaDiv.addEventListener("mouseleave", () => {
-	mouseCursor.classList.remove("image-over");
-});
-ctaDiv.addEventListener("mouseover", () => {
-	mouseCursor.classList.add("image-over");
-});
-
 //filter effect on the last title 
 
 ctaTitle.addEventListener("mouseleave", () => {
