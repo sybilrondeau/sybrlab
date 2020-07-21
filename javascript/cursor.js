@@ -72,7 +72,7 @@ const noisyCursor = gsap.timeline({
 .to(turbVal, 0.2, { val: 0.2 })
 .to(turbVal, 0.2, { val: 0.000001 });
 
-ctaTitle.addEventListener('mouseover', function() {
+ctaTitle.addEventListener('mouseenter', function() {
   noisyCursor.restart();
 });
 

@@ -30,15 +30,16 @@ ScrollTrigger.matchMedia({
 
 			.add("pic1")
 			.from(".slide--02", {yPercent: 100}, "pic1")
-			.to(".slideText--01", {opacity: 0}, "pic1")
-			.from(".slideText--02", {yPercent: -30, opacity: 0}, "pic1")
-
 			.add("pic2")
-			.from(".slide--03", {yPercent: 100}, "pic2")
-			.to(".slideText--02", {opacity: 0}, "pic2")
-			.from(".slideText--03", {yPercent: -30, opacity: 0}, "pic2")
+			.to(".slideText--01", {duration: .05, opacity: 0}, "pic2")
+			.from(".slideText--02", {duration: .05, opacity: 0}, "pic2")
 
 			.add("pic3")
+			.from(".slide--03", {yPercent: 100}, "pic3")
+			.add("end")
+			.to(".slideText--02", {duration: .05, opacity: 0}, "end")
+			.from(".slideText--03", {duration: .05, opacity: 0}, "end")
+
 	},
 
 	// mobile
