@@ -1,12 +1,22 @@
 import { gsap } from "gsap";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin"; 
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
+gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MorphSVGPlugin);
 
 MorphSVGPlugin.convertToPath("#dot");
 
 
-const tl = gsap.timeline({defaults: {duration: .8}});
+const tl = gsap.timeline({
+	defaults: {duration: .8},
+	scrollTrigger: {
+		trigger: ".contact",
+		start: "top 20%",
+		toggleActions: "play none none reset",
+	}
+});
 
 tl.to(".s", { delay: 1, morphSVG: ".l"})
 tl.to(".y", { morphSVG: ".a"}, "<")
@@ -21,5 +31,4 @@ tl.to(".r", {x: 110}, ">")
 tl.to(".s", {morphSVG: ".l2"}, "<")
 tl.to(".y", {morphSVG: ".a2"}, "<")
 tl.to(".b", {morphSVG: ".b3"}, "<")
-tl.to(".logosybr", { opacity: 0, delay: 1}, ">")
-tl.from(".header__title h1", { opacity: 0, scale: .8, delay: .2}, ">")
+tl.to(".logosybr", { opacity: 1, delay: 1}, ">")

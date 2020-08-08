@@ -3,83 +3,86 @@
 	height: 100%;
 	padding: 0 20rem;
 	margin: 5rem 0 0rem;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
 	
-	@include respond(desk) {
-		padding-right: 10rem;
-		padding-left: 0rem;
-	}
-	@include respond(tab) {
-		padding: 0 2rem;
-	}
-	@include respond(phone) {
-		
-	}
+	// @include respond(desk) {
+	// 	padding-right: 10rem;
+	// 	padding-left: 0rem;
+	// }
+	// @include respond(tab) {
+	// 	padding: 0 2rem;
+	// }
 
-
-	&--img {
-		flex: 0 1 50%;
+	&__container {
 		width: 100%;
-		height: 100%;
-		display: flex; // centre image dans la div.
-		justify-content: center;
+		display: flex;
+		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 2%;
+		flex-wrap: wrap;
 
-		@include respond(tabSmall) {
-			flex: 0 1 100%;
-		}
+		.contact__portrait {
+			flex: 0 1 50%;
 
-		img {
-			width: 80%;
-			height: 80%;
-			object-fit: cover;
-			border-radius: 50%;
-			z-index: -200;
-			position: relative;
-
-			@include respond(desk) {
-				width: 30rem;
-				height: 30rem;
+			img {
+				width: 40rem;
+				height: 40rem;
+				border-radius: 50%;
 			}
 		}
-	}
 
+		.contact__story {
+			flex: 0 1 50%;
 
-	&--text {
-		flex: 0 1 50%;
+				@include respond(tabSmall) {
+					flex: 0 1 80%;
+				}
 
-		@include respond(tabSmall) {
-			flex: 0 1 80%;
-		}
+			.contact__text {
+				margin: 5rem 0;
 
-		h3 {
-			margin-bottom: 1rem;
-		}
+				h3 {
+					margin-bottom: 1rem;
+				}
 
-		p {
-			margin: 2rem 0;
-		}
-
-		.box {
-			margin-bottom: 4rem;
-			
-			ul li {
-				font-size: 1.6rem;
-				color: var(--grey-medium-dark);
-
-				@include respond(deskBig) {
-					font-size: 2rem;
+				p {
+					margin: 2rem 0;
 				}
 			}
+			
+			.contact__animation {
+				height: 100%;
+				
+				svg {
+					width: 25rem;
 
-			svg {
-				width: 5rem;
-				height: 5rem;
+					@include respond(deskBig) {
+						width: 35rem;
+					}
+				}
+
+				.l, .a, .b2, .dot, .l2, .a2, .b3 {
+				    visibility: hidden;
+				}
 			}
+		}
+	}
+
+	
+	&__techno {
+		width: 100%;
+		margin : 10rem auto;
+		
+		ul li {
+			font-size: 1.6rem;
+			color: var(--grey-medium-dark);
+
+			@include respond(deskBig) {
+				font-size: 2rem;
+			}
+		}
+
+		svg {
+			width: 5rem;
+			height: 5rem;
 		}
 	}
 }

@@ -7,29 +7,10 @@
 	align-items: center;
 	padding: 0 10rem;
 	position: relative;
+	animation: fadeIn 1s;
 
 	@include respond(tab) {
 		padding: 0 2rem;
-	}
-
-	&__logo {
-		flex: 0 1 100%;
-		height: 100%;
-		margin: 0 auto;
-		position: absolute;
-		top: 30%;
-		
-		svg {
-			width: 25rem;
-
-			@include respond(deskBig) {
-				width: 35rem;
-			}
-		}
-
-		.l, .a, .b2, .dot, .l2, .a2, .b3{
-		    visibility: hidden;
-		}
 	}
 	
 	&__title {

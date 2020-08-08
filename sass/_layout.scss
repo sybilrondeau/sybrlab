@@ -29,35 +29,12 @@
 		fill: var(--primary);
 	}
 
-	&__bottom {
-
-		ul li {
-			list-style: none;
-			padding-top: 1rem;
-
-			svg {
-				width: 2rem;
-				height: 2rem;
-				
-				@include respond(deskBig) {
-					height: 3rem;
-					width: 3rem;
-				}
-			}
-
-			svg:hover {
-				fill: var(--primary);
-			}
-		}
-	}
-}
-
-.nav-right {
+	&__middle {
 	width: 8rem;
 	height: 100vh;
 	position: fixed;
 	top: 0;
-	right: 0;
+	left: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -75,7 +52,7 @@
 
 	li {
 		list-style: none;
-		transform: rotate(90deg);
+		transform: rotate(-90deg);
 		margin-top: 10rem;
 		margin-bottom: 10rem;
 		text-align: center;
@@ -110,6 +87,31 @@
 	}
 }
 
+	&__bottom {
+
+		ul li {
+			list-style: none;
+			padding-top: 1rem;
+
+			svg {
+				width: 2rem;
+				height: 2rem;
+				
+				@include respond(deskBig) {
+					height: 3rem;
+					width: 3rem;
+				}
+			}
+
+			svg:hover {
+				fill: var(--primary);
+			}
+		}
+	}
+}
+
+
+
 .nav-phone {
 	display: none;
 
@@ -131,48 +133,48 @@
 	}
 }
 
-.marquee {
-	overflow: hidden;
-	font-size: 8vw;
-	z-index: 0;
-	position: relative;
+// .marquee {
+// 	overflow: hidden;
+// 	font-size: 8vw;
+// 	z-index: 0;
+// 	position: relative;
 
-	@include respond(deskBig) {
-		font-size: 7vw;
-	}
+// 	@include respond(deskBig) {
+// 		font-size: 7vw;
+// 	}
 
-	@include respond(phone) {
-		font-size: 10vw;
-	}
+// 	@include respond(phone) {
+// 		font-size: 10vw;
+// 	}
 
-	span {
-		display: inline-block;
-		white-space: nowrap;
-		font-family: "Open Sans";
-	    font-weight: 800;
-	    text-transform: uppercase;
-	    color: var(--grey-medium);
-	    width: var(--width);
-	    text-shadow: var(--width) 0 currentColor, 
-                 calc(var(--width) * 2) 0 currentColor, 
-                 calc(var(--width) * 3) 0 currentColor,
-                 calc(var(--width) * 4) 0 currentColor,
-                 calc(var(--width) * 5) 0 currentColor,
-                 calc(var(--width) * 6) 0 currentColor;
-		will-change: transform;
-	    animation: marquee var(--duration) linear infinite;
+// 	span {
+// 		display: inline-block;
+// 		white-space: nowrap;
+// 		font-family: "Open Sans";
+// 	    font-weight: 800;
+// 	    text-transform: uppercase;
+// 	    color: var(--grey-medium);
+// 	    width: var(--width);
+// 	    text-shadow: var(--width) 0 currentColor, 
+//                  calc(var(--width) * 2) 0 currentColor, 
+//                  calc(var(--width) * 3) 0 currentColor,
+//                  calc(var(--width) * 4) 0 currentColor,
+//                  calc(var(--width) * 5) 0 currentColor,
+//                  calc(var(--width) * 6) 0 currentColor;
+// 		will-change: transform;
+// 	    animation: marquee var(--duration) linear infinite;
 
-	    @media (prefers-reduced-motion: reduce) {
-			animation: none;
-			text-shadow: none;
-			width: auto;
-			display: block;
-			line-height: 1.5;
-			text-align: center;
-			white-space: normal;
-		}
-	}
-}
+// 	    @media (prefers-reduced-motion: reduce) {
+// 			animation: none;
+// 			text-shadow: none;
+// 			width: auto;
+// 			display: block;
+// 			line-height: 1.5;
+// 			text-align: center;
+// 			white-space: normal;
+// 		}
+// 	}
+// }
 
 .mt {
 	margin-top: 20rem;

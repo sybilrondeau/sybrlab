@@ -19,10 +19,10 @@ html {
 }
 
 .cursor {
-	width: 80px;
-	height: 80px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
-	background-color: var(--grey-medium);
+	border: 1px solid var(--grey-medium);
 	position: absolute;
 	transform: translate(-50%, -50%);
 	pointer-events: none;
@@ -44,16 +44,14 @@ html {
 	background-color: var(--primary);
 }
 
-.image-over {
-	background-color: transparent;
-	border: 1px solid var(--grey-medium);
-	backdrop-filter: hue-rotate(180deg);
-	transform: scale(2) translate(-25%, -25%);
-}
+// .image-over {
+// 	background-color: transparent;
+// 	backdrop-filter: hue-rotate(180deg);
+// 	transform: scale(2) translate(-25%, -25%);
+// }
 
 .filter-effect {
 	filter: url(#filter-1);
 	background-color: transparent;
-	border: 1px solid var(--grey-medium);
 	transform: scale(2) translate(-25%, -25%);
 }
