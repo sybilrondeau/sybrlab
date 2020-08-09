@@ -14,13 +14,13 @@
 	src: url('./fonts/Muli-VariableFont_wght.woff2') format('woff2');
 }
 
-@font-face {
-	font-family: 'Open Sans';
-	font-weight: 800;
-	font-style: normal;
-	display: swap;
-	src: url('./fonts/OpenSans-ExtraBold.woff2') format('woff2');
-}
+// @font-face {
+// 	font-family: 'Open Sans';
+// 	font-weight: 800;
+// 	font-style: normal;
+// 	display: swap;
+// 	src: url('./fonts/OpenSans-ExtraBold.woff2') format('woff2');
+// }
 
 h1, h2 {
 	font-family: 'Exo', sans-serif;
@@ -41,11 +41,10 @@ h1, h2 {
 
 }
 
-
-
-.section-h2 {
-	text-align: center;
-	margin-bottom: 15rem;
+.nav-title {
+	width: 100%;
+	padding-left: 10rem;
+	margin: 10rem;
 }
 
 h3 {
@@ -71,7 +70,7 @@ p {
 	font-size: 1.6rem;
 	font-weight: 400;
 	font-kerning: normal;
-	hyphens: auto;
+	hyphens: none;
 	color: var(--grey-medium-dark);
 
 	@include respond(deskBig) {
@@ -79,13 +78,14 @@ p {
 	}
 }
 
-strong {
-	font-weight: 800;
-	color: var(--grey-dark);
-}
+// strong {
+// 	font-weight: 800;
+// 	color: var(--grey-dark);
+// }
 
 .accent {
 	color: var(--primary);
+	font-weight: 800;
 }
 
 .text-grey-medium {
@@ -103,7 +103,7 @@ ul li {
 }
 
 .big-numbers {
-	font-family: "Open Sans";
+	font-family: "Exo";
     font-weight: 800;
     text-transform: uppercase;
     font-size: 15rem;

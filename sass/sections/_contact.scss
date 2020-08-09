@@ -1,4 +1,4 @@
-.contact {
+.a-propos {
 	width: 100%;
 	height: 100%;
 	padding: 0 20rem;
@@ -17,7 +17,7 @@
 		margin: 10rem auto;
 		position: relative;
 
-		.contact__portrait {
+		.a-propos__portrait {
 
 			img {
 				width: 50rem;
@@ -28,13 +28,14 @@
 		}
 
 
-		.contact__animation {
+		.a-propos__animation {
 			position: absolute;
 			top: 20%;
 			right: -30%;
 			
 			svg {
 				width: 25rem;
+				fill: var(--grey-dark);
 
 				@include respond(deskBig) {
 					width: 35rem;
@@ -70,19 +71,20 @@
 			margin-bottom: 3rem;
 		}
 		
-		ul li {
+		// ul li {
 
-			font-size: 1.6rem;
-			color: var(--grey-medium-dark);
+		// 	font-size: 2rem;
+		// 	color: var(--grey-medium-dark);
 
-			@include respond(deskBig) {
-				font-size: 2rem;
-			}
-		}
+		// 	@include respond(deskBig) {
+		// 		font-size: 2rem;
+		// 	}
+		// }
 
 		svg {
-			width: 5rem;
-			height: 5rem;
+			width: 6rem;
+			height: 6rem;
+			margin: 1rem;
 		}
 	}
 }
