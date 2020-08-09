@@ -13,65 +13,65 @@
 	// }
 
 	&__container {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap;
+		width: 50rem;
+		margin: 10rem auto;
+		position: relative;
 
 		.contact__portrait {
-			flex: 0 1 50%;
 
 			img {
-				width: 40rem;
-				height: 40rem;
+				width: 50rem;
+				height: 50rem;
 				border-radius: 50%;
+				margin: 0 auto;
 			}
 		}
 
-		.contact__story {
-			flex: 0 1 50%;
 
-				@include respond(tabSmall) {
-					flex: 0 1 80%;
-				}
-
-			.contact__text {
-				margin: 5rem 0;
-
-				h3 {
-					margin-bottom: 1rem;
-				}
-
-				p {
-					margin: 2rem 0;
-				}
-			}
+		.contact__animation {
+			position: absolute;
+			top: 20%;
+			right: -30%;
 			
-			.contact__animation {
-				height: 100%;
-				
-				svg {
-					width: 25rem;
+			svg {
+				width: 25rem;
 
-					@include respond(deskBig) {
-						width: 35rem;
-					}
-				}
-
-				.l, .a, .b2, .dot, .l2, .a2, .b3 {
-				    visibility: hidden;
+				@include respond(deskBig) {
+					width: 35rem;
 				}
 			}
+
+			.l, .a, .b2, .dot, .l2, .a2, .b3 {
+			    visibility: hidden;
+			}
+		}
+	}
+
+
+	&__text {
+		width: 80%;
+		margin: 5rem auto;
+
+		h3 {
+			margin-bottom: 1rem;
+		}
+
+		p {
+			margin: 2rem 0;
 		}
 	}
 
 	
 	&__techno {
-		width: 100%;
+		width: 80%;
 		margin : 10rem auto;
+
+		h3 {
+			margin-bottom: 3rem;
+		}
 		
 		ul li {
+
 			font-size: 1.6rem;
 			color: var(--grey-medium-dark);
 
