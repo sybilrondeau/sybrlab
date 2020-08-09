@@ -2,7 +2,6 @@
 	width: 100%;
 	height: 100vh;
 	display: flex;
-	padding-left: 10rem;
 	overflow: hidden;
 	position: relative;
 	flex-wrap: wrap;
@@ -13,12 +12,17 @@
 		margin: 0 0 20%;
 	}
 
+	h2 {
+		margin-left: 15rem;
+		margin-top: 5rem;
+	}
+
 
 	.slideText {
 		flex: 0 1 50%;
 		position: absolute;
-		left: 10rem;
-		top: 20rem;
+		left: 15rem;
+		top: 25rem;
 
 		@include respond(deskBig) {
 			left: 20rem;
@@ -67,7 +71,7 @@
 		}
 		
 		p {
-			width: 40%;
+			width: 50rem;
 			margin: 4rem 0;
 
 			@include respond(tab) {

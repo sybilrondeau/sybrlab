@@ -3,10 +3,9 @@ import { gsap } from "gsap";
 const mouseCursor = document.querySelector(".cursor");
 const titles = document.querySelectorAll(".marquee");
 const links = document.querySelectorAll("a");
-console.log(links);
 const contactDiv = document.querySelector(".contact");
 const ctaDiv = document.querySelector(".cta");
-const ctaTitle = document.querySelector(".cta h3");
+const ctaTitle = document.querySelector(".cta h2");
 
 // custom cursor and clipath on titles
 
@@ -44,6 +43,10 @@ const noisyCursor = gsap.timeline({
 ctaTitle.addEventListener('mouseover', () => {
   noisyCursor.restart();
   mouseCursor.classList.add("filter-effect");
+});
+
+ctaTitle.addEventListener('mouseleave', () => {
+  mouseCursor.classList.remove("filter-effect");
 });
 
 //effect on titles

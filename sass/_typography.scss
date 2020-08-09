@@ -43,14 +43,15 @@ h1, h2 {
 
 .nav-title {
 	width: 100%;
-	padding-left: 10rem;
-	margin: 10rem;
+	// margin-left: 15rem;
+	text-align: center;
 }
 
 h3 {
 	font-family: 'Exo', sans-serif;
-	font-size: 4.5rem;
-	font-variation-settings: 'wght' 900;
+	font-size: 3rem;
+	font-variation-settings: 'wght' 600;
+	text-transform: uppercase;
 
 	@include respond(deskBig) {
 		font-size: 6rem;

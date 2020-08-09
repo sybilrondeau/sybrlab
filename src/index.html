@@ -37,7 +37,7 @@
 		</div>
 		<div class="nav__middle">
 			<ul>
-				<li><a class="nav-formules" href="#section1">offre</a></li>
+				<li><a class="nav-formules" href="#section1">formules</a></li>
 				<li><a class="nav-portfolio" href="#section2">portfolio</a></li>
 				<li><a class="nav-a-propos" href="#section3">à propos</a></li>
 				<li><a class="nav-contact" href="#section4">contact</a></li>
@@ -172,11 +172,11 @@
 <!-- 	<div class="marquee mt" id="a-propos" style="--width: 50vw; --duration: 9s;">
 		<span>a-propos</span>
 	</div> -->
-	<div class="nav-title">
-		<h2>À Propos</h2>
-	</div>
 	<div class="a-propos" id="section3">
 		<div class="a-propos__container">
+			<div class="nav-title nav-title-apropos">
+				<h2>À Propos</h2>
+			</div>
 			<div class="a-propos__portrait">
 				<img src="./images/sybil-500.jpg" alt="portrait de Sybil Rondeau">
 			</div>
@@ -209,41 +209,47 @@
 			  	</svg>
 	  		</div>
   		</div>
-		<div class="a-propos__text">
-			<h3>Parcours</h3>
-			<p>
-				Ce métier de développeuse web est déjà mon 3e ! J'ai démarré ma vie professionnelle en tant que <span class="accent">manipulatrice en radiologie médicale</span> à l'hôpital. Je travaillais principalement au scanner et à l'IRM, et aux urgences la nuit les 4 dernières années. Epuisée physiquement et moralement par ce travail, j'ai radicalement changé de voie à la découverte d'une passion : la photographie. Je me suis reconvertie en 2009 et je suis toujours <span class="accent">photographe professionnelle</span> freelance aujourd'hui, spécialisée en reportage de famille.<br/>
-				C'est aussi un métier très exigeant physiquement, alors en 2019 j'ai eu envie de ralentir le rythme et de me diriger vers un autre de mes grands intérêts : le développement web. J'ai crée une activité accessoire de création de site web en 2019, et j'ai obtenu début 2020 la certification de <span class="accent">conceptrice développeuse  d'applications web</span> au Wagon Nantes.
-			</p>
-			<p>
-				L'animation ci-dessus raconte exactement cela ! Le passage de mon premier logo de photographe, SybR au Lab, mon logo de développeuse. 
-			</p>
-		</div>
-		<div class="a-propos__techno">
-			<h3>Technologies</h3>
-			<svg xmlns:xlink="http://www.w3.org/2000/svg">
-				<use xlink:href="./images/sprite.svg#wordpress"></use>
-			</svg>
-			<svg xmlns:xlink="http://www.w3.org/2000/svg">
-				<use xlink:href="./images/sprite.svg#html-5"></use>
-			</svg>
-			<svg xmlns:xlink="http://www.w3.org/2000/svg">
-				<use xlink:href="./images/sprite.svg#css-3"></use>
-			</svg>
-			<svg xmlns:xlink="http://www.w3.org/2000/svg">
-				<use xlink:href="./images/sprite.svg#sass"></use>
-			</svg>
-			<svg xmlns:xlink="http://www.w3.org/2000/svg">
-				<use xlink:href="./images/sprite.svg#javascript"></use>
-			</svg>
-			<svg xmlns:xlink="http://www.w3.org/2000/svg">
-				<use xlink:href="./images/sprite.svg#php"></use>
-			</svg>
+  		<div class="a-propos__text">
+			<div class="a-propos__parcours">
+				<h3>Parcours</h3>
+				<p>
+					J'ai démarré ma vie professionnelle en tant que <span class="accent">manipulatrice en radiologie médicale</span> à l'hôpital en <strong>1998</strong>. Je travaillais principalement au scanner et à l'IRM, et aux urgences la nuit. Epuisée physiquement et moralement par ce travail, j'ai radicalement changé de voie à la découverte d'une passion : la photographie. Je me suis reconvertie en <strong>2009</strong> et je suis toujours <span class="accent">photographe professionnelle</span> freelance aujourd'hui, spécialisée en reportage de famille.<br>
+					C'est aussi un métier très exigeant physiquement, alors en 2019 j'ai eu envie de ralentir le rythme et de me diriger vers un autre de mes grands intérêts : le développement web. J'ai crée une activité accessoire de création de site web en <strong>2019</strong>, et j'ai obtenu début 2020 la certification de <span class="accent">conceptrice développeuse  d'applications web</span> au Wagon Nantes.
+				</p>
+				<p class="p-parcours">
+					L'animation ci-dessus raconte exactement cela ! Le passage de mon premier logo de photographe, SybR au Lab, mon logo de développeuse. 
+				</p>
+			</div>
+			<div class="a-propos__techno">
+				<h3>Technologies</h3>
+				<p>
+					A la sortie du bootcamp du Wagon, je me suis concentrée sur le Front-end en approfondissant mes connaissances en Javascript et en CSS notamment.<br>
+					D'autre part, je me forme en php pour pouvoir développer au sein de WordPress. 
+				</p>
+				<svg xmlns:xlink="http://www.w3.org/2000/svg">
+					<use xlink:href="./images/sprite.svg#wordpress"></use>
+				</svg>
+				<svg xmlns:xlink="http://www.w3.org/2000/svg">
+					<use xlink:href="./images/sprite.svg#html-5"></use>
+				</svg>
+				<svg xmlns:xlink="http://www.w3.org/2000/svg">
+					<use xlink:href="./images/sprite.svg#css-3"></use>
+				</svg>
+				<svg xmlns:xlink="http://www.w3.org/2000/svg">
+					<use xlink:href="./images/sprite.svg#sass"></use>
+				</svg>
+				<svg xmlns:xlink="http://www.w3.org/2000/svg">
+					<use xlink:href="./images/sprite.svg#javascript"></use>
+				</svg>
+				<svg xmlns:xlink="http://www.w3.org/2000/svg">
+					<use xlink:href="./images/sprite.svg#php"></use>
+				</svg>
+			</div>
 		</div>
 	</div>
 
 	<div class="cta" id="section4">
-		<h3 class="cta__title">Vous êtes prêt ?</h3>
+		<h2 class="cta__title">Vous êtes prêt ?</h2>
 		<p class="text-grey-medium">Je suis aussi disponible pour des missions en Front-End.</p>
 		<p><span class="accent">sybilrondeau at gmail.com</span></p>
 		<p><span class="accent">06 29 42 62 76</span></p>
