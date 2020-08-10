@@ -43,7 +43,7 @@ h1, h2 {
 
 .nav-title {
 	width: 100%;
-    padding: 10rem;
+    padding: 20rem 0 10rem;
 	text-align: center;
 }
 
@@ -52,6 +52,7 @@ h3 {
 	font-size: 3rem;
 	font-variation-settings: 'wght' 600;
 	text-transform: uppercase;
+	margin-bottom: 2rem;
 
 	@include respond(deskBig) {
 		font-size: 6rem;
@@ -79,6 +80,13 @@ p {
 	}
 }
 
+.big-p {
+	text-align: justify;
+	font-size: 3rem;
+	color: var(--grey-dark);
+	font-weight: 400;
+	line-height: 8rem;
+}
 // strong {
 // 	font-weight: 800;
 // 	color: var(--grey-dark);

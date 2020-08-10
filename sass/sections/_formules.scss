@@ -1,15 +1,10 @@
 .formules {
-	width: 70%;
-	margin: 0rem auto 20rem;
-
+	width: 100%;
 
 	p {
-	text-align: justify;
-	font-size: 3rem;
-	margin-top: 5rem;
-	color: var(--grey-dark);
-	font-weight: 400;
-	line-height: 8rem;
+		width: 60%;
+		margin: 0 auto;
+		margin-bottom: 20rem;
 
 		svg {
 			width: 9rem;

@@ -12,8 +12,9 @@ MorphSVGPlugin.convertToPath("#dot");
 const tl = gsap.timeline({
 	defaults: {duration: .8},
 	scrollTrigger: {
-		trigger: ".a-propos",
-		start: "top 20%",
+		trigger: ".nav-title__animation",
+		start: "top 40%",
+		// markers: true,
 		toggleActions: "play none none reset",
 	}
 });
