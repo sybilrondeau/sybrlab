@@ -1,20 +1,7 @@
 .formules {
 	width: 70%;
-	padding: 0 20rem;
 	margin: 0rem auto 20rem;
 
-
-	@include respond(desk) {
-		padding: 0 15rem;			
-	}
-
-	@include respond(tab) {
-		padding: 0 6rem;			
-	}
-
-	@include respond(tab) {
-		padding: 0 3rem;			
-	}
 
 	p {
 	text-align: justify;

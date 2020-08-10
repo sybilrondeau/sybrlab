@@ -5,6 +5,7 @@
 	overflow: hidden;
 	position: relative;
 	flex-wrap: wrap;
+	background-color: var(--grey-light);
 
 	@include respond(tab) {
 		height: auto;
@@ -71,16 +72,16 @@
 		}
 		
 		p {
-			width: 50rem;
+			max-width: 40%;
 			margin: 4rem 0;
 
 			@include respond(tab) {
 				margin-top: 2rem;
-				width: 70%;
+				max-width: 70%;
 			}
 			@include respond(phone) {
 				margin-top: 2rem;
-				width: 90%;
+				max-width: 90%;
 				font-size: 1.4rem;
 			}
 		}
