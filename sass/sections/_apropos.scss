@@ -1,7 +1,6 @@
 .a-propos {
 	width: 70%;
 	margin: 0 auto;
-	position: relative;
 
 	@include respond(deskBig) {
 		width: 50%;
@@ -14,6 +13,7 @@
 	.a-propos__portrait {
 		width: 50rem;
 		margin: 0 auto;
+		position: relative;
 
 		@include respond(phone) {
 			width: 30rem;
@@ -30,42 +30,41 @@
 				height: 30rem;
 			}
 		} 
-	}
+		.nav-title__animation {
+		width: 20rem;
+		height: 20rem;
+		border-radius: 50%;
+		border: 2px solid var(--grey-medium);
+		background-color: var(--backg);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 70%;
+		left: 0%;
 
-	.nav-title__animation {
-	width: 20rem;
-	height: 20rem;
-	border-radius: 50%;
-	border: 2px solid var(--grey-medium);
-	background-color: var(--backg);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	top: 35%;
-	left: 20%;
+			@include respond(phone) {
+				width: 15rem;
+				height: 15rem;
+				top: 70%;
+				left: 0%;
+			}
 
-		@include respond(tab) {
-			width: 15rem;
-			height: 15rem;
-			top: 40%;
-			left: 20%;
-		}
+			svg {
+				fill: var(--grey-medium);
+				width: 12rem;
 
-		@include respond(phone) {
-			top: 25%;
-			left: 15%;
-		}
+				@include respond(phone) {
+				width: 10rem;
+			}
+			}
 
-		svg {
-			fill: var(--grey-medium);
-			width: 12rem;
-		}
-
-		.l, .a, .b2, .dot, .l2, .a2, .b3 {
-		    visibility: hidden;
+			.l, .a, .b2, .dot, .l2, .a2, .b3 {
+			    visibility: hidden;
+			}
 		}
 	}
+
 	
 	.a-propos__parcours {
 		width: 50rem;

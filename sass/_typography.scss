@@ -28,7 +28,7 @@ h1, h2 {
 	font-variation-settings: 'wght' 900;
 
 	@include respond(deskBig) {
-		font-size: 8rem;
+		font-size: 7rem;
 	}
 
 	@include respond(tab) {
@@ -55,7 +55,7 @@ h3 {
 	margin-bottom: 2rem;
 
 	@include respond(deskBig) {
-		font-size: 6rem;
+		font-size: 4rem;
 	}
 
 	@include respond(tab) {
