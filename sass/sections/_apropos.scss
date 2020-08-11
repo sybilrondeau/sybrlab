@@ -1,19 +1,40 @@
 .a-propos {
-	width: 50rem;
+	width: 70%;
 	margin: 0 auto;
 	position: relative;
 
+	@include respond(deskBig) {
+		width: 50%;
+	}
+
+	@include respond(tab) {
+		width: 100%;
+	}
+
 	.a-propos__portrait {
+		width: 50rem;
+		margin: 0 auto;
+
+		@include respond(phone) {
+			width: 30rem;
+			margin: 0 auto;	
+		}
+
 		img {
 			width: 50rem;
 			height: 50rem;
 			border-radius: 50%;
+
+			@include respond(phone) {
+				width: 30rem;
+				height: 30rem;
+			}
 		} 
 	}
 
 	.nav-title__animation {
-	width: 30rem;
-	height: 30rem;
+	width: 20rem;
+	height: 20rem;
 	border-radius: 50%;
 	border: 2px solid var(--grey-medium);
 	background-color: var(--backg);
@@ -21,12 +42,24 @@
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 30rem;
-	left: -15rem;
+	top: 35%;
+	left: 20%;
+
+		@include respond(tab) {
+			width: 15rem;
+			height: 15rem;
+			top: 40%;
+			left: 20%;
+		}
+
+		@include respond(phone) {
+			top: 25%;
+			left: 15%;
+		}
 
 		svg {
 			fill: var(--grey-medium);
-			width: 20rem;
+			width: 12rem;
 		}
 
 		.l, .a, .b2, .dot, .l2, .a2, .b3 {
@@ -35,7 +68,13 @@
 	}
 	
 	.a-propos__parcours {
-		margin: 12rem 0 5rem;
+		width: 50rem;
+		margin: 10rem auto;
+
+		@include respond(phone) {
+			width: 30rem;
+		}
+
 
 		.p-parcours {
 			margin-top: 1rem;
@@ -43,36 +82,27 @@
 	}
 
 	.a-propos__logos {
+		width: 50rem;
+		margin: 0 auto;
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		@include respond(phone) {
+			width: 30rem;
+		}
 
 		svg {
 			width: 6rem;
 			height: 6rem;
 			margin: 1rem;
 			opacity: .8;
+
+			@include respond(phone) {
+				width: 5rem;
+				height: 5rem;
+				margin: 0rem;
+			}
 		}
 	}	
 }
-
-.nav-title-propos {
-	width: 100%;
-
-}
-
-	// &__animation {
-	// 	position: absolute;
-	// 	top: 60%;
-	// 	right: 4%;
-	// 	z-index: 2;
-
-	// 	svg {
-	// 		width: 20rem;
-	// 		position: relative;
-	// 		fill: #fff;
-	// 	}
-
-	// 	.l, .a, .b2, .dot, .l2, .a2, .b3 {
-	// 	    visibility: hidden;
-	// 	}
-	// }
-

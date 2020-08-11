@@ -2,9 +2,14 @@
 	width: 100%;
 
 	p {
-		width: 60%;
+		width: 70%;
 		margin: 0 auto;
 		margin-bottom: 20rem;
+		text-align: justify;
+		font-size: 4rem;
+		color: var(--grey-dark);
+		font-weight: 400;
+		line-height: 7rem;
 
 		svg {
 			width: 9rem;
@@ -19,17 +24,18 @@
 			}
 		}
 
-		@include respond(desk) {
-			font-size: 4rem;
-			line-height: 7rem;
+		@include respond(deskBig) {
+			width: 60%
 		}
 
 		@include respond(tab) {
+			width: 80%;
 			font-size: 3rem;
 			line-height: 6rem;
 		}
 
 		@include respond(phone) {
+			width: 90%;
 			font-size: 2.4rem;
 			line-height: 4.4rem;
 		}

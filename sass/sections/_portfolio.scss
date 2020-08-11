@@ -10,20 +10,13 @@
 	@include respond(tab) {
 		height: auto;
 		padding-left: 0;
-		margin: 0 0 20%;
 	}
-
-	h2 {
-		margin-left: 15rem;
-		margin-top: 5rem;
-	}
-
 
 	.slideText {
 		flex: 0 1 50%;
 		position: absolute;
 		left: 15rem;
-		top: 25rem;
+		top: 20rem;
 
 		@include respond(deskBig) {
 			left: 20rem;
@@ -32,11 +25,11 @@
 		@include respond(tab) {
 			position: relative;
 			top: 5rem;
-			left: 5rem;
+			left: 2rem;
 			padding: 0 2rem;
 			flex: 0 1 100%;
-			margin: 0;
 		}
+
 		@include respond(phone) {
 			left: 1rem;
 			padding: 0 1rem;
@@ -72,17 +65,18 @@
 		}
 		
 		p {
-			max-width: 40%;
-			margin: 4rem 0;
+			width: 40%;
+			margin-top: 4rem;
+			padding-right: 2rem;
 			text-align: justify;
 
 			@include respond(tab) {
+				padding-right: 0rem;
 				margin-top: 2rem;
-				max-width: 70%;
+				width: 90%;
 			}
 			@include respond(phone) {
 				margin-top: 2rem;
-				max-width: 90%;
 				font-size: 1.4rem;
 			}
 		}
