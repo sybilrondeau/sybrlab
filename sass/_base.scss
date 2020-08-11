@@ -22,7 +22,7 @@ html {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
-	border: 1px solid var(--grey-medium);
+	border: 1px solid var(--grey-medium-dark);
 	position: absolute;
 	transform: translate(-50%, -50%);
 	pointer-events: none;
@@ -37,6 +37,7 @@ html {
 
 .link-grow {
 	transform: scale(2) translate(-25%, -25%);
+	border: 1px solid var(--grey-medium);
 }
 
 // .title-highlight {
@@ -54,4 +55,5 @@ html {
 	filter: url(#filter-1);
 	background-color: transparent;
 	transform: scale(3) translate(-25%, -25%);
+	border: 1px solid var(--grey-medium);
 }
