@@ -56,7 +56,7 @@
       <radialGradient id="a" cx=".837" cy="-125.811" r="363.057" gradientTransform="matrix(.463 0 0 .463 76.464 81.918)" gradientUnits="userSpaceOnUse">
         <stop offset="0" stop-color="#fff"></stop>
         <stop offset=".5" stop-color="#dbdbdb"></stop>
-        <stop offset="1" stop-color="#231f20"></stop>
+        <stop offset="1" stop-color="#dbdbdb"></stop>
       </radialGradient>
     </defs>
     <ellipse fill="url(#a)" cx="128" cy="67.3" rx="128" ry="67.3"></ellipse>
