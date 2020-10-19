@@ -13,7 +13,6 @@
 	.a-propos__portrait {
 		width: 50rem;
 		margin: 0 auto;
-		position: relative;
 
 		@include respond(phone) {
 			width: 30rem;
@@ -30,38 +29,36 @@
 				height: 30rem;
 			}
 		}
-		.nav-title__animation {
-		width: 20rem;
-		height: 20rem;
-		border-radius: 50%;
-		border: 2px solid black;
-		background-color: var(--backg);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: absolute;
-		top: 70%;
-		left: 0%;
+	}
+	.nav-title__animation {
+	width: 20rem;
+	height: 20rem;
+  margin: 3rem auto;
+	border-radius: 50%;
+	border: 2px solid #333;
+	background-color: var(--backg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+		@include respond(phone) {
+			width: 15rem;
+			height: 15rem;
+			top: 70%;
+			left: 0%;
+		}
+
+		svg {
+			fill: #333;
+			width: 12rem;
 
 			@include respond(phone) {
-				width: 15rem;
-				height: 15rem;
-				top: 70%;
-				left: 0%;
-			}
+			width: 10rem;
+		}
+		}
 
-			svg {
-				fill: #333;
-				width: 12rem;
-
-				@include respond(phone) {
-				width: 10rem;
-			}
-			}
-
-			.l, .a, .b2, .dot, .l2, .a2, .b3 {
-			    visibility: hidden;
-			}
+		.l, .a, .b2, .dot, .l2, .a2, .b3 {
+		    visibility: hidden;
 		}
 	}
 

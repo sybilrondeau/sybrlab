@@ -1,5 +1,5 @@
 import { gsap } from "gsap";
-import { MorphSVGPlugin } from "gsap/MorphSVGPlugin"; 
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 
@@ -13,8 +13,7 @@ const tl = gsap.timeline({
 	defaults: {duration: .8},
 	scrollTrigger: {
 		trigger: ".a-propos__portrait",
-		start: "top 30%",
-		// markers: true,
+		start: "bottom 30%",
 		toggleActions: "play none none reset",
 	}
 });

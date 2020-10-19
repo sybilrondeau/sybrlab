@@ -9,6 +9,16 @@ gsap.from(".draw", {
 		start: "top 80%",
 		toggleActions: "play none none reset",
 	},
-	duration: 6, 
+	duration: 6,
 	drawSVG: "50% 50%"
+});
+
+gsap.from(".draw-portrait", {
+  scrollTrigger : {
+    trigger: ".a-propos",
+    start: "100% 80%",
+    toggleActions: "play none none reset",
+  },
+  duration: 6,
+  drawSVG: "50% 50%"
 });
