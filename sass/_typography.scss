@@ -43,8 +43,14 @@ h1, h2 {
 
 .nav-title {
 	width: 100%;
-    padding: 20rem 0 10rem;
+  padding: 20rem 0 10rem;
 	text-align: center;
+}
+
+.nav-title-formule {
+  width: 100%;
+  padding: 10rem 0 10rem;
+  text-align: center;
 }
 
 h3 {
@@ -121,5 +127,10 @@ ul li {
     @include respond(phone) {
 		font-size: 8rem;
 	}
+}
+
+.email {
+  color: var(--primary);
+  text-decoration: none;
 }
 

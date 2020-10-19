@@ -30,12 +30,12 @@ links.forEach(link => {
 
 const turbVal = { val: 0.000001 };
 const turb = document.querySelectorAll('#filter-1 feTurbulence')[0];
-	
-const noisyCursor = gsap.timeline({ 
-	paused: true, 
+
+const noisyCursor = gsap.timeline({
+	paused: true,
 	onUpdate: function() {
-  		turb.setAttribute('baseFrequency', '0 ' + turbVal.val); 
-	} 
+  		turb.setAttribute('baseFrequency', '0 ' + turbVal.val);
+	}
 })
 .to(turbVal, 0.2, { val: 0.2 })
 .to(turbVal, 0.2, { val: 0.000001 });
@@ -48,36 +48,6 @@ ctaTitle.addEventListener('mouseover', () => {
 ctaTitle.addEventListener('mouseleave', () => {
   mouseCursor.classList.remove("filter-effect");
 });
-
-//effect on titles
-
-// titles.forEach(title => {
-// 	title.addEventListener("mouseleave", () => {
-// 		mouseCursor.classList.remove("title-highlight");
-// 	})
-// 	title.addEventListener("mouseover", () => {
-// 		mouseCursor.classList.add("title-highlight");
-// 	})
-// });
-
-
-//effect on the last two div
-
-// contactDiv.addEventListener("mouseleave", () => {
-// 	mouseCursor.classList.remove("image-over");
-// });
-// contactDiv.addEventListener("mouseover", () => {
-// 	mouseCursor.classList.add("image-over");
-// });
-
-//filter effect on the last title 
-
-// ctaTitle.addEventListener("mouseleave", () => {
-// 	mouseCursor.classList.remove("filter-effect");
-// });
-// ctaTitle.addEventListener("mouseover", () => {
-// 	mouseCursor.classList.add("filter-effect");
-// });
 
 
 
