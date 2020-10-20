@@ -15,9 +15,10 @@ gsap.from(".draw", {
 
 gsap.from(".draw-portrait", {
   scrollTrigger : {
-    trigger: ".a-propos",
-    start: "100% 80%",
+    trigger: ".a-propos__portrait",
+    start: "20% 80%",
     toggleActions: "play none none reset",
+    markers: true,
   },
   duration: 6,
   drawSVG: "50% 50%"
