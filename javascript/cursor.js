@@ -26,28 +26,30 @@ links.forEach(link => {
 	})
 });
 
+
+
 // distortion on cta title
 
-const turbVal = { val: 0.000001 };
-const turb = document.querySelectorAll('#filter-1 feTurbulence')[0];
+// const turbVal = { val: 0.000001 };
+// const turb = document.querySelectorAll('#filter-1 feTurbulence')[0];
 
-const noisyCursor = gsap.timeline({
-	paused: true,
-	onUpdate: function() {
-  		turb.setAttribute('baseFrequency', '0 ' + turbVal.val);
-	}
-})
-.to(turbVal, 0.2, { val: 0.2 })
-.to(turbVal, 0.2, { val: 0.000001 });
+// const noisyCursor = gsap.timeline({
+// 	paused: true,
+// 	onUpdate: function() {
+//   		turb.setAttribute('baseFrequency', '0 ' + turbVal.val);
+// 	}
+// })
+// .to(turbVal, 0.2, { val: 0.2 })
+// .to(turbVal, 0.2, { val: 0.000001 });
 
-ctaTitle.addEventListener('mouseover', () => {
-  noisyCursor.restart();
-  mouseCursor.classList.add("filter-effect");
-});
+// ctaTitle.addEventListener('mouseover', () => {
+//   noisyCursor.restart();
+//   mouseCursor.classList.add("filter-effect");
+// });
 
-ctaTitle.addEventListener('mouseleave', () => {
-  mouseCursor.classList.remove("filter-effect");
-});
+// ctaTitle.addEventListener('mouseleave', () => {
+//   mouseCursor.classList.remove("filter-effect");
+// });
 
 
 

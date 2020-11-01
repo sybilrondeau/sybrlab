@@ -14,43 +14,23 @@
 	src: url('./fonts/Muli-VariableFont_wght.woff2') format('woff2');
 }
 
-// @font-face {
-// 	font-family: 'Open Sans';
-// 	font-weight: 800;
-// 	font-style: normal;
-// 	display: swap;
-// 	src: url('./fonts/OpenSans-ExtraBold.woff2') format('woff2');
-// }
-
 h1, h2 {
 	font-family: 'Exo', sans-serif;
-	font-size: 6rem;
+	font-size: 6.854rem;
 	font-variation-settings: 'wght' 900;
 
 	@include respond(deskBig) {
-		font-size: 7rem;
+		font-size: 6.854rem;
 	}
 
 	@include respond(tab) {
-		font-size: 5rem;
+		font-size: 6.854rem;
 	}
 
 	@include respond(phone) {
-		font-size: 4rem;
+		font-size: 6.854rem;
 	}
 
-}
-
-.nav-title {
-	width: 100%;
-  padding: 20rem 0 10rem;
-	text-align: center;
-}
-
-.nav-title-formule {
-  width: 100%;
-  padding: 10rem 0 10rem;
-  text-align: center;
 }
 
 h3 {
@@ -79,7 +59,7 @@ p {
 	font-weight: 400;
 	font-kerning: normal;
 	hyphens: none;
-	color: var(--grey-medium-dark);
+	color: var(--grey-dark);
 
 	@include respond(deskBig) {
 		font-size: 2rem;
@@ -87,8 +67,9 @@ p {
 }
 
 .accent {
-	color: var(--primary);
-	font-weight: 800;
+  -webkit-text-fill-color: var(--backg); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--grey-dark);
 }
 
 .text-grey-medium {
@@ -129,8 +110,13 @@ ul li {
 	}
 }
 
-.email {
-  color: var(--primary);
+a {
   text-decoration: none;
+  font-weight: 900;
+  color: var(--grey-dark);
+}
+
+a:hover {
+  color: var(--primary);
 }
 

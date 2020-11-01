@@ -4,7 +4,7 @@
 	margin: 0 auto;
 	text-align: center;
 	display: flex;
-	justify-content: center; 
+	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	position: relative;
@@ -19,9 +19,9 @@
 	}
 
 	p {
-		font-size: 2.4rem;
+		font-size: 2.618rem;
 	}
-	
+
 	svg {
 		position: absolute;
 		left: -10rem;
@@ -36,6 +36,6 @@
 #legal {
 	font-size: 1rem;
 	text-align: center;
-	position: absolute; 
+	position: absolute;
 	bottom: 4rem;
 }

@@ -1,53 +1,32 @@
-.header {
-	width: 100%;
+.header-section {
+	width: 100vw;
 	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	animation: fadeIn 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 	@include respond(tab) {
 		padding: 0 2rem;
 	}
 
-	&__title {
-		flex: 0 1 100%;
-		margin: 0 auto;
-		position: absolute;
-		top: 30%;
+	&__main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .portrait-svg {
+      width: 40rem;
+    }
 
 		h1 {
 			text-align: center;
+      width: 80rem;
 
 			@include respond(phone) {
 				padding: 1rem;
 			}
-		}
-	}
-
-	&__scroll {
-		flex: 0 1 100%;
-		position: absolute;
-		bottom: 10rem;
-
-		.header__line {
-			display: block;
-			padding-top: 6rem;
-			position: relative;
-		}
-
-		.header__line::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 50%;
-			margin-left: -1px;
-			width: 1.4px;
-			height: 8rem;
-			background-color: var(--grey-dark);
-			animation: scrollDown 2.4s cubic-bezier(1, 0, 0, 1) infinite;
 		}
 	}
 }
