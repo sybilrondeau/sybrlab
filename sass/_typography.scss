@@ -93,6 +93,11 @@ p {
   font-size: 1rem;
 }
 
+.text-red {
+  color: var(--primary);
+  font-weight: 600;
+}
+
 .outline {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
@@ -114,5 +119,9 @@ a {
 
 a:hover {
   color: var(--primary);
+
+  svg {
+    fill: var(--primary);
+  }
 }
 
