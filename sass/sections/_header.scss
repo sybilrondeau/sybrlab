@@ -1,33 +1,18 @@
-.header-section {
+.intro {
 	width: 100vw;
 	height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
-	@include respond(tab) {
-		padding: 0 2rem;
-	}
+  .portrait-svg {
+    flex: 0 1 40rem;
+  }
 
-	&__main {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-    .portrait-svg {
-      width: 40rem;
-    }
-
-		h1 {
-			text-align: center;
-      width: 80rem;
-
-			@include respond(phone) {
-				padding: 1rem;
-			}
-		}
+	h1 {
+		text-align: center;
+    flex: 0 1 80rem;
 	}
 }
 

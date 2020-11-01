@@ -14,7 +14,7 @@
 	src: url('./fonts/Muli-VariableFont_wght.woff2') format('woff2');
 }
 
-h1, h2 {
+h1 {
 	font-family: 'Exo', sans-serif;
 	font-size: 6.854rem;
 	font-variation-settings: 'wght' 900;
@@ -33,29 +33,48 @@ h1, h2 {
 
 }
 
+h2 {
+  font-family: 'Exo', sans-serif;
+  font-size: 4.236rem;
+  font-variation-settings: 'wght' 900;
+
+  @include respond(deskBig) {
+    font-size: 4.236rem;
+  }
+
+  @include respond(tab) {
+    font-size: 4.236rem;
+  }
+
+  @include respond(phone) {
+    font-size: 4.236rem;
+  }
+
+}
+
 h3 {
 	font-family: 'Exo', sans-serif;
-	font-size: 3rem;
+	font-size: 2.618rem;
 	font-variation-settings: 'wght' 600;
 	text-transform: uppercase;
-	margin-bottom: 2rem;
+	margin-bottom: 2.618rem;
 
 	@include respond(deskBig) {
-		font-size: 4rem;
+		font-size: 2.618rem;
 	}
 
 	@include respond(tab) {
-	  font-size: 4rem;
+	  font-size: 2.618rem;
 	}
 
 	@include respond(phone) {
-	  font-size: 3rem;
+	  font-size: 2.618rem;
 	}
 }
 
 p {
 	font-family: 'Muli', sans-serif;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	font-weight: 400;
 	font-kerning: normal;
 	hyphens: none;
@@ -66,48 +85,25 @@ p {
 	}
 }
 
-.accent {
-  -webkit-text-fill-color: var(--backg); /* Will override color (regardless of order) */
+.big-text {
+  font-size: 2.618rem;
+}
+
+.little-text {
+  font-size: 1rem;
+}
+
+.outline {
+  -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--grey-dark);
-}
-
-.text-grey-medium {
-	color: var(--grey-medium-dark) !important;
-}
-
-.text-black {
-	color: var(--grey-dark) !important;
+  letter-spacing: .1rem;
 }
 
 ul li {
 	font-family:  'Muli', sans-serif;
 	color: var(--grey-dark);
 	list-style: none;
-}
-
-.big-numbers {
-	font-family: "Exo";
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 15rem;
-    color: var(--grey-medium);
-    position: absolute;
-    top: -.5em;
-    left: 10rem;
-    z-index: -1;
-
-	@include respond(deskBig) {
-		font-size: 18rem;
-		left: 25rem;
-	}
-
-    @include respond(tab) {
-		font-size: 10rem;
-    }
-    @include respond(phone) {
-		font-size: 8rem;
-	}
 }
 
 a {

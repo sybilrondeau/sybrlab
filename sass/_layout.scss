@@ -1,1 +1,58 @@
+.nav {
+  width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 
+  .logo {
+    position: fixed;
+    top: 2rem;
+    left: 8rem;
+
+    svg {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  .menu {
+    top: 4rem;
+    right: 8rem;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 8rem;
+
+  .bottom-links {
+    position: fixed;
+    bottom: 4rem;
+    right: 8rem;
+    display: flex;
+
+    li {
+      display: inline;
+      padding: 0 0 0 2rem;
+      svg {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  .legal {
+    bottom: 4rem;
+    left: 8rem;
+  }
+}
+
+.circle {
+  position: fixed;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--grey-dark);
+}
