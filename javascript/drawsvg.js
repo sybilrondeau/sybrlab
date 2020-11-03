@@ -12,7 +12,6 @@ gsap.from(".draw-camera", {
 		trigger: ".camera-paragraph",
 		start: "top 80%",
 		toggleActions: "play none none reset",
-    markers: true
 	},
 	duration: 6,
 	drawSVG: "50% 50%"
