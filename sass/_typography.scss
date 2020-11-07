@@ -113,12 +113,13 @@ ul li {
 
 a {
   text-decoration: none;
-  font-weight: 900;
-  color: var(--grey-dark);
+  color: var(--primary);
+  font-weight: 600;
 }
 
 a:hover {
   color: var(--primary);
+  cursor: none;
 
   svg {
     fill: var(--primary);

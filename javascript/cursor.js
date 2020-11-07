@@ -1,11 +1,11 @@
 import { gsap } from "gsap";
 
 const mouseCursor = document.querySelector(".cursor");
-const titles = document.querySelectorAll(".marquee");
 const links = document.querySelectorAll("a");
-const contactDiv = document.querySelector(".contact");
-const ctaDiv = document.querySelector(".cta");
-const ctaTitle = document.querySelector(".cta h2");
+const circles = document.querySelectorAll('.navi__btn');
+// const contactDiv = document.querySelector(".contact");
+// const ctaDiv = document.querySelector(".cta");
+// const ctaTitle = document.querySelector(".cta h2");
 
 // custom cursor and clipath on titles
 
@@ -14,18 +14,20 @@ window.addEventListener("mousemove", e => {
 	mouseCursor.style.left = (e.pageX) + "px";
 });
 
+// hover on links and circles.
 
-// effect on links
+const elementsHover = new Array(links, circles);
 
-links.forEach(link => {
-	link.addEventListener("mouseleave", () => {
-		mouseCursor.classList.remove("link-grow");
-	})
-	link.addEventListener("mouseover", () => {
-		mouseCursor.classList.add("link-grow");
-	})
+elementsHover.forEach(elementHover => {
+  elementHover.forEach(element => {
+    element.addEventListener("mouseleave", () => {
+      mouseCursor.classList.remove("link-grow");
+    })
+    element.addEventListener("mouseover", () => {
+      mouseCursor.classList.add("link-grow");
+    })
+  })
 });
-
 
 
 // distortion on cta title

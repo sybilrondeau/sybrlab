@@ -1,7 +1,9 @@
 import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
 // draw portrait at page load
 gsap.from(".draw-portrait", { duration: 6, drawSVG: "50% 50%" });

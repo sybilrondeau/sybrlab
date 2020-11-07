@@ -1,37 +1,66 @@
-.nav {
-  width: 1200px;
-  margin: 2rem auto;
+.navi {
+  width: 100%;
+  height: 8rem;
+  position: fixed;
+  padding: 0 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+}
 
-  .logo {
-    position: fixed;
-    top: 2rem;
-    left: 8rem;
+.navi-top {
+  top: 0;
+  background: linear-gradient(to right, transparent 50%, var(--grey-dark) 50%);
+  background-size: 200%;
+  background-position: top left;
 
-    svg {
+  .navi__logo {
+    flex: 0 1 10%;
+    height: 100%;
+
+    #logoLab {
       width: 6rem;
-      height: 6rem;
+      height: 8rem;
     }
   }
 
-  .menu {
-    top: 4rem;
-    right: 8rem;
+  .navi__nav {
+    flex: 0 1 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      display: inline;
+      padding: 0 0 0 2rem;
+      font-size: 1.4rem;
+      color: var(--backg);
+    }
   }
 }
 
-footer {
-  width: 100%;
-  height: 8rem;
+.navi-bottom {
+  bottom: 0;
+  background: linear-gradient(to right, var(--grey-dark) 50%, transparent 50%);
+  background-size: 200%;
+  background-position: top right;
 
-  .bottom-links {
-    position: fixed;
-    bottom: 4rem;
-    right: 8rem;
+  .navi__p {
+    flex: 0 1 80%;
+    height: 100%;
+    font-size: 1.2rem;
     display: flex;
+    align-items: center;
+    color: var(--backg);
+  }
+
+  .navi__links {
+    flex: 0 1 10%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     li {
       display: inline;
@@ -39,20 +68,36 @@ footer {
       svg {
         width: 2rem;
         height: 2rem;
+        fill: var(--grey-dark);
       }
     }
   }
+}
 
-  .legal {
-    bottom: 4rem;
-    left: 8rem;
+.navi__btn {
+  flex: 0 1 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+
+    #close-btn {
+      visibility: hidden;
+    }
   }
 }
 
-.circle {
-  position: fixed;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  background-color: var(--grey-dark);
+.open {
+  animation: openBckg 1s forwards;
+}
+.close {
+  animation: closeBckg 1s forwards;
+}
+
+.colorWhite {
+  color: white;
 }

@@ -37,6 +37,7 @@ html {
 
 
 .link-grow {
-	transform: scale(5) translate(-25%, -25%);
+	transform: scale(5) translate(-15%, -15%);
 	border: 1px solid white;
+  animation: blob 3s linear infinite alternate;
 }
