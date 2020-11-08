@@ -1,0 +1,24 @@
+.competences-section {
+  width: 100%;
+  padding: 0 16rem;
+}
+
+.competences {
+  width: 40rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--grey-dark);
+  display: grid;
+  grid-template-columns: repeat(3, 8rem);
+  grid-template-rows: 1fr;
+  grid-gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+
+  &__item svg {
+    width: 7rem;
+    height: 7rem;
+    filter: grayscale(100%);
+  }
+}

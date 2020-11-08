@@ -1,35 +1,14 @@
 .about {
-  width: 1200px;
-  margin: 0 auto;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  &__paragraph {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 50rem;
-    border-top: 2px solid var(--grey-dark);
-
-    p {
-      font-size: 2.618rem;
-      margin: 0 4.236rem 6.854rem;
-      padding: 1rem;
-      flex: 0 1 85%;
-    }
-
-    .arrow-rounded {
-      fill: var(--grey-dark);
-      flex: 0 1 15%;
-      transform: rotate(60deg);
-      margin-right: -1rem;
-    }
-  }
 
   #camera {
     width: 10rem;
     height: 10rem;
   }
 }
+
+

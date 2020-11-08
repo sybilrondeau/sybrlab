@@ -20,6 +20,7 @@
 <body>
 	<div class="cursor">
 	</div>
+
 	<nav class="navi navi-top">
     <div class="navi__logo">
       <a href="#section1">
@@ -29,13 +30,14 @@
       </a>
     </div>
     <ul class="navi__nav">
-      <li>Portfolio</li>
-      <li>Compétences</li>
-      <li>Contact</li>
-      <li>Anglais</li>
+      <li><a href="#section3">Portfolio</a></li>
+      <li><a href="#section4">Compétences</a></li>
+      <li><a href="#section5">Contact</a></li>
+      <li><a href="#" target="self">Anglais</a></li>
     </ul>
     <div class="navi__btn navi__btn--top" data-id="2">
     <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+      <!-- ID for JS - class for CSS -->
       <path id="close-btn-top" class='close-btn' d="M33,28.11c1.32.91,8.93,6,4.85,8.06-1.77.88-6.77-4.58-8.33-5.72-3.55-2.59-6-6.4-8.63-9.85A140.58,140.58,0,0,0,9.67,30c-1.5,1.44-5.62,8-8,6.24-4.13-3.1,14.55-17,16.75-18.68A73.35,73.35,0,0,0,8.87,8.67C7.08,7.19.08,4.61,2.29,1.82c2.38-3,8.21,3.08,9.89,4.5,1.87,1.57,3.71,3.19,5.53,4.83q1.34,1.2,2.55,2.52c2,2.18,2.25.66,4.26-.94S36.35,0,38.21,3.3,26.33,16.32,24,18.18C26.7,21.8,29.19,25.48,33,28.11Z" transform="translate(-1 -0.5)"/>
       <circle id="circle-top" class='circle' cx="19" cy="19" r="18.5"/>
     </svg>
@@ -53,21 +55,25 @@
 
 	<div class="about" id="section2">
     <div class="about__paragraph portrait-paragraph">
-      <svg class="arrow-rounded" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 95 95" enable-background="new 0 0 95 95" xml:space="preserve"><path d="M81.882,17.95c0.102-1.013-0.306-1.522-1.22-1.522c-0.713-0.102-1.22,0.204-1.525,0.912l-0.152,0.153  c-3.761,4.17-7.622,7.576-11.586,10.219c-0.814,0.509-0.968,1.168-0.457,1.979c0.507,0.816,1.167,0.969,1.981,0.458  c2.744-1.831,5.489-4.063,8.233-6.708c-2.136,6.812-5.285,12.098-9.452,15.855c-5.591,4.88-12.452,6.558-20.584,5.033  c-2.133-0.405-3.912-0.814-5.336-1.22c0.204-0.812,0.355-1.624,0.459-2.441c1.218-7.213,0.709-12.806-1.525-16.77  c-0.914-1.625-1.729-2.745-2.44-3.353c-1.321-1.321-2.896-1.833-4.726-1.525c-2.439,0.407-4.116,1.729-5.031,3.961  c-0.814,1.629-1.066,3.714-0.761,6.252c0.201,2.238,0.761,4.42,1.676,6.556c0.915,2.133,1.929,3.762,3.049,4.878  c1.83,1.731,3.812,3.103,5.947,4.117c-1.221,4.982-3.05,9.757-5.489,14.332c-3.456,6.505-7.267,11.184-11.434,14.025  c-4.372,3.05-8.488,3.408-12.35,1.069c-0.812-0.51-1.472-0.356-1.982,0.455c-0.506,0.814-0.355,1.475,0.457,1.981  c4.88,2.947,10.011,2.543,15.398-1.218c4.575-3.05,8.692-8.029,12.35-14.941c2.538-4.677,4.472-9.555,5.794-14.635  c1.422,0.405,3.2,0.814,5.335,1.219c9.147,1.625,16.821-0.254,23.022-5.641c4.472-3.862,7.827-9.3,10.062-16.314  c0.913,3.864,2.896,7.37,5.946,10.52c0.708,0.611,1.396,0.588,2.058-0.076c0.659-0.66,0.687-1.345,0.076-2.057  C83.407,29.233,81.475,24.05,81.882,17.95z M39.499,40.211c-0.103,0.611-0.206,1.171-0.304,1.675  c-1.731-0.81-3.255-1.927-4.575-3.353c-0.914-0.812-1.779-2.136-2.592-3.961c-0.814-1.833-1.322-3.711-1.524-5.644  c-0.204-2.031-0.053-3.658,0.458-4.878c0.609-1.222,1.677-1.983,3.201-2.286c0.812-0.102,1.525,0.15,2.134,0.761  c0.508,0.509,1.167,1.477,1.981,2.897C40.208,28.676,40.617,33.604,39.499,40.211z"/></path></svg>
+      <svg class="arrow-rounded" xmlns:xlink="http://www.w3.org/2000/svg">
+        <use xlink:href="./images/sprite.svg#arrow-rounded"></use>
+      </svg>
       <p>
         Je suis spécialisée en développement <span class="text-red">Front-end</span> avec une appétence pour l'<span class="text-red">animation</span>.
       </p>
     </div>
     <div class="about__paragraph">
-      <svg class="arrow-rounded" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 95 95" enable-background="new 0 0 95 95" xml:space="preserve"><path d="M81.882,17.95c0.102-1.013-0.306-1.522-1.22-1.522c-0.713-0.102-1.22,0.204-1.525,0.912l-0.152,0.153  c-3.761,4.17-7.622,7.576-11.586,10.219c-0.814,0.509-0.968,1.168-0.457,1.979c0.507,0.816,1.167,0.969,1.981,0.458  c2.744-1.831,5.489-4.063,8.233-6.708c-2.136,6.812-5.285,12.098-9.452,15.855c-5.591,4.88-12.452,6.558-20.584,5.033  c-2.133-0.405-3.912-0.814-5.336-1.22c0.204-0.812,0.355-1.624,0.459-2.441c1.218-7.213,0.709-12.806-1.525-16.77  c-0.914-1.625-1.729-2.745-2.44-3.353c-1.321-1.321-2.896-1.833-4.726-1.525c-2.439,0.407-4.116,1.729-5.031,3.961  c-0.814,1.629-1.066,3.714-0.761,6.252c0.201,2.238,0.761,4.42,1.676,6.556c0.915,2.133,1.929,3.762,3.049,4.878  c1.83,1.731,3.812,3.103,5.947,4.117c-1.221,4.982-3.05,9.757-5.489,14.332c-3.456,6.505-7.267,11.184-11.434,14.025  c-4.372,3.05-8.488,3.408-12.35,1.069c-0.812-0.51-1.472-0.356-1.982,0.455c-0.506,0.814-0.355,1.475,0.457,1.981  c4.88,2.947,10.011,2.543,15.398-1.218c4.575-3.05,8.692-8.029,12.35-14.941c2.538-4.677,4.472-9.555,5.794-14.635  c1.422,0.405,3.2,0.814,5.335,1.219c9.147,1.625,16.821-0.254,23.022-5.641c4.472-3.862,7.827-9.3,10.062-16.314  c0.913,3.864,2.896,7.37,5.946,10.52c0.708,0.611,1.396,0.588,2.058-0.076c0.659-0.66,0.687-1.345,0.076-2.057  C83.407,29.233,81.475,24.05,81.882,17.95z M39.499,40.211c-0.103,0.611-0.206,1.171-0.304,1.675  c-1.731-0.81-3.255-1.927-4.575-3.353c-0.914-0.812-1.779-2.136-2.592-3.961c-0.814-1.833-1.322-3.711-1.524-5.644  c-0.204-2.031-0.053-3.658,0.458-4.878c0.609-1.222,1.677-1.983,3.201-2.286c0.812-0.102,1.525,0.15,2.134,0.761  c0.508,0.509,1.167,1.477,1.981,2.897C40.208,28.676,40.617,33.604,39.499,40.211z"/></path></svg>
-
+      <svg class="arrow-rounded" xmlns:xlink="http://www.w3.org/2000/svg">
+        <use xlink:href="./images/sprite.svg#arrow-rounded"></use>
+      </svg>
       <p>
         Je travaille en <span class="text-red">collaboration</span> avec des développeurs Back-end, Web Designers, Directeurs Artistique, Graphistes, Rédacteurs, Photographes, Vidéastes...<br> Pour créer des <span class="text-red">sites</span> internet ou des <span class="text-red">applications</span> uniques.
       </p>
     </div>
     <div class="about__paragraph camera-paragraph">
-      <svg class="arrow-rounded" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 95 95" enable-background="new 0 0 95 95" xml:space="preserve"><path d="M81.882,17.95c0.102-1.013-0.306-1.522-1.22-1.522c-0.713-0.102-1.22,0.204-1.525,0.912l-0.152,0.153  c-3.761,4.17-7.622,7.576-11.586,10.219c-0.814,0.509-0.968,1.168-0.457,1.979c0.507,0.816,1.167,0.969,1.981,0.458  c2.744-1.831,5.489-4.063,8.233-6.708c-2.136,6.812-5.285,12.098-9.452,15.855c-5.591,4.88-12.452,6.558-20.584,5.033  c-2.133-0.405-3.912-0.814-5.336-1.22c0.204-0.812,0.355-1.624,0.459-2.441c1.218-7.213,0.709-12.806-1.525-16.77  c-0.914-1.625-1.729-2.745-2.44-3.353c-1.321-1.321-2.896-1.833-4.726-1.525c-2.439,0.407-4.116,1.729-5.031,3.961  c-0.814,1.629-1.066,3.714-0.761,6.252c0.201,2.238,0.761,4.42,1.676,6.556c0.915,2.133,1.929,3.762,3.049,4.878  c1.83,1.731,3.812,3.103,5.947,4.117c-1.221,4.982-3.05,9.757-5.489,14.332c-3.456,6.505-7.267,11.184-11.434,14.025  c-4.372,3.05-8.488,3.408-12.35,1.069c-0.812-0.51-1.472-0.356-1.982,0.455c-0.506,0.814-0.355,1.475,0.457,1.981  c4.88,2.947,10.011,2.543,15.398-1.218c4.575-3.05,8.692-8.029,12.35-14.941c2.538-4.677,4.472-9.555,5.794-14.635  c1.422,0.405,3.2,0.814,5.335,1.219c9.147,1.625,16.821-0.254,23.022-5.641c4.472-3.862,7.827-9.3,10.062-16.314  c0.913,3.864,2.896,7.37,5.946,10.52c0.708,0.611,1.396,0.588,2.058-0.076c0.659-0.66,0.687-1.345,0.076-2.057  C83.407,29.233,81.475,24.05,81.882,17.95z M39.499,40.211c-0.103,0.611-0.206,1.171-0.304,1.675  c-1.731-0.81-3.255-1.927-4.575-3.353c-0.914-0.812-1.779-2.136-2.592-3.961c-0.814-1.833-1.322-3.711-1.524-5.644  c-0.204-2.031-0.053-3.658,0.458-4.878c0.609-1.222,1.677-1.983,3.201-2.286c0.812-0.102,1.525,0.15,2.134,0.761  c0.508,0.509,1.167,1.477,1.981,2.897C40.208,28.676,40.617,33.604,39.499,40.211z"/></path></svg>
-
+      <svg class="arrow-rounded" xmlns:xlink="http://www.w3.org/2000/svg">
+        <use xlink:href="./images/sprite.svg#arrow-rounded"></use>
+      </svg>
       <p>
         Je suis aussi SybR, <span class="text-red"><a href="https://sybilrondeau.com" target="_blank" rel="noopener noreferrer" >photographe</a></span> depuis plus de 10 ans !
       </p>
@@ -75,12 +81,198 @@
     <svg id="camera" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 521.78 450.53"><path class="draw-camera" d="M403.52,251.38a111.71,111.71,0,0,0-113.3-111.69c-60.16.84-109.26,49.94-110.1,110.1a111.71,111.71,0,0,0,111.69,113.3l72.19.35c31.2,0,60.58-.76,60.58-.76a32.23,32.23,0,0,0,33-32.22V157.11a32.26,32.26,0,0,0-32.26-32.26H387.73a27.46,27.46,0,0,1-27.46-27.46h0a38.61,38.61,0,0,0-38.61-38.61H269.88s-39-1.84-44,25.23-2.11,42.16,34.1,32.81c28.36-7.32,59.78-14.29,60-26.87.14-9.72-7.18-12.48-30.91-13l-41-.33a68.89,68.89,0,0,0-51.9,23.59l-14.24,16.31a63.07,63.07,0,0,1-47.51,21.59H86.68A32.44,32.44,0,0,0,54.23,170.6V327.46a32.31,32.31,0,0,0,32.31,32.31l35.71-.25A45.63,45.63,0,0,1,154.6,372.6a111.39,111.39,0,0,0,80.14,32.06c60.08-1,109.05-50,109.89-110.11A111.71,111.71,0,1,0,121.23,293" fill="none" stroke="var(--grey-dark)" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/></svg>
 	</div>
 
-  <div class="portfolio" id="section3">
+  <div class="portfolio-section" id="section3">
+    <h2><span class="outline">Portfolio</span></h2>
+    <div class="portfolio">
+      <div class="portfolio__item portfolio__item01">
+        <div class="portfolio__item--image portfolio__item--image01"></div>
+        <div class="portfolio__item--title">
+          <div class='title-arrow'>
+            <h3>SybR Lab</h3>
+            <svg height='100px' width='100px' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 95 95" enable-background="new 0 0 95 95" xml:space="preserve"><path d="M31.795,61.756c0.575-1.146,0.288-2.012-0.854-2.583c-2.583-1.433-7.745-4.587-15.488-9.465  c8.462,0.287,19.145,0.287,32.049,0c22.373-0.715,35.278-1.078,38.717-1.078c1.292,0,1.936-0.646,1.936-1.936  c0-1.286-0.644-1.936-1.936-1.936c-3.585,0-16.487,0.363-38.717,1.078c-13.335,0.287-24.305,0.287-32.911,0l4.734-3.226  c4.156-2.583,7.31-4.875,9.464-6.882c0.999-1.005,1.035-1.972,0.108-2.906c-0.938-0.93-1.828-0.966-2.69-0.107  c-2.011,2.008-5.021,4.231-9.034,6.67c-4.303,2.866-7.238,4.874-8.819,6.023c-1.002,0.287-1.508,0.858-1.508,1.721v0.427  c0,0.428,0.146,0.791,0.431,1.074c0.145,0.434,0.36,0.793,0.646,1.078c1.434,0.718,4.624,2.655,9.573,5.806  c4.946,3.16,8.851,5.527,11.724,7.104C30.363,63.189,31.224,62.906,31.795,61.756z"></path></svg>
+          </div>
+          <p>01.</p>
+        </div>
+        <div class="portfolio__item--credits">
+          <div class="credits-makers">
+            <ul>
+              <li>Site sur-mesure</li>
+              <li>Web Design : Sybil Rondeau</li>
+              <li>Icône et portrait One line : Loeiza Coccolini</li>
+            </ul>
+          </div>
+          <div class="credits-tech">
+            <ul>
+              <li>no framework</li>
+              <li>Parcel Bundle</li>
+              <li>HTML5 SASS JS</li>
+              <li>GSAP</li>
+            </ul>
+          </div>
+        </div>
+        <div class="portfolio__item--description">
+          <p>J’aime les sites sobres, épurés, fluides, qui laissent une belle place à la typographie, au graphisme et au design d'interaction.</p>
+        </div>
+      </div>
 
+      <div class="portfolio__item portfolio__item02">
+        <div class="portfolio__item--image portfolio__item--image02"></div>
+        <div class="portfolio__item--title">
+          <div class='title-arrow'>
+            <h3>Amime Records</h3>
+            <svg height='100px' width='100px' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 95 95" enable-background="new 0 0 95 95" xml:space="preserve"><path d="M31.795,61.756c0.575-1.146,0.288-2.012-0.854-2.583c-2.583-1.433-7.745-4.587-15.488-9.465  c8.462,0.287,19.145,0.287,32.049,0c22.373-0.715,35.278-1.078,38.717-1.078c1.292,0,1.936-0.646,1.936-1.936  c0-1.286-0.644-1.936-1.936-1.936c-3.585,0-16.487,0.363-38.717,1.078c-13.335,0.287-24.305,0.287-32.911,0l4.734-3.226  c4.156-2.583,7.31-4.875,9.464-6.882c0.999-1.005,1.035-1.972,0.108-2.906c-0.938-0.93-1.828-0.966-2.69-0.107  c-2.011,2.008-5.021,4.231-9.034,6.67c-4.303,2.866-7.238,4.874-8.819,6.023c-1.002,0.287-1.508,0.858-1.508,1.721v0.427  c0,0.428,0.146,0.791,0.431,1.074c0.145,0.434,0.36,0.793,0.646,1.078c1.434,0.718,4.624,2.655,9.573,5.806  c4.946,3.16,8.851,5.527,11.724,7.104C30.363,63.189,31.224,62.906,31.795,61.756z"></path></svg>
+          </div>
+          <p>02.</p>
+        </div>
+        <div class="portfolio__item--credits">
+          <div class="credits-makers">
+            <ul>
+              <li>Site e-commerce</li>
+              <li>Photo et Web design : Sybil Rondeau</li>
+              <li>Graphisme: Adrien Thiot Rader</li>
+            </ul>
+          </div>
+          <div class="credits-tech">
+            <ul>
+              <li>WordPress</li>
+              <li>WooCommerce</li>
+            </ul>
+          </div>
+        </div>
+        <div class="portfolio__item--description">
+          <p>Un site ludique pour un label de musique rétro-gaming. Les couleurs se basent sur les dessins d'Adrien Thiot-Rader. La typographie pixellisée rappelle l'univers du jeu, ainsi que les animations.
+Ce site WordPress utilise le plugin Woo-commerce pour la vente des albums.</p>
+        </div>
+      </div>
+
+      <div class="portfolio__item portfolio__item03">
+        <div class="portfolio__item--image portfolio__item--image03"></div>
+        <div class="portfolio__item--title">
+          <div class='title-arrow'>
+            <h3>WSSA</h3>
+            <svg height='100px' width='100px' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 95 95" enable-background="new 0 0 95 95" xml:space="preserve"><path d="M31.795,61.756c0.575-1.146,0.288-2.012-0.854-2.583c-2.583-1.433-7.745-4.587-15.488-9.465  c8.462,0.287,19.145,0.287,32.049,0c22.373-0.715,35.278-1.078,38.717-1.078c1.292,0,1.936-0.646,1.936-1.936  c0-1.286-0.644-1.936-1.936-1.936c-3.585,0-16.487,0.363-38.717,1.078c-13.335,0.287-24.305,0.287-32.911,0l4.734-3.226  c4.156-2.583,7.31-4.875,9.464-6.882c0.999-1.005,1.035-1.972,0.108-2.906c-0.938-0.93-1.828-0.966-2.69-0.107  c-2.011,2.008-5.021,4.231-9.034,6.67c-4.303,2.866-7.238,4.874-8.819,6.023c-1.002,0.287-1.508,0.858-1.508,1.721v0.427  c0,0.428,0.146,0.791,0.431,1.074c0.145,0.434,0.36,0.793,0.646,1.078c1.434,0.718,4.624,2.655,9.573,5.806  c4.946,3.16,8.851,5.527,11.724,7.104C30.363,63.189,31.224,62.906,31.795,61.756z"></path></svg>
+          </div>
+          <p>03.</p>
+        </div>
+        <div class="portfolio__item--credits">
+          <div class="credits-makers">
+            <ul>
+              <li>Application crée par DrakkR - Nantes</li>
+              <li>Web Design: Ambroise Nicolao</li>
+            </ul>
+          </div>
+          <div class="credits-tech">
+            <ul>
+              <li>Ruby on Rails</li>
+              <li>Datatables</li>
+            </ul>
+          </div>
+        </div>
+        <div class="portfolio__item--description">
+          <p>Un travail d’implémentation du Front-end pour une application qui recense les résultats des compétitions de de la World Slalom Skaters Association. Le palmarès est affiché par des tables gérées par le plugin Datatables en Javascript dans le framework Ruby on Rails.</p>
+        </div>
+      </div>
+
+      <div class="portfolio__item portfolio__item04">
+        <div class="portfolio__item--image portfolio__item--image04"></div>
+        <div class="portfolio__item--title">
+          <div class='title-arrow'>
+            <h3>SGPA</h3>
+            <svg height='100px' width='100px' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 95 95" enable-background="new 0 0 95 95" xml:space="preserve"><path d="M31.795,61.756c0.575-1.146,0.288-2.012-0.854-2.583c-2.583-1.433-7.745-4.587-15.488-9.465  c8.462,0.287,19.145,0.287,32.049,0c22.373-0.715,35.278-1.078,38.717-1.078c1.292,0,1.936-0.646,1.936-1.936  c0-1.286-0.644-1.936-1.936-1.936c-3.585,0-16.487,0.363-38.717,1.078c-13.335,0.287-24.305,0.287-32.911,0l4.734-3.226  c4.156-2.583,7.31-4.875,9.464-6.882c0.999-1.005,1.035-1.972,0.108-2.906c-0.938-0.93-1.828-0.966-2.69-0.107  c-2.011,2.008-5.021,4.231-9.034,6.67c-4.303,2.866-7.238,4.874-8.819,6.023c-1.002,0.287-1.508,0.858-1.508,1.721v0.427  c0,0.428,0.146,0.791,0.431,1.074c0.145,0.434,0.36,0.793,0.646,1.078c1.434,0.718,4.624,2.655,9.573,5.806  c4.946,3.16,8.851,5.527,11.724,7.104C30.363,63.189,31.224,62.906,31.795,61.756z"></path></svg>
+          </div>
+          <p>04.</p>
+        </div>
+        <div class="portfolio__item--credits">
+          <div class="credits-makers">
+            <ul>
+              <li>Site Vitrine</li>
+              <li>Direction Artistique: Raphaëlle du Boÿs</li>
+              <li>Web Design: Myriam le Barbier</li>
+            </ul>
+          </div>
+          <div class="credits-tech">
+            <ul>
+              <li>WordPress</li>
+            </ul>
+          </div>
+        </div>
+        <div class="portfolio__item--description">
+          <p>Le site vitrine de la SGPA promeut le travail de Jean Paul Guisset, Business Angel à Paris.
+L’équipe du collectif Elles@Meudon à fait appel à moi pour l’implémentation WordPress du design. Le client souhaitait pouvoir administrer totalement le site. J’ai donc opté pour Elementor pour son ergonomie intuitive et codé des widgets personnalisés pour coller au plus près du design.
+Le site est également bilingue français - anglais.</p>
+        </div>
+      </div>
+
+    </div>
 	</div>
 
+  <div class="competences-section" id="section4">
+    <h2><span class="outline">Compétences</span></h2>
+    <div class="competences">
+      <div class="competences__item">
+        <svg xmlns:xlink="http://www.w3.org/2000/svg">
+          <use xlink:href="./images/sprite.svg#html-5"></use>
+        </svg>
+      </div>
+      <div class="competences__item">
+        <svg xmlns:xlink="http://www.w3.org/2000/svg">
+          <use xlink:href="./images/sprite.svg#css-3"></use>
+        </svg>
+      </div>
+      <div class="competences__item">
+        <svg xmlns:xlink="http://www.w3.org/2000/svg">
+          <use xlink:href="./images/sprite.svg#sass"></use>
+        </svg>
+      </div>
+      <div class="competences__item">
+        <svg xmlns:xlink="http://www.w3.org/2000/svg">
+          <use xlink:href="./images/sprite.svg#javascript"></use>
+        </svg>
+      </div>
+      <div class="competences__item">
+        <svg xmlns:xlink="http://www.w3.org/2000/svg">
+          <use xlink:href="./images/sprite.svg#php"></use>
+        </svg>
+      </div>
+      <div class="competences__item">
+        <svg xmlns:xlink="http://www.w3.org/2000/svg">
+          <use xlink:href="./images/sprite.svg#wordpress"></use>
+        </svg>
+      </div>
+      <div class="competences__item">
+        <svg xmlns:xlink="http://www.w3.org/2000/svg">
+          <use xlink:href="./images/sprite.svg#gsap"></use>
+        </svg>
+      </div>
+      <div class="competences__item">
+        <svg xmlns:xlink="http://www.w3.org/2000/svg">
+          <use xlink:href="./images/sprite.svg#figma"></use>
+        </svg>
+      </div>
 
-  <div class="cta" id="section4">
+    </div>
+  </div>
+
+  <div class="contact-section" id="section5">
+    <h2><span class="outline">Contact</span></h2>
+    <div class="contact">
+      <h3>Un projet ?</h3>
+      <div class="about-paragraph">
+        <svg class="arrow-rounded" xmlns:xlink="http://www.w3.org/2000/svg">
+          <use xlink:href="./images/sprite.svg#arrow-rounded"></use>
+        </svg>
+        <p>
+          Vous êtes Agence Web ou Développeur et vous avez besoin d’une développeuse <span class="text-red">Front-end</span> freelance ? Je suis disponible pour des <span class="text-red">missions</span> de courte ou longue durée.
+        </p>
+
+      </div>
+      <p>
+        Vous êtes entrepreneur et avez besoin d’un site vitrine ? Je travaille avec une <span class="text-red">équipe de freelance</span> pour répondre à tous vos besoins afin de <span class="text-red">créer un site internet</span> qui vous ressemble.
+      </p>
+    </div>
+  </div>
+
+  <div class="cta">
 		<h2 class="cta__title">Vous êtes prêt ?</h2>
 		<p><span><a href="mailto:hello@sybrlab.com" rel="noopener noreferrer" target="_blank" id="email">Ecrivez-moi !</a></span></p>
 		<p><span><a href="tel:+33629426276" rel="noopener noreferrer" target="_blank">06 29 42 62 76</a></span></p>

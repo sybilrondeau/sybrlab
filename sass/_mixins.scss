@@ -1,5 +1,5 @@
 @mixin respond($breakpoint) {
-	@if $breakpoint ==deskBig {
+	@if $breakpoint == deskBig {
 		@media only screen and (min-width: 125em) { @content}; // >= 2000px
 	}
 	@if $breakpoint == desk {

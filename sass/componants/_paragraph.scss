@@ -1,0 +1,21 @@
+.about__paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50rem;
+  border-top: 2px solid var(--grey-dark);
+
+  p {
+    font-size: 2.618rem;
+    margin: 0 4.236rem 6.854rem;
+    padding: 1rem;
+    flex: 0 1 85%;
+  }
+
+  .arrow-rounded {
+    height: 6rem;
+    flex: 0 1 15%;
+    transform: rotate(60deg);
+    margin-right: -1rem;
+  }
+}

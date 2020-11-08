@@ -48,3 +48,4 @@ naviButtonBottom.addEventListener('click', (e) => {
     footTl.reverse();
   }
 });
+

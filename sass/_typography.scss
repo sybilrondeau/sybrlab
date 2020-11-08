@@ -35,19 +35,20 @@ h1 {
 
 h2 {
   font-family: 'Exo', sans-serif;
-  font-size: 4.236rem;
+  font-size: 6.854rem;
   font-variation-settings: 'wght' 900;
+  margin: 20rem 0 10rem;
 
   @include respond(deskBig) {
-    font-size: 4.236rem;
+    font-size: 6.854rem;
   }
 
   @include respond(tab) {
-    font-size: 4.236rem;
+    font-size: 6.854rem;
   }
 
   @include respond(phone) {
-    font-size: 4.236rem;
+    font-size: 6.854rem;
   }
 
 }
@@ -57,7 +58,6 @@ h3 {
 	font-size: 2.618rem;
 	font-variation-settings: 'wght' 600;
 	text-transform: uppercase;
-	margin-bottom: 2.618rem;
 
 	@include respond(deskBig) {
 		font-size: 2.618rem;
@@ -74,7 +74,7 @@ h3 {
 
 p {
 	font-family: 'Muli', sans-serif;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	font-weight: 400;
 	font-kerning: normal;
 	hyphens: none;
@@ -109,6 +109,7 @@ ul li {
 	font-family:  'Muli', sans-serif;
 	color: var(--grey-dark);
 	list-style: none;
+  font-size: 1.2rem;
 }
 
 a {

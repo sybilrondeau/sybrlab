@@ -38,6 +38,10 @@
       color: white;
       opacity: 0;
     }
+
+    li a {
+      color: white;
+    }
   }
 }
 
@@ -62,15 +66,18 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     li {
       display: inline;
-      padding: 0 0 0 2rem;
       svg {
         width: 2rem;
         height: 2rem;
         fill: var(--grey-dark);
+      }
+
+      svg:hover {
+        fill: var(--primary);
       }
     }
   }
@@ -80,7 +87,6 @@
   flex: 0 1 10%;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
 
   svg {
@@ -91,6 +97,13 @@
       visibility: hidden;
     }
   }
+}
+
+.navi__btn--top {
+  justify-content: flex-end;
+}
+.navi__btn--bottom {
+  justify-content: flex-start;
 }
 
 .open {

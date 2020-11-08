@@ -27,7 +27,7 @@ html {
 	position: absolute;
 	transform: translate(-50%, -50%);
 	pointer-events: none;
-	z-index: -20;
+	z-index: 0;
 	transition: transform .2s;
 
 	@media (any-pointer: none) {
@@ -38,6 +38,5 @@ html {
 
 .link-grow {
 	transform: scale(5) translate(-15%, -15%);
-	border: 1px solid white;
   animation: blob 3s linear infinite alternate;
 }
