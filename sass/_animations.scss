@@ -28,6 +28,24 @@
   }
 }
 
+@keyframes visibleText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fillWhite {
+   0% {
+    fill: var(--grey-dark);
+  }
+  100% {
+    fill: white;
+  }
+}
+
 
 // @keyframes fadeIn {
 // 	0% {
