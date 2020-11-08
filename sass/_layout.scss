@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 .navi-top {
@@ -74,10 +75,6 @@
         width: 2rem;
         height: 2rem;
         fill: var(--grey-dark);
-      }
-
-      svg:hover {
-        fill: var(--primary);
       }
     }
   }

@@ -8,34 +8,12 @@
 	flex-direction: column;
 	position: relative;
 
-	@include respond(phone) {
-		padding: 2rem;
-	}
-
 	h2 {
 		font-size: 6rem;
-		margin-bottom: 2rem;
+		margin: 0 0 2rem;
 	}
 
 	p {
 		font-size: 2.618rem;
 	}
-
-	svg {
-		position: absolute;
-		left: -10rem;
-		z-index: -30;
-
-		@include respond(phone) {
-			display: none;
-		}
-	}
-
-  // #legal {
-  // width: 100%;
-  // font-size: 1rem;
-  // text-align: center;
-  // position: absolute;
-  // bottom: 4rem;
-  // }
 }
