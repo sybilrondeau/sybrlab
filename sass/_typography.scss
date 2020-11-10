@@ -18,19 +18,6 @@ h1 {
 	font-family: 'Exo', sans-serif;
 	font-size: 6.854rem;
 	font-variation-settings: 'wght' 900;
-
-	@include respond(deskBig) {
-		font-size: 6.854rem;
-	}
-
-	@include respond(tab) {
-		font-size: 6.854rem;
-	}
-
-	@include respond(phone) {
-		font-size: 6.854rem;
-	}
-
 }
 
 h2 {
@@ -38,19 +25,6 @@ h2 {
   font-size: 6.854rem;
   font-variation-settings: 'wght' 900;
   margin: 20rem 0 10rem;
-
-  @include respond(deskBig) {
-    font-size: 6.854rem;
-  }
-
-  @include respond(tab) {
-    font-size: 6.854rem;
-  }
-
-  @include respond(phone) {
-    font-size: 6.854rem;
-  }
-
 }
 
 h3 {
@@ -58,18 +32,6 @@ h3 {
 	font-size: 2.618rem;
 	font-variation-settings: 'wght' 600;
 	text-transform: uppercase;
-
-	@include respond(deskBig) {
-		font-size: 2.618rem;
-	}
-
-	@include respond(tab) {
-	  font-size: 2.618rem;
-	}
-
-	@include respond(phone) {
-	  font-size: 2.618rem;
-	}
 }
 
 p {
@@ -79,18 +41,6 @@ p {
 	font-kerning: normal;
 	hyphens: none;
 	color: var(--grey-dark);
-
-	@include respond(deskBig) {
-		font-size: 2rem;
-	}
-}
-
-.big-text {
-  font-size: 2.618rem;
-}
-
-.little-text {
-  font-size: 1rem;
 }
 
 .text-red {
@@ -109,7 +59,7 @@ ul li {
 	font-family:  'Muli', sans-serif;
 	color: var(--grey-dark);
 	list-style: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 a {
