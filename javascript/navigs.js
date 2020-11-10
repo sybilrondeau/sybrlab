@@ -8,6 +8,7 @@ const naviButtonBottom = document.querySelector('.navi__btn--bottom');
 const naviP = document.querySelector('.navi__p');
 const naviNavLis = document.querySelectorAll('.navi__nav li');
 const naviLogo = document.querySelector('.logoLab');
+const naviLinks = document.querySelectorAll('.navi__links svg');
 
 MorphSVGPlugin.convertToPath("#circle-top");
 const navTl = gsap.timeline({ defaults: {duration: 1}, paused: true});
@@ -40,10 +41,16 @@ naviButtonBottom.addEventListener('click', (e) => {
     e.currentTarget.parentElement.classList.remove('close');
     e.currentTarget.parentElement.classList.add('open');
     naviP.classList.add('visibleText');
+    naviLinks.forEach(naviLink => {
+      naviLink.classList.add('fill-white');
+    });
     footTl.play();
   } else {
     e.currentTarget.parentElement.classList.remove('open');
     naviP.classList.remove('visibleText');
+    naviLinks.forEach(naviLink => {
+      naviLink.classList.remove('fill-white');
+    });
     e.currentTarget.parentElement.classList.add('close');
     footTl.reverse();
   }
