@@ -9,6 +9,7 @@ const naviP = document.querySelector('.navi__p');
 const naviNavLis = document.querySelectorAll('.navi__nav li');
 const naviLogo = document.querySelector('.logoLab');
 const naviLinks = document.querySelectorAll('.navi__links svg');
+const mouseCursor = document.querySelector(".cursor");
 
 MorphSVGPlugin.convertToPath("#circle-top");
 const navTl = gsap.timeline({ defaults: {duration: 1}, paused: true});
@@ -16,6 +17,12 @@ navTl.to("#circle-top", { morphSVG: "#close-btn-top"} );
 navTl.to("#circle-top", {attr: {fill: "#fff"}, duration: .1}, "<")
 
 naviButtonTop.addEventListener('click', (e) => {
+  // if (e.currentTarget.parentElement.style.backgroundPosition === "left top") {
+  //   e.currentTarget.parentElement.style.animation = "closeBckg 1s forwards";
+  //   naviNavLis.forEach(li => li.classList.add('visibleText'));
+  //   naviLogo.classList.add('fill-white');
+  //   navTl.play();
+  // }
   if (!e.currentTarget.parentElement.classList.contains('close')) {
     e.currentTarget.parentElement.classList.remove('open');
     e.currentTarget.parentElement.classList.add('close');
@@ -41,16 +48,12 @@ naviButtonBottom.addEventListener('click', (e) => {
     e.currentTarget.parentElement.classList.remove('close');
     e.currentTarget.parentElement.classList.add('open');
     naviP.classList.add('visibleText');
-    naviLinks.forEach(naviLink => {
-      naviLink.classList.add('fill-white');
-    });
+    naviLinks.forEach(naviLink => naviLink.classList.add('fill-white'));
     footTl.play();
   } else {
     e.currentTarget.parentElement.classList.remove('open');
     naviP.classList.remove('visibleText');
-    naviLinks.forEach(naviLink => {
-      naviLink.classList.remove('fill-white');
-    });
+    naviLinks.forEach(naviLink => naviLink.classList.remove('fill-white'));
     e.currentTarget.parentElement.classList.add('close');
     footTl.reverse();
   }

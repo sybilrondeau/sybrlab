@@ -27,7 +27,8 @@ html {
 	position: absolute;
 	transform: translate(-50%, -50%);
 	pointer-events: none;
-	z-index: 0;
+	z-index: -20;
+  opacity: 1;
 	transition: transform .2s;
 
 	@media (any-pointer: none) {

@@ -28,7 +28,7 @@ elementsHover.forEach(elementHover => {
 navigs.forEach(navig => {
   navig.addEventListener("mouseover", (e) => {
     mouseCursor.style.zIndex = "30";
-    mouseCursor.style.opacity = ".5";
+    mouseCursor.style.opacity = ".7";
   });
   navig.addEventListener("mouseleave", (e) => {
     mouseCursor.style.zIndex = "-20";
