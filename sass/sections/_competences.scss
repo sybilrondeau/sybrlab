@@ -1,26 +1,38 @@
 .competences-section {
-  width: 100%;
-  padding: 0 5%;
-  z-index: -30;
-}
 
-.competences {
-  width: 50%;
-  margin: 0 auto;
-  padding-top: 2rem;
-  border-top: 2px solid var(--grey-dark);
-  display: grid;
-  grid-template-columns: repeat(3, 8rem);
-  grid-template-rows: 1fr;
-  grid-gap: 4rem;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
+  .competences {
+    width: 50rem;
+    margin: 20rem auto 0;
+    padding-top: 2rem;
+    border-top: 2px solid var(--grey-dark);
+    display: grid;
+    grid-template-columns: repeat(3, 8rem);
+    grid-template-rows: 1fr;
+    grid-gap: 8rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    @include respond(tab) {
+      grid-gap: 6.4rem;
+    }
+
+    @include respond(phone) {
+      grid-gap: 5.12rem;
+      width: 100%;
+    }
 
 
-  &__item svg {
-    width: 7rem;
-    height: 7rem;
-    filter: grayscale(100%);
+    &__item svg {
+      width: 10rem;
+      height: 10rem;
+      filter: grayscale(100%);
+
+      @include respond(tab) {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
   }
 }
+

@@ -1,50 +1,40 @@
 .portfolio-section {
-  width: 100%;
-  padding: 0 5%;
-}
 
+  .portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.portfolio {
-    display: grid;
-    grid-gap: 6rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: "item01 ."
-                          ". item02"
-                          "item03 ."
-                          ". item04";
-
-    @include respond(tab) {
-      grid-template-columns: 1fr;
-      grid-template-areas: "item01"
-                           "item02"
-                           "item03"
-                           "item04";
+    @include respond(phone) {
+      width: 100%;
     }
 
+
     &__item01 {
-      grid-area: item01;
+      margin-right: 20rem;
 
       .portfolio__item--image01 {
         background-image: url("./images/sybrlab-650.jpg");
       }
     }
      &__item02 {
-      grid-area: item02;
+      margin-left: 20rem;
 
       .portfolio__item--image02 {
         background-image: url("./images/amime-650.jpg");
       }
     }
      &__item03 {
-      grid-area: item03;
+      margin-right: 20rem;
 
       .portfolio__item--image03 {
         background-image: url("./images/wssa-650.jpg");
       }
     }
      &__item04 {
-      grid-area: item04;
+      margin-left: 20rem;
 
       .portfolio__item--image04 {
         background-image: url("./images/sgpa-650.jpg");
@@ -52,6 +42,12 @@
     }
 
     &__item {
+      max-width: 50rem;
+      margin-bottom: 20rem;
+
+      @include respond(tab) {
+        margin: 0 0 10rem;
+      }
 
       &--image {
         background-cover: cover;
@@ -78,7 +74,14 @@
         svg {
           width: 6rem;
           height: 4rem;
-          transform: rotate(180deg);
+        }
+
+        a {
+          fill: var(--primary);
+        }
+
+        a:hover svg {
+          animation: arrowScale 1s forwards;
         }
       }
 
@@ -87,11 +90,8 @@
         display: flex;
         justify-content: space-between;
       }
-
-      &--description {
-
-      }
     }
+  }
 }
 
 

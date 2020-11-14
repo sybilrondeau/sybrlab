@@ -17,12 +17,6 @@ navTl.to("#circle-top", { morphSVG: "#close-btn-top"} );
 navTl.to("#circle-top", {attr: {fill: "#fff"}, duration: .1}, "<")
 
 infoButtonTop.addEventListener('click', (e) => {
-  // if (e.currentTarget.parentElement.style.backgroundPosition === "left top") {
-  //   e.currentTarget.parentElement.style.animation = "closeBckg 1s forwards";
-  //   infoNavLis.forEach(li => li.classList.add('visibleText'));
-  //   infoLogo.classList.add('fill-white');
-  //   navTl.play();
-  // }
   if (!e.currentTarget.parentElement.classList.contains('close')) {
     e.currentTarget.parentElement.classList.remove('open');
     e.currentTarget.parentElement.classList.add('close');

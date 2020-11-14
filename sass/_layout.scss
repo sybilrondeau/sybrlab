@@ -1,18 +1,27 @@
 .info {
   width: 100%;
-  height: 8rem;
   position: fixed;
-  padding: 0 5%;
+  padding: 0 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 10;
 
+  @include respond(phone) {
+    padding: 0 2rem;
+  }
+
   &.info-top {
     top: 0;
+    height: 8rem;
     background: linear-gradient(to right, transparent 50%, var(--grey-dark) 50%);
     background-size: 200%;
     background-position: top left;
+
+    @include respond(tab) {
+    padding: 0 2rem;
+    height: 20rem;
+    }
 
     .info__logo {
       height: 100%;
@@ -20,6 +29,10 @@
       .logoLab {
         width: 6rem;
         height: 8rem;
+      }
+
+      .logoLab:hover {
+        fill: var(--primary);
       }
     }
 
@@ -29,9 +42,9 @@
       align-items: center;
       justify-content: center;
 
-      @include respond(tabSmall) {
+      @include respond(tab) {
           flex-direction: column;
-        }
+      }
 
       li {
         padding: 0 0 0 2rem;
@@ -39,10 +52,20 @@
         color: white;
         opacity: 0;
         text-transform: uppercase;
+
+        @include respond(tab) {
+          padding: 2rem 0 0rem 0;
+        }
       }
 
       li a {
         color: white;
+      }
+
+      li:last-child {
+        @include respond(tab) {
+          margin: 0rem 0 2rem 0;
+        }
       }
     }
   }
@@ -53,11 +76,13 @@
     background: linear-gradient(to right, var(--grey-dark) 50%, transparent 50%);
     background-size: 200%;
     background-position: top right;
+    height: 8rem;
 
     .info__p {
-      flex: 0 1 80%;
+      flex: 0 1 85%;
       height: 100%;
-      font-size: 1.2rem;
+      padding: 2rem;
+      font-size: 1rem;
       display: flex;
       align-items: center;
       color: white;
@@ -65,7 +90,7 @@
     }
 
     .info__links {
-      flex: 0 1 10%;
+      flex: 0 1 10rem;
       height: 100%;
       display: flex;
       align-items: center;
@@ -85,7 +110,6 @@
   .info__btn {
     height: 100%;
     display: flex;
-    align-items: center;
 
     svg {
       width: 2rem;
@@ -98,12 +122,18 @@
   }
 }
 
-
 .info__btn--top {
   justify-content: flex-end;
+  align-items: center;
+
+  @include respond(tab) {
+    align-items: flex-start;
+    margin-top: 6rem;
+  }
 }
 .info__btn--bottom {
   justify-content: flex-start;
+  align-items: center;
 }
 
 .open {
@@ -119,4 +149,18 @@
 
 .fill-white {
   animation: fillWhite 1s forwards;
+}
+// config globale des sections
+.layout-global {
+  width: 100%;
+  padding: 0 12rem 0 12rem;
+  margin-bottom: 30rem;
+
+  @include respond(tab) {
+    padding: 0 6rem 0 6rem;
+  }
+
+  @include respond(phone) {
+    padding: 0 2rem 0 2rem;
+  }
 }
