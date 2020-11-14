@@ -1,15 +1,14 @@
 .paragraph {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
-  width: 60rem;
+  width: 50rem;
   border-top: 2px solid var(--grey-dark);
   margin-bottom: 6rem;
 
   p {
     font-size: 2.618rem;
-    margin: 0 4.236rem 6.854rem;
-    padding-top: 3rem;
+    padding: 2rem 0 2rem 2rem;
     flex: 0 1 85%;
   }
 

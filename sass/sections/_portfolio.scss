@@ -1,18 +1,26 @@
 .portfolio-section {
-  width: 100vw;
-  padding: 0 20rem;
+  width: 100%;
+  padding: 0 5%;
 }
 
 
 .portfolio {
     display: grid;
     grid-gap: 6rem;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: "item01 ."
                           ". item02"
                           "item03 ."
                           ". item04";
+
+    @include respond(tab) {
+      grid-template-columns: 1fr;
+      grid-template-areas: "item01"
+                           "item02"
+                           "item03"
+                           "item04";
+    }
 
     &__item01 {
       grid-area: item01;

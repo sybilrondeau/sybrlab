@@ -1,7 +1,7 @@
 const mouseCursor = document.querySelector(".cursor");
 const links = document.querySelectorAll("a");
-const circles = document.querySelectorAll('.navi__btn');
-const navigs = document.querySelectorAll('.navi');
+const circles = document.querySelectorAll('.info__btn');
+const infogs = document.querySelectorAll('.info');
 
 // custom cursor
 window.addEventListener("mousemove", e => {
@@ -23,14 +23,14 @@ elementsHover.forEach(elementHover => {
   })
 });
 
-// cursor transparent on navigs.
+// cursor transparent on infogs.
 
-navigs.forEach(navig => {
-  navig.addEventListener("mouseover", (e) => {
+infogs.forEach(infog => {
+  infog.addEventListener("mouseover", (e) => {
     mouseCursor.style.zIndex = "30";
     mouseCursor.style.opacity = ".7";
   });
-  navig.addEventListener("mouseleave", (e) => {
+  infog.addEventListener("mouseleave", (e) => {
     mouseCursor.style.zIndex = "-20";
     mouseCursor.style.opacity = "1";
   });
