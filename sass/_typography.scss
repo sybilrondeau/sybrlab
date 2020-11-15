@@ -53,15 +53,11 @@ p {
 	font-kerning: normal;
 	hyphens: none;
 	color: var(--grey-dark);
+  line-height: 1.618;
 }
 
 strong {
   color: black;
-}
-
-.text-red {
-  color: black;
-  font-weight: 800;
   display: inline-block;
 }
 
@@ -77,6 +73,7 @@ ul li {
 	color: var(--grey-dark);
 	list-style: none;
   font-size: 1.2944rem;
+  line-height: 1.618;
 }
 
 a {
@@ -87,5 +84,6 @@ a {
 
 a:hover {
   cursor: none;
+  text-decoration: underline;
 }
 

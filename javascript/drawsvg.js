@@ -12,7 +12,7 @@ gsap.from(".draw-camera", {
 	scrollTrigger: {
 		trigger: ".camera-paragraph",
 		start: "top 80%",
-		toggleActions: "play none none reset",
+		toggleActions: "play none none reverse",
 	},
 	duration: 6,
 	drawSVG: "50% 50%"

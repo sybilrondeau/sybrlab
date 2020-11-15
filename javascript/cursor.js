@@ -1,7 +1,4 @@
 const mouseCursor = document.querySelector(".cursor");
-const links = document.querySelectorAll(".body-link");
-const circles = document.querySelectorAll('.info__btn');
-const infogs = document.querySelectorAll('.info');
 
 // custom cursor
 window.addEventListener("mousemove", e => {
@@ -10,11 +7,9 @@ window.addEventListener("mousemove", e => {
 });
 
 // hover on links and circles.
-// const elementsHover = new Array(links, circles);
-
+const links = document.querySelectorAll(".body-link");
 // elementsHover.forEach(elementHover => {
   links.forEach(element => {
-    console.log(element.parentElement);
     element.addEventListener("mouseleave", (e) => {
       mouseCursor.classList.remove("link-grow");
     });
@@ -25,6 +20,7 @@ window.addEventListener("mousemove", e => {
 // });
 
 // cursor transparent on infogs.
+const infogs = document.querySelectorAll('.info');
 
 infogs.forEach(infog => {
   infog.addEventListener("mouseleave", (e) => {
@@ -36,3 +32,17 @@ infogs.forEach(infog => {
     mouseCursor.classList.add("info-grow");
   });
 });
+
+// cursor on menu list
+// const menuList = document.querySelectorAll('.info__nav li');
+
+// menuList.forEach(menuItem => {
+//   menuItem.addEventListener("mouseleave", (e) => {
+//     mouseCursor.style.height = "2rem";
+//     mouseCursor.style.width = "2rem";
+//   });
+//   menuItem.addEventListener("mouseover", (e) => {
+//     mouseCursor.style.height = ".5rem";
+//     mouseCursor.style.width = ".5rem";
+//   });
+// });

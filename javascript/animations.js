@@ -30,9 +30,6 @@ const portfolioItems = document.querySelectorAll(".portfolio__item");
 
 portfolioItems.forEach(portfolio => {
   const portfolioElements = portfolio.querySelectorAll('.portfolio__item--image, .portfolio__item--title, .portfolio__item--credits, .portfolio__item--description');
-  // const portfolioTitle = document.querySelector('.portfolio__item--title');
-  // const portfolioCredit = document.querySelector('.portfolio__item--credits');
-  // const PortfolioDescription = document.querySelector('.portfolio__item--description');
 
   gsap.from(portfolioElements, {
     scrollTrigger: {
@@ -60,7 +57,7 @@ const competencesItems = document.querySelectorAll('.competences__item');
     opacity: 0,
     duration: 1,
     stagger: {
-      each: .2,
+      each: .4,
       grid: "auto",
     }
   });

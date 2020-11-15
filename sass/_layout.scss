@@ -1,3 +1,19 @@
+// config globale des sections
+.layout-global {
+  width: 100%;
+  padding: 0 12rem 0 12rem;
+  margin-bottom: 30rem;
+
+  @include respond(tab) {
+    padding: 0 6rem 0 6rem;
+  }
+
+  @include respond(phone) {
+    padding: 0 2rem 0 2rem;
+  }
+}
+
+// config des bandeaux sup et inf
 .info {
   width: 100%;
   position: fixed;
@@ -62,6 +78,10 @@
         color: white;
       }
 
+      li a:hover {
+        text-decoration: none;
+      }
+
       li:last-child {
         @include respond(tab) {
           margin: 0rem 0 2rem 0;
@@ -104,6 +124,10 @@
           fill: var(--grey-dark);
         }
       }
+
+      li:hover svg {
+        fill: var(--primary);
+      }
     }
   }
 
@@ -119,6 +143,10 @@
         visibility: hidden;
       }
     }
+  }
+
+  .info__btn:hover svg {
+    fill: white;
   }
 }
 
@@ -149,18 +177,4 @@
 
 .fill-white {
   animation: fillWhite 1s forwards;
-}
-// config globale des sections
-.layout-global {
-  width: 100%;
-  padding: 0 12rem 0 12rem;
-  margin-bottom: 30rem;
-
-  @include respond(tab) {
-    padding: 0 6rem 0 6rem;
-  }
-
-  @include respond(phone) {
-    padding: 0 2rem 0 2rem;
-  }
 }
