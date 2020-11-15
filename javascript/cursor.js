@@ -6,7 +6,7 @@ window.addEventListener("mousemove", e => {
 	mouseCursor.style.left = (e.pageX) + "px";
 });
 
-// hover on links and circles.
+// hover on links
 const links = document.querySelectorAll(".body-link");
 // elementsHover.forEach(elementHover => {
   links.forEach(element => {
@@ -20,14 +20,14 @@ const links = document.querySelectorAll(".body-link");
 // });
 
 // cursor transparent on infogs.
-const infogs = document.querySelectorAll('.info');
+const infos = document.querySelectorAll('.info');
 
-infogs.forEach(infog => {
-  infog.addEventListener("mouseleave", (e) => {
+infos.forEach(info => {
+  info.addEventListener("mouseleave", (e) => {
     mouseCursor.style.zIndex = "-20";
     mouseCursor.classList.remove("info-grow");
   });
-  infog.addEventListener("mouseover", (e) => {
+  info.addEventListener("mouseover", (e) => {
     mouseCursor.style.zIndex = "30";
     mouseCursor.classList.add("info-grow");
   });
