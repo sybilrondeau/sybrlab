@@ -7,6 +7,10 @@
 
   .portrait-svg {
     flex: 0 1 40rem;
+
+    @include respond(phone) {
+      flex: 0 1 30rem;
+    }
   }
 
 	h1 {

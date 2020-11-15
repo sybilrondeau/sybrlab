@@ -9,7 +9,7 @@
   }
 
   @include respond(phone) {
-    padding: 0 2rem 0 2rem;
+    padding: 0 4rem 0 4rem;
   }
 }
 
@@ -18,16 +18,18 @@
   width: 100%;
   position: fixed;
   padding: 0 6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  justify-content: center; // aligne la grille dans le document
+  align-items: center; // aligne les élements dans chaque cellule
   z-index: 10;
 
-  @include respond(phone) {
-    padding: 0 2rem;
+  @include respond(tab) {
+    padding: 0 2rem 0;
   }
 
   &.info-top {
+    grid-template-columns: 6rem 1fr 2rem;
+    grid-template-areas: "logo menu circleTop";
     top: 0;
     height: 8rem;
     background: linear-gradient(to right, transparent 50%, var(--grey-dark) 50%);
@@ -35,16 +37,22 @@
     background-position: top left;
 
     @include respond(tab) {
-    padding: 0 2rem;
-    height: 20rem;
+      height: 20rem;
     }
 
     .info__logo {
+      grid-area: logo;
       height: 100%;
 
       .logoLab {
         width: 6rem;
         height: 8rem;
+
+        @include respond(phone) {
+          width: 4rem;
+          height: 8rem;
+          fill: var(--backg);
+        }
       }
 
       .logoLab:hover {
@@ -53,6 +61,7 @@
     }
 
     .info__nav {
+      grid-area: menu;
       height: 100%;
       display: flex;
       align-items: center;
@@ -63,14 +72,15 @@
       }
 
       li {
-        padding: 0 0 0 2rem;
+        text-align: center;
+        padding: 0 0 0 4rem;
         font-size: 1.4rem;
         color: white;
         opacity: 0;
         text-transform: uppercase;
 
         @include respond(tab) {
-          padding: 2rem 0 0rem 0;
+          padding: 1rem 0 0rem 0;
         }
       }
 
@@ -92,36 +102,61 @@
 
 
   &.info-bottom {
+    grid-template-columns: 2rem 1fr 16rem;
+    grid-template-areas: "circleBottom paragraph links";
     bottom: 0;
     background: linear-gradient(to right, var(--grey-dark) 50%, transparent 50%);
     background-size: 200%;
     background-position: top right;
     height: 8rem;
 
+    @include respond(phone) {
+      grid-template-columns: 4rem 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "circleBottom paragraph"
+                          "links links";
+      height: 15rem;
+      padding: 0;
+    }
+
     .info__p {
-      flex: 0 1 85%;
-      height: 100%;
-      padding: 2rem;
+      grid-area: paragraph;
+      padding: 0 2rem;
       font-size: 1rem;
       display: flex;
       align-items: center;
       color: white;
       opacity: 0;
+
+      @include respond(phone) {
+        padding: 0 1rem;
+      }
     }
 
     .info__links {
-      flex: 0 1 10rem;
+      grid-area: links;
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
+
+      @include respond(phone) {
+        justify-content: center;
+        padding: 1rem 0;
+        background-color: var(--grey-dark);
+      }
 
       li {
         display: inline;
+        padding: 0 0 0 4rem;
         svg {
           width: 2rem;
           height: 2rem;
           fill: var(--grey-dark);
+
+          @include respond(phone) {
+            fill: white;
+          }
         }
       }
 
@@ -139,6 +174,11 @@
       width: 2rem;
       height: 2rem;
 
+      @include respond(phone) {
+        width: 1.5rem;
+        height: 6rem;
+      }
+
       .close-btn {
         visibility: hidden;
       }
@@ -153,15 +193,29 @@
 .info__btn--top {
   justify-content: flex-end;
   align-items: center;
+  grid-area: circleTop;
 
   @include respond(tab) {
     align-items: flex-start;
     margin-top: 6rem;
   }
+  @include respond(phone) {
+    margin-top: 2rem;
+  }
 }
 .info__btn--bottom {
   justify-content: flex-start;
   align-items: center;
+  grid-area: circleBottom;
+
+  @include respond(tab) {
+    align-items: flex-end;
+    margin-bottom: 6rem;
+  }
+  @include respond(phone) {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 }
 
 .open {

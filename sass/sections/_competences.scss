@@ -18,7 +18,7 @@
     }
 
     @include respond(phone) {
-      grid-gap: 5.12rem;
+      grid-gap: 2rem;
       width: 100%;
     }
 
@@ -31,6 +31,10 @@
       @include respond(tab) {
         width: 8rem;
         height: 8rem;
+      }
+      @include respond(phone) {
+        width: 6rem;
+        height: 6rem;
       }
     }
   }

@@ -34,15 +34,13 @@ infogs.forEach(infog => {
 });
 
 // cursor on menu list
-// const menuList = document.querySelectorAll('.info__nav li');
+const menuList = document.querySelectorAll('.info__nav li');
 
-// menuList.forEach(menuItem => {
-//   menuItem.addEventListener("mouseleave", (e) => {
-//     mouseCursor.style.height = "2rem";
-//     mouseCursor.style.width = "2rem";
-//   });
-//   menuItem.addEventListener("mouseover", (e) => {
-//     mouseCursor.style.height = ".5rem";
-//     mouseCursor.style.width = ".5rem";
-//   });
-// });
+menuList.forEach(menuItem => {
+  menuItem.addEventListener("mouseleave", (e) => {
+    mouseCursor.style.opacity = "1";
+  });
+  menuItem.addEventListener("mouseover", (e) => {
+    mouseCursor.style.opacity = ".4";
+  });
+});

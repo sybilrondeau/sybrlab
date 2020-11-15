@@ -22,6 +22,9 @@ h1 {
   @include respond(tab) {
     font-size: 5.4832rem;
   }
+  @include respond(phone) {
+    font-size: 4.236rem;
+  }
 }
 
 h2 {
@@ -36,6 +39,11 @@ h2 {
 
   @include respond(tab) {
     font-size: 5.4832rem;
+    text-align: center;
+  }
+  @include respond(phone) {
+    font-size: 4rem;
+    margin: 0 0 10rem 0;
   }
 }
 
