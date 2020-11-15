@@ -38,13 +38,13 @@ html {
 }
 
 .link-grow {
-	transform: scale(6) translate(-15%, -15%);
+	transform: scale(6) translate(-10%, -10%);
   animation: blob 3s linear infinite alternate;
 }
 
 .info-grow {
   background-color: transparent;
-  transform: scale(2.5);
+  transform: scale(2.5) translate(-20%, -20%);
   animation: blob 3s linear infinite alternate;
 }
 
