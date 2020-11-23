@@ -11,10 +11,10 @@ const infoLogo = document.querySelector('.logoLab');
 const infoLinks = document.querySelectorAll('.info__links svg');
 const mouseCursor = document.querySelector(".cursor");
 
-MorphSVGPlugin.convertToPath("#circle-top");
+MorphSVGPlugin.convertToPath(".circle-top");
 const navTl = gsap.timeline({ defaults: {duration: 1}, paused: true});
-navTl.to("#circle-top", { morphSVG: "#close-btn-top"} );
-navTl.to("#circle-top", {attr: {fill: "#fff"}, duration: .1}, "<")
+navTl.to(".circle-top", { morphSVG: ".close-btn-top"} );
+navTl.to(".circle-top", {attr: {fill: "#fff"}, duration: .1}, "<")
 
 infoButtonTop.addEventListener('click', (e) => {
   if (!e.currentTarget.parentElement.classList.contains('close')) {
@@ -32,10 +32,10 @@ infoButtonTop.addEventListener('click', (e) => {
   }
 });
 
-MorphSVGPlugin.convertToPath("#circle-bottom");
+MorphSVGPlugin.convertToPath(".circle-bottom");
 const footTl = gsap.timeline({ defaults: {duration: 1}, paused: true});
-footTl.to("#circle-bottom", { morphSVG: "#close-btn-bottom"} );
-footTl.to("#circle-bottom", {attr: {fill: "#fff"}, duration: .1}, "<")
+footTl.to(".circle-bottom", { morphSVG: ".close-btn-bottom"} );
+footTl.to(".circle-bottom", {attr: {fill: "#fff"}, duration: .1}, "<")
 
 infoButtonBottom.addEventListener('click', (e) => {
   if (!e.currentTarget.parentElement.classList.contains('open')) {

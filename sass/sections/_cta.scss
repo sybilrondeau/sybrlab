@@ -20,4 +20,8 @@
   #email {
     font-size: 4.236rem;
   }
+
+  a:hover {
+    animation: underlineA .3s forwards;
+  }
 }

@@ -92,8 +92,13 @@ a {
   font-weight: 800;
 }
 
-a:hover {
+a:after {
+  content: "";
+}
+
+a:hover:after {
   cursor: none;
   text-decoration: none;
 }
+
 
