@@ -1,5 +1,9 @@
 .portfolio-section {
 
+  h2 {
+    text-align: center;
+  }
+
   .portfolio {
     width: 100%;
     display: flex;
@@ -13,28 +17,28 @@
 
 
     &__item01 {
-      margin-right: 20rem;
+      margin-right: 25.89rem;
 
       .portfolio__item--image01 {
         background-image: url("./images/sybrlab-650.jpg");
       }
     }
      &__item02 {
-      margin-left: 20rem;
+      margin-left: 25.89rem;
 
       .portfolio__item--image02 {
         background-image: url("./images/amime-650.jpg");
       }
     }
      &__item03 {
-      margin-right: 20rem;
+      margin-right: 25.89rem;
 
       .portfolio__item--image03 {
         background-image: url("./images/wssa-650.jpg");
       }
     }
      &__item04 {
-      margin-left: 20rem;
+      margin-left: 25.89rem;
 
       .portfolio__item--image04 {
         background-image: url("./images/sgpa-650.jpg");
@@ -43,7 +47,6 @@
 
     &__item {
       max-width: 50rem;
-      margin-bottom: 20rem;
 
       @include respond(tab) {
         margin: 0 0 10rem;
@@ -94,6 +97,10 @@
           text-align: right;
         }
       }
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 20rem;
     }
   }
 }

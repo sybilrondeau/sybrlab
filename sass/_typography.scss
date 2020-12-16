@@ -16,40 +16,37 @@
 
 h1 {
 	font-family: 'Exo', sans-serif;
-	font-size: 6.854rem;
+	font-size: 6.778rem;
 	font-variation-settings: 'wght' 900;
 
   @include respond(tab) {
-    font-size: 5.4832rem;
   }
   @include respond(phone) {
-    font-size: 4.236rem;
   }
 }
 
 h2 {
   font-family: 'Exo', sans-serif;
-  font-size: 6.854rem;
+  font-size: 4.189rem;
   font-variation-settings: 'wght' 900;
   margin: 0 0 10rem 2rem;
+  text-transform: uppercase;
 
   @include respond(bigDesk) {
     margin: 0 0 10rem 10rem;
   }
 
   @include respond(tab) {
-    font-size: 5.4832rem;
     text-align: center;
   }
   @include respond(phone) {
-    font-size: 4rem;
     margin: 0 0 10rem 0;
   }
 }
 
 h3 {
 	font-family: 'Exo', sans-serif;
-	font-size: 2.618rem;
+	font-size: 2.589rem;
 	font-variation-settings: 'wght' 600;
 	text-transform: uppercase;
 }
@@ -82,7 +79,7 @@ ul li {
 	font-family:  'Muli', sans-serif;
 	color: var(--grey-dark);
 	list-style: none;
-  font-size: 1.2944rem;
+  font-size: 1.2rem;
   line-height: 1.618;
 }
 

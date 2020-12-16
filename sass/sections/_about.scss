@@ -1,19 +1,23 @@
 .about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   @include respond(phone) {
       width: 100%;
     }
 
-  svg {
-    width: 10rem;
-    height: 10rem;
-    fill: var(--backg);
-    stroke: var(--grey-dark);
-    stroke-width: 10;
+  h2 {
+    text-align: center;
+  }
+
+  .paragraph {
+    width: 25.89rem;
+
+    svg {
+      width: 5rem;
+      height: 5rem;
+      fill: var(--backg);
+      stroke: var(--grey-dark);
+      stroke-width: 15;
+    }
   }
 }
 

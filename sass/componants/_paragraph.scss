@@ -1,29 +1,29 @@
-.paragraph {
+.paragraphes {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
-  width: 50rem;
-  border-top: 2px solid var(--grey-dark);
-  margin-bottom: 15rem;
+  flex-wrap: wrap;
 
-  @include respond(phone) {
-      width: 100%;
-  }
+  .paragraph {
 
-  p {
-    font-size: 2.618rem;
-    padding: 2rem 0 2rem 2rem;
-    flex: 0 1 85%;
-
-    @include respond(tab) {
-      font-size: 2.0944rem;
+    .paragraph__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0 1.2rem;
     }
-  }
 
-  .arrow-rounded {
-    height: 6rem;
-    flex: 0 1 15%;
-    transform: rotate(60deg);
-    margin-right: -1rem;
+    .paragraph__text {
+      border-top: 2px solid var(--grey-dark);
+      margin: 1rem 1rem 4rem;
+
+
+      @include respond(phone) {
+          width: 100%;
+      }
+
+      p {
+        padding: 2rem 0;
+      }
+    }
   }
 }
