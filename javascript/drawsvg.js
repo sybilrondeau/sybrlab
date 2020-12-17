@@ -7,12 +7,12 @@ gsap.registerPlugin(DrawSVGPlugin, ScrollTrigger);
 // draw portrait at page load
 gsap.from(".draw-portrait", { duration: 6, drawSVG: "50% 50%" });
 
-// draw camera when visible on page
-gsap.from(".draw-camera", {
+// draw svg when visible on page
+gsap.from(".draw-svg", {
 	scrollTrigger: {
-		trigger: ".camera-paragraph",
+		trigger: ".about .paragraph__title",
 		start: "top 80%",
-		toggleActions: "play none none reverse",
+		toggleActions: "play none none reverse"
 	},
 	duration: 6,
 	drawSVG: "50% 50%"

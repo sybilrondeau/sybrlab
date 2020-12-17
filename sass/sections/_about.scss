@@ -8,15 +8,20 @@
     text-align: center;
   }
 
-  .paragraph {
-    width: 25.89rem;
+  .paragraphes {
+    width: 102.4rem;
+    margin: 0 auto;
 
-    svg {
-      width: 5rem;
-      height: 5rem;
-      fill: var(--backg);
-      stroke: var(--grey-dark);
-      stroke-width: 15;
+    .paragraph {
+      width: 25.89rem;
+
+      svg {
+        width: 5rem;
+        height: 5rem;
+        fill: var(--backg);
+        stroke: var(--grey-dark);
+        stroke-width: 15;
+      }
     }
   }
 }
