@@ -16,14 +16,24 @@
 
 h1 {
 	font-family: 'Exo', sans-serif;
-	font-size: 6.778rem;
+	font-size: calc( var(--h1-font-size-min) * 1em );
 	font-variation-settings: 'wght' 900;
-
-  @include respond(tab) {
-  }
-  @include respond(phone) {
-  }
 }
+
+h1 {
+font-size: calc( var(--h1-font-size-min) * 1em );
+}
+@media screen and (min-width: 24.15em) {
+h1 {
+font-size: calc(( var(--h1-font-size-min) * 1em ) +
+( var(--h1-font-size-max) - var(--h1-font-size-min) ) *
+((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge)
+- var(--bp-small) )));
+}}
+@media screen and (min-width: 75em) {
+h1 {
+font-size: calc( var(—h1-font-size-max) * 1em );
+}}
 
 h2 {
   font-family: 'Exo', sans-serif;
