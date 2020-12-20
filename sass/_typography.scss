@@ -16,48 +16,30 @@
 
 h1 {
 	font-family: 'Exo', sans-serif;
-	font-size: calc( var(--h1-font-size-min) * 1em );
 	font-variation-settings: 'wght' 900;
+  --minFontSize: 4.236rem;
+  --maxFontSize: 6.854rem;
 }
-
-h1 {
-font-size: calc( var(--h1-font-size-min) * 1em );
-}
-@media screen and (min-width: 24.15em) {
-h1 {
-font-size: calc(( var(--h1-font-size-min) * 1em ) +
-( var(--h1-font-size-max) - var(--h1-font-size-min) ) *
-((100vw - ( var(--bp-small) * 1em )) / ( var(--bp-xlarge)
-- var(--bp-small) )));
-}}
-@media screen and (min-width: 75em) {
-h1 {
-font-size: calc( var(—h1-font-size-max) * 1em );
-}}
 
 h2 {
   font-family: 'Exo', sans-serif;
-  font-size: 4.189rem;
   font-variation-settings: 'wght' 900;
-  margin: 0 0 10rem;
+  margin: 30rem 0 10rem;
   text-transform: uppercase;
-
-  @include respond(bigDesk) {
-    margin: 0 0 10rem;
-  }
-
-  @include respond(tab) {
-    text-align: center;
-  }
-  @include respond(phone) {
-    margin: 0 0 10rem 0;
-  }
+  --minFontSize: 2.618rem;
+  --maxFontSize: 4.236rem;
 }
 
 h3 {
 	font-family: 'Exo', sans-serif;
-	font-size: 2.589rem;
 	font-variation-settings: 'wght' 600;
+	--minFontSize: 1.618rem;
+  --maxFontSize: 2.618rem;
+}
+
+h1, h2, h3 {
+  --scaler: 10vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
 
 p {
@@ -69,7 +51,7 @@ p {
 	color: var(--grey-dark);
   line-height: 1.618;
   margin-bottom: 1rem;
-  text-align: justify;
+  // text-align: justify;
 }
 
 strong {

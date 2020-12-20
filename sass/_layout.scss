@@ -1,16 +1,8 @@
 // config globale des sections
-.layout-global {
-  width: 100%;
-  padding: 0 12rem 0 12rem;
-  margin-bottom: 30rem;
-
-  @include respond(tab) {
-    padding: 0 6rem 0 6rem;
-  }
-
-  @include respond(phone) {
-    padding: 0 4rem 0 4rem;
-  }
+main {
+  width: 102.4rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 // config des bandeaux sup et inf

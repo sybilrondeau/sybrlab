@@ -5,12 +5,6 @@
   }
 
   .contact {
-    width: 102.4rem;
-    margin: 0 auto;
-
-    @include respond(phone) {
-        width: 100%;
-    }
 
     .paragraph {
     width: 41.89rem;

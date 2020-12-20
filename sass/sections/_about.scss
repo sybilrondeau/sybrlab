@@ -1,19 +1,14 @@
 .about {
-
-  @include respond(phone) {
-      width: 100%;
-    }
+  width: 100%;
 
   h2 {
     text-align: center;
   }
 
   .paragraphes {
-    width: 102.4rem;
-    margin: 0 auto;
 
     .paragraph {
-      width: 25.89rem;
+      flex: 0 1 25.89rem;
 
       svg {
         width: 5rem;
