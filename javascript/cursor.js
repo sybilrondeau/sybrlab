@@ -19,15 +19,15 @@ const links = document.querySelectorAll(".body-link");
   })
 // });
 
-// cursor transparent on infogs.
-const infos = document.querySelectorAll('.info');
+// cursor transparent on buttons.
+const infoButtons = document.querySelectorAll('.info__btn');
 
-infos.forEach(info => {
-  info.addEventListener("mouseleave", (e) => {
+infoButtons.forEach(infoButton => {
+  infoButton.addEventListener("mouseleave", (e) => {
     mouseCursor.style.zIndex = "-20";
     mouseCursor.classList.remove("info-grow");
   });
-  info.addEventListener("mouseover", (e) => {
+  infoButton.addEventListener("mouseover", (e) => {
     mouseCursor.style.zIndex = "30";
     mouseCursor.classList.add("info-grow");
   });
