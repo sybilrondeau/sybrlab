@@ -93,6 +93,10 @@
         display: flex;
         justify-content: space-between;
 
+        .credits-makers {
+          padding-right: 1rem;
+        }
+
         .credits-tech {
           text-align: right;
         }

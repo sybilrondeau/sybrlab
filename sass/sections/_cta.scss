@@ -14,12 +14,14 @@
 		margin: 0 0 2rem;
 	}
 
-	p {
-		font-size: 2.618rem;
-	}
-
   #email {
-    font-size: 4.236rem;
+    --minFontSize: 2.618rem;
+    --maxFontSize: 4.236rem;
+  }
+
+  #tel {
+    --minFontSize: 1.618rem;
+    --maxFontSize: 2.618rem;
   }
 
   a:hover {
