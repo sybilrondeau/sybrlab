@@ -9,13 +9,18 @@
     flex: 0 1 40rem;
 
     @include respond(phone) {
-      flex: 0 1 30rem;
+      flex: 0 1 35rem;
     }
   }
 
 	h1 {
 		text-align: center;
     flex: 0 1 75rem;
+
+    @include respond(phone) {
+      margin-top: -10rem;
+    }
 	}
 }
+
 

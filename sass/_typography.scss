@@ -17,7 +17,7 @@
 h1 {
 	font-family: 'Exo', sans-serif;
 	font-variation-settings: 'wght' 900;
-  --minFontSize: 4.236rem;
+  --minFontSize: 2.618rem;
   --maxFontSize: 6.854rem;
 }
 
@@ -28,6 +28,10 @@ h2 {
   text-transform: uppercase;
   --minFontSize: 2.618rem;
   --maxFontSize: 4.236rem;
+
+  @include respond(phone) {
+    margin: 20rem 0 10rem;
+  }
 }
 
 h3 {

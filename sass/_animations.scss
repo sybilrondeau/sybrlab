@@ -1,3 +1,25 @@
+@keyframes scrollDown {
+  0% {
+    transform-origin: top;
+    transform: scale(1,0);
+  }
+
+  50% {
+    transform-origin: top;
+    transform: scale(1,1);
+  }
+
+  50.1% {
+    transform-origin: bottom;
+    transform: scale(1,1);
+  }
+
+  100% {
+    transform-origin: bottom;
+    transform: scale(1,0);
+  }
+}
+
 @keyframes blob {
   0% {
     border-radius: 50%;
@@ -53,14 +75,5 @@
   100% {
     transform: scale(1.2);
     transform-origin: left;
-  }
-}
-
-@keyframes underlineA {
-  0% {
-
-  }
-  100% {
-
   }
 }
