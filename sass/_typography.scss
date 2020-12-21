@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Muli';
-    font-weight: normal;
+    font-weight: 200 900;
     font-style: italic;
     font-display: swap;
     src: url('./fonts/Muli-Italic.woff2') format('woff2');
@@ -50,6 +50,15 @@ h3 {
   --maxFontSize: 2.618rem;
 }
 
+ul li {
+  font-family:  'Muli', sans-serif;
+  font-style: italic;
+  color: var(--grey-dark);
+  list-style: none;
+  --minFontSize: 1rem;
+  --maxFontSize: 1.4rem;
+}
+
 h1, h2, h3, li, #email, #tel {
   --scaler: 10vw;
   font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
@@ -76,15 +85,6 @@ strong {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--grey-dark);
   letter-spacing: .1rem;
-}
-
-ul li {
-	font-family:  'Muli', sans-serif;
-  font-style: italic;
-	color: var(--grey-dark);
-	list-style: none;
-  --minFontSize: 1rem;
-  --maxFontSize: 1.2rem;
 }
 
 a {
