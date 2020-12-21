@@ -9,7 +9,8 @@
 	position: relative;
 
 	h2 {
-		font-size: 6rem;
+		--minFontSize: 2.618rem;
+    --maxFontSize: 6.854rem;
 		margin: 0 0 2rem;
 	}
 

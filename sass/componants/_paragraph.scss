@@ -4,6 +4,8 @@
   flex-wrap: wrap;
 
   .paragraph {
+    flex: 0 1 40rem;
+    margin-bottom: 1rem;
 
     .paragraph__title {
       display: flex;

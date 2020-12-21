@@ -14,6 +14,14 @@
 	src: url('./fonts/Muli-VariableFont_wght.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'Muli';
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+    src: url('./fonts/Muli-Italic.woff2') format('woff2');
+}
+
 h1 {
 	font-family: 'Exo', sans-serif;
 	font-variation-settings: 'wght' 900;
@@ -26,6 +34,7 @@ h2 {
   font-variation-settings: 'wght' 900;
   margin: 30rem 0 10rem;
   text-transform: uppercase;
+  text-align: center;
   --minFontSize: 2.618rem;
   --maxFontSize: 4.236rem;
 
@@ -55,7 +64,6 @@ p {
 	color: var(--grey-dark);
   line-height: 1.618;
   margin-bottom: 1rem;
-  // text-align: justify;
 }
 
 strong {
@@ -72,9 +80,10 @@ strong {
 
 ul li {
 	font-family:  'Muli', sans-serif;
+  font-style: italic;
 	color: var(--grey-dark);
 	list-style: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.618;
 }
 
