@@ -93,6 +93,13 @@
         display: flex;
         justify-content: space-between;
 
+        li {
+          font-style: italic;
+          color: var(--grey-dark);
+          --minFontSize: 1rem;
+          --maxFontSize: 1.4rem;
+        }
+
         .credits-makers {
           padding-right: 1rem;
         }

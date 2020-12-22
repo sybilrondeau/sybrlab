@@ -28,21 +28,37 @@
   }
 }
 
-@keyframes visibleText {
+@keyframes openNav {
   0% {
-    opacity: 0;
+    top: -10rem;
   }
   100% {
-    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes closeNav {
+  0% {
+    top: 0rem;
+  }
+  100% {
+    top: -10rem;
   }
 }
 
-@keyframes fillWhite {
-   0% {
-    fill: var(--grey-dark);
+@keyframes openNavTab {
+  0% {
+    top: -28rem;
   }
   100% {
-    fill: white;
+    top: 0;
+  }
+}
+@keyframes closeNavTab {
+  0% {
+    top: 0rem;
+  }
+  100% {
+    top: -28rem;
   }
 }
 

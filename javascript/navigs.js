@@ -1,55 +1,71 @@
 import { gsap } from "gsap";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
+gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MorphSVGPlugin);
 
-const infoButtonTop = document.querySelector('.info__btn--top');
-const infoButtonBottom = document.querySelector('.info__btn--bottom');
+const infoButton = document.querySelector('.info__btn');
 const infoP = document.querySelector('.info__p');
-const infoNavLis = document.querySelectorAll('.info__nav li');
+const infoNavLis = document.querySelectorAll('.info__nav');
 const infoLogo = document.querySelector('.logoLab');
 const infoLinks = document.querySelectorAll('.info__links svg');
 const mouseCursor = document.querySelector(".cursor");
 
-MorphSVGPlugin.convertToPath(".circle-top");
+MorphSVGPlugin.convertToPath(".circle");
 const navTl = gsap.timeline({ defaults: {duration: 1}, paused: true});
-navTl.to(".circle-top", { morphSVG: ".close-btn-top"} );
-navTl.to(".circle-top", {attr: {fill: "#fff"}, duration: .1}, "<")
+navTl.to(".circle", { morphSVG: ".close-btn"} );
+navTl.to(".circle", {attr: {fill: "var(--primary"}, duration: .1}, "<")
 
-infoButtonTop.addEventListener('click', (e) => {
+infoButton.addEventListener('click', (e) => {
   if (!e.currentTarget.parentElement.classList.contains('close')) {
     e.currentTarget.parentElement.classList.remove('open');
     e.currentTarget.parentElement.classList.add('close');
-    infoNavLis.forEach(li => { li.classList.add('visibleText'); });
-    infoLogo.classList.add('fill-white');
+    infoNavLis.forEach(li => {
+      li.classList.add('openNav');
+      li.classList.remove('closeNav');
+    });
     navTl.play();
   } else {
     e.currentTarget.parentElement.classList.remove('close');
-    infoNavLis.forEach(li => { li.classList.remove('visibleText'); });
-    infoLogo.classList.remove('fill-white');
+    infoNavLis.forEach(li => {
+      li.classList.add('closeNav');
+      li.classList.remove('openNav');
+    });
     e.currentTarget.parentElement.classList.add('open');
     navTl.reverse();
   }
 });
 
-MorphSVGPlugin.convertToPath(".circle-bottom");
-const footTl = gsap.timeline({ defaults: {duration: 1}, paused: true});
-footTl.to(".circle-bottom", { morphSVG: ".close-btn-bottom"} );
-footTl.to(".circle-bottom", {attr: {fill: "#fff"}, duration: .1}, "<")
-
-infoButtonBottom.addEventListener('click', (e) => {
-  if (!e.currentTarget.parentElement.classList.contains('open')) {
-    e.currentTarget.parentElement.classList.remove('close');
-    e.currentTarget.parentElement.classList.add('open');
-    infoP.classList.add('visibleText');
-    infoLinks.forEach(infoLink => infoLink.classList.add('fill-white'));
-    footTl.play();
-  } else {
-    e.currentTarget.parentElement.classList.remove('open');
-    infoP.classList.remove('visibleText');
-    infoLinks.forEach(infoLink => infoLink.classList.remove('fill-white'));
-    e.currentTarget.parentElement.classList.add('close');
-    footTl.reverse();
-  }
+ScrollTrigger.create({
+  trigger: "#section2",
+  start: "top bottom",
+  end: "bottom 20%",
+  // markers: true,
+  toggleClass: {targets:".nav-about", className: "active"}
 });
 
+ScrollTrigger.create({
+  trigger: "#section3",
+  start: "top bottom",
+  end: "bottom 20%",
+  // markers: true,
+  toggleClass: {targets:".nav-portfolio", className: "active"}
+});
+
+ScrollTrigger.create({
+  trigger: "#section4",
+  start: "top bottom",
+  end: "bottom 20%",
+  // markers: true,
+  toggleClass: {targets:".nav-skills", className: "active"}
+});
+
+ScrollTrigger.create({
+  trigger: "#section5",
+  start: "top bottom",
+  end: "200% 20%",
+  // markers: true,
+  toggleClass: {targets:".nav-contact", className: "active"}
+});

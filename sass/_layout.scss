@@ -7,66 +7,132 @@ main {
 
 // config des bandeaux sup et inf
 .info {
-  width: 100%;
-  height: 8rem;
-  z-index: 10;
 
-  .info-top {
+  &__logo {
     position: fixed;
-    width: 100%;
-    padding: 0 2rem;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
+    top: 2rem;
+    left: 6rem;
+    z-index: 100;
 
-    &__logo {
-      .logoLab {
-        width: 6rem;
-        height: 8rem;
+    @include respond(phone) {
+      left: 2rem;
+    }
 
-        @include respond(phone) {
-          width: 4rem;
-          height: 8rem;
-        }
+    .logoLab {
+      width: 6rem;
+      height: 4rem;
+
+      @include respond(phone) {
+        width: 4rem;
+        height: 2rem;
       }
+    }
 
-      .logoLab:hover {
-        fill: var(--primary);
-      }
+    .logoLab:hover {
+      fill: var(--primary);
     }
   }
 
-  .info-nav {
+  &__nav {
     height: 8rem;
     width: 100%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: -10rem;
+    background-color: white;
+    z-index: 50;
+
+    @include respond(tabSmall) {
+      flex-direction: column;
+      justify-content: center;
+      height: 28rem;
+    }
 
     li {
-      display: inline;
-      padding: 1rem;
+      // background-color: var(--backg);
+      padding: 4rem 1.618rem;
+      font-style: normal;
+      font-weight: 400;
+      --minFontSize: 1.4rem;
+      --maxFontSize: 1.618rem;
+
+      @include respond(tabSmall) {
+        padding: 1.618rem;
+      }
+    }
+
+    .nav-link {
+      color: var(--grey-dark);
+    }
+
+    .nav-link:hover {
+      color: var(--primary);
     }
   }
 
-  .info-bottom {
-    height: 8rem;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-  }
+  &__links {
+    position: fixed;
+    bottom: 4rem;
+    left: 6rem;
+    z-index: 100;
 
-  .info__btn {
-    height: 100%;
+    @include respond(phone) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      bottom: 0rem;
+      background-color: var(--grey-dark);
+    }
 
     svg {
       width: 2rem;
-      height: 8rem;
+      height: 2rem;
+      margin-top: 4rem;
+
+      @include respond(phone) {
+        margin: 2rem 4rem;
+        fill: white;
+      }
+    }
+
+    svg:hover {
+      fill: var(--primary);
+    }
+  }
+
+  &__p {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 2rem;
+    font-size: 1.2rem;
+
+    @include respond(phone) {
+      width: 90%;
+      margin: 0 auto 8rem;
+    }
+  }
+
+  &__btn {
+    position: fixed;
+    top: 2rem;
+    right: 6rem;
+    z-index: 100;
+
+    @include respond(phone) {
+      right: 2rem;
+    }
+
+    svg {
+      width: 2rem;
+      height: 4rem;
 
       @include respond(phone) {
         width: 1.5rem;
-        height: 6rem;
+        height: 4rem;
       }
 
       .close-btn {
@@ -75,225 +141,35 @@ main {
     }
   }
 
-  .info__btn:hover svg {
-    fill: white;
+  &__btn:hover svg {
+    fill: var(--primary);
   }
 }
 
-// .info {
-//   width: 100%;
-//   position: fixed;
-//   padding: 0 6rem;
-//   display: grid;
-//   justify-content: center; // aligne la grille dans le document
-//   align-items: center; // aligne les élements dans chaque cellule
-//   z-index: 10;
+.active {
+  color: var(--primary) !important;
+}
 
-//   @include respond(tab) {
-//     padding: 0 2rem 0;
-//   }
+.open {
+  animation: openBckg 1s forwards;
+}
 
-//   &.info-top {
-//     grid-template-columns: 6rem 1fr 2rem;
-//     grid-template-areas: "logo menu circleTop";
-//     top: 0;
-//     height: 8rem;
-//     background: linear-gradient(to right, transparent 50%, var(--grey-dark) 50%);
-//     background-size: 200%;
-//     background-position: top left;
+.close {
+  animation: closeBckg 1s forwards;
+}
 
-//     @include respond(tab) {
-//       height: 20rem;
-//     }
+.openNav {
+  animation: openNav 1s forwards;
 
-//     .info__logo {
-//       grid-area: logo;
-//       height: 100%;
+  @include respond(tabSmall) {
+    animation: openNavTab 1s forwards;
+  }
+}
 
-//       .logoLab {
-//         width: 6rem;
-//         height: 8rem;
+.closeNav {
+  animation: closeNav 1s forwards;
 
-//         @include respond(phone) {
-//           width: 4rem;
-//           height: 8rem;
-//           fill: var(--backg);
-//         }
-//       }
-
-//       .logoLab:hover {
-//         fill: var(--primary);
-//       }
-//     }
-
-//     .info__nav {
-//       grid-area: menu;
-//       height: 100%;
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-
-//       @include respond(tab) {
-//           flex-direction: column;
-//       }
-
-//       li {
-//         text-align: center;
-//         padding: 0 0 0 4rem;
-//         font-size: 1.4rem;
-//         color: white;
-//         opacity: 0;
-//         text-transform: uppercase;
-
-//         @include respond(tab) {
-//           padding: 1rem 0 0rem 0;
-//         }
-//       }
-
-//       li a {
-//         color: white;
-//       }
-
-//       li a:hover {
-//         text-decoration: none;
-//       }
-
-//       li:last-child {
-//         @include respond(tab) {
-//           margin: 0rem 0 2rem 0;
-//         }
-//       }
-//     }
-//   }
-
-
-//   &.info-bottom {
-//     grid-template-columns: 2rem 1fr 16rem;
-//     grid-template-areas: "circleBottom paragraph links";
-//     bottom: 0;
-//     background: linear-gradient(to right, var(--grey-dark) 50%, transparent 50%);
-//     background-size: 200%;
-//     background-position: top right;
-//     height: 8rem;
-
-//     @include respond(phone) {
-//       grid-template-columns: 4rem 1fr;
-//       grid-template-rows: 1fr;
-//       grid-template-areas: "circleBottom paragraph"
-//                           "links links";
-//       height: 15rem;
-//       padding: 0;
-//     }
-
-//     .info__p {
-//       grid-area: paragraph;
-//       padding: 0 2rem;
-//       font-size: 1rem;
-//       display: flex;
-//       align-items: center;
-//       color: white;
-//       opacity: 0;
-
-//       @include respond(phone) {
-//         padding: 0 1rem;
-//       }
-//     }
-
-//     .info__links {
-//       grid-area: links;
-//       height: 100%;
-//       display: flex;
-//       align-items: center;
-//       justify-content: flex-end;
-
-//       @include respond(phone) {
-//         justify-content: center;
-//         padding: 1rem 0;
-//         background-color: var(--grey-dark);
-//       }
-
-//       li {
-//         display: inline;
-//         padding: 0 0 0 4rem;
-//         svg {
-//           width: 2rem;
-//           height: 2rem;
-//           fill: var(--grey-dark);
-
-//           @include respond(phone) {
-//             fill: white;
-//           }
-//         }
-//       }
-
-//       li:hover svg {
-//         fill: var(--primary);
-//       }
-//     }
-//   }
-
-//   .info__btn {
-//     height: 100%;
-//     display: flex;
-
-//     svg {
-//       width: 2rem;
-//       height: 2rem;
-
-//       @include respond(phone) {
-//         width: 1.5rem;
-//         height: 6rem;
-//       }
-
-//       .close-btn {
-//         visibility: hidden;
-//       }
-//     }
-//   }
-
-//   .info__btn:hover svg {
-//     fill: white;
-//   }
-// }
-
-// .info__btn--top {
-//   justify-content: flex-end;
-//   align-items: center;
-
-//   @include respond(tab) {
-//     align-items: flex-start;
-//     margin-top: 6rem;
-//   }
-//   @include respond(phone) {
-//     margin-top: 2rem;
-//   }
-// }
-
-// .info__btn--bottom {
-//   justify-content: flex-start;
-//   align-items: center;
-
-//   @include respond(tab) {
-//     align-items: flex-end;
-//     margin-bottom: 6rem;
-//   }
-//   @include respond(phone) {
-//     justify-content: center;
-//     margin-bottom: 2rem;
-//   }
-// }
-
-// .open {
-//   animation: openBckg 1s forwards;
-// }
-// .close {
-//   animation: closeBckg 1s forwards;
-// }
-
-// .visibleText {
-//   animation: visibleText 1s forwards;
-// }
-
-// .fill-white {
-//   animation: fillWhite 1s forwards;
-// }
+  @include respond(tabSmall) {
+    animation: closeNavTab 1s forwards;
+  }
+}
