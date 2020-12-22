@@ -1,6 +1,5 @@
 .cta {
 	height: 100vh;
-  margin-bottom: 0;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -8,23 +7,33 @@
 	flex-direction: column;
 	position: relative;
 
-	h2 {
-		--minFontSize: 2.618rem;
-    --maxFontSize: 6.854rem;
-		margin: 0 0 2rem;
-	}
+  &__p {
+    flex: 0 1 10%;
+    text-align: center;
+    width: 70%;
+    font-size: 1.2rem;
 
-  #email {
-    --minFontSize: 2.618rem;
-    --maxFontSize: 4.236rem;
+    @include respond(phone) {
+      width: 90%;
+    }
   }
 
-  #tel {
-    --minFontSize: 1.618rem;
-    --maxFontSize: 2.618rem;
-  }
+  &__main {
+    flex: 0 1 90%;
+  	h2 {
+  		--minFontSize: 2.618rem;
+      --maxFontSize: 6.854rem;
+  		margin: 0 0 2rem;
+  	}
 
-  a:hover {
-    animation: underlineA .3s forwards;
+    #email {
+      --minFontSize: 2.618rem;
+      --maxFontSize: 4.236rem;
+    }
+
+    #tel {
+      --minFontSize: 1.618rem;
+      --maxFontSize: 2.618rem;
+    }
   }
 }

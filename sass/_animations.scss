@@ -10,24 +10,6 @@
   }
 }
 
-@keyframes openBckg {
-  0% {
-    background-position: top right;
-  }
-  100% {
-    background-position: top left;
-  }
-}
-
-@keyframes closeBckg {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
-}
-
 @keyframes openNav {
   0% {
     top: -10rem;

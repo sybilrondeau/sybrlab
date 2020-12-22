@@ -7,31 +7,63 @@ main {
 
 // config des bandeaux sup et inf
 .info {
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 
-  &__logo {
-    position: fixed;
-    top: 2rem;
-    left: 6rem;
-    z-index: 100;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 4rem;
 
-    @include respond(phone) {
-      left: 2rem;
-    }
+    &--logo {
+      z-index: 100;
+      padding: 2rem 0;
 
-    .logoLab {
-      width: 6rem;
-      height: 4rem;
+      .logoLab {
+        width: 6rem;
+        height: 4rem;
 
-      @include respond(phone) {
-        width: 4rem;
-        height: 2rem;
+        @include respond(phone) {
+          width: 4rem;
+          height: 2rem;
+        }
+      }
+
+      .logoLab:hover {
+        fill: var(--primary);
       }
     }
 
-    .logoLab:hover {
-      fill: var(--primary);
+    &--btn {
+      z-index: 100;
+      padding: 2rem 0;
+
+    @include respond(phone) {
+      right: 2rem;
+    }
+
+    svg {
+      width: 2rem;
+      height: 4rem;
+
+      @include respond(phone) {
+        width: 1.5rem;
+        height: 2rem;
+      }
+
+      .close-btn {
+        visibility: hidden;
+      }
     }
   }
+
+  &__btn:hover svg {
+    fill: var(--primary);
+  }
+  }
+
 
   &__nav {
     height: 8rem;
@@ -41,7 +73,7 @@ main {
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: -10rem;
+    top: -30rem;
     background-color: white;
     z-index: 50;
 
@@ -49,6 +81,7 @@ main {
       flex-direction: column;
       justify-content: center;
       height: 28rem;
+      width: 100%;
     }
 
     li {
@@ -56,8 +89,9 @@ main {
       padding: 4rem 1.618rem;
       font-style: normal;
       font-weight: 400;
-      --minFontSize: 1.4rem;
-      --maxFontSize: 1.618rem;
+      text-transform: uppercase;
+      --minFontSize: 1.2rem;
+      --maxFontSize: 1.4rem;
 
       @include respond(tabSmall) {
         padding: 1.618rem;
@@ -72,90 +106,36 @@ main {
       color: var(--primary);
     }
   }
+}
 
-  &__links {
-    position: fixed;
-    bottom: 4rem;
-    left: 6rem;
+.footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+
+  &__links li {
     z-index: 100;
+    padding: 0rem 4rem 2rem;
 
     @include respond(phone) {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      left: 0;
-      bottom: 0rem;
-      background-color: var(--grey-dark);
+      display: none;
     }
 
     svg {
       width: 2rem;
       height: 2rem;
       margin-top: 4rem;
-
-      @include respond(phone) {
-        margin: 2rem 4rem;
-        fill: white;
-      }
     }
 
     svg:hover {
       fill: var(--primary);
     }
   }
-
-  &__p {
-    text-align: center;
-    width: 70%;
-    margin: 0 auto 2rem;
-    font-size: 1.2rem;
-
-    @include respond(phone) {
-      width: 90%;
-      margin: 0 auto 8rem;
-    }
-  }
-
-  &__btn {
-    position: fixed;
-    top: 2rem;
-    right: 6rem;
-    z-index: 100;
-
-    @include respond(phone) {
-      right: 2rem;
-    }
-
-    svg {
-      width: 2rem;
-      height: 4rem;
-
-      @include respond(phone) {
-        width: 1.5rem;
-        height: 4rem;
-      }
-
-      .close-btn {
-        visibility: hidden;
-      }
-    }
-  }
-
-  &__btn:hover svg {
-    fill: var(--primary);
-  }
 }
 
 .active {
   color: var(--primary) !important;
-}
-
-.open {
-  animation: openBckg 1s forwards;
-}
-
-.close {
-  animation: closeBckg 1s forwards;
 }
 
 .openNav {

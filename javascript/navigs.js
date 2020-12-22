@@ -6,12 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MorphSVGPlugin);
 
-const infoButton = document.querySelector('.info__btn');
-const infoP = document.querySelector('.info__p');
-const infoNavLis = document.querySelectorAll('.info__nav');
-const infoLogo = document.querySelector('.logoLab');
-const infoLinks = document.querySelectorAll('.info__links svg');
-const mouseCursor = document.querySelector(".cursor");
+const infoButton = document.querySelector('.info__top--btn');
+const infoNav = document.querySelector('.info__nav');
 
 MorphSVGPlugin.convertToPath(".circle");
 const navTl = gsap.timeline({ defaults: {duration: 1}, paused: true});
@@ -19,22 +15,17 @@ navTl.to(".circle", { morphSVG: ".close-btn"} );
 navTl.to(".circle", {attr: {fill: "var(--primary"}, duration: .1}, "<")
 
 infoButton.addEventListener('click', (e) => {
-  if (!e.currentTarget.parentElement.classList.contains('close')) {
-    e.currentTarget.parentElement.classList.remove('open');
-    e.currentTarget.parentElement.classList.add('close');
-    infoNavLis.forEach(li => {
-      li.classList.add('openNav');
-      li.classList.remove('closeNav');
-    });
+  console.log(e);
+  if (e.currentTarget.dataset.state === "close") {
+    infoNav.classList.remove('closeNav');
+    infoNav.classList.add('openNav');
     navTl.play();
+    e.currentTarget.dataset.state = "open";
   } else {
-    e.currentTarget.parentElement.classList.remove('close');
-    infoNavLis.forEach(li => {
-      li.classList.add('closeNav');
-      li.classList.remove('openNav');
-    });
-    e.currentTarget.parentElement.classList.add('open');
+    infoNav.classList.remove('openNav');
+    infoNav.classList.add('closeNav');
     navTl.reverse();
+    e.currentTarget.dataset.state = "close";
   }
 });
 
