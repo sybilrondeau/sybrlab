@@ -9,6 +9,7 @@ gsap.registerPlugin(MorphSVGPlugin);
 const infoButton = document.querySelector('.info__top--btn');
 const infoNav = document.querySelector('.info__nav');
 
+// transformation circle button to cross
 MorphSVGPlugin.convertToPath(".circle");
 const navTl = gsap.timeline({ defaults: {duration: 1}, paused: true});
 navTl.to(".circle", { morphSVG: ".close-btn"} );
@@ -28,34 +29,18 @@ infoButton.addEventListener('click', (e) => {
   }
 });
 
-ScrollTrigger.create({
-  trigger: "#section2",
+// class active on menu items
+function activeMenu(trigger, end, targets) {
+  ScrollTrigger.create({
+  trigger: trigger,
   start: "top bottom",
-  end: "bottom 20%",
+  end: end,
   // markers: true,
-  toggleClass: {targets:".nav-about", className: "active"}
-});
+  toggleClass: {targets: targets, className: "active"}
+  });
+};
 
-ScrollTrigger.create({
-  trigger: "#section3",
-  start: "top bottom",
-  end: "bottom 20%",
-  // markers: true,
-  toggleClass: {targets:".nav-portfolio", className: "active"}
-});
-
-ScrollTrigger.create({
-  trigger: "#section4",
-  start: "top bottom",
-  end: "bottom 20%",
-  // markers: true,
-  toggleClass: {targets:".nav-skills", className: "active"}
-});
-
-ScrollTrigger.create({
-  trigger: "#section5",
-  start: "top bottom",
-  end: "200% 20%",
-  // markers: true,
-  toggleClass: {targets:".nav-contact", className: "active"}
-});
+activeMenu("#section2", "bottom 20%", ".nav-about");
+activeMenu("#section3", "bottom 20%", ".nav-portfolio");
+activeMenu("#section4", "bottom 20%", ".nav-skills");
+activeMenu("#section5", "200% 20%", ".nav-contact");
