@@ -16,10 +16,7 @@
 	h1 {
 		text-align: center;
     flex: 0 1 75rem;
-
-    @include respond(phone) {
-
-    }
+    padding: 0 2rem;
 	}
 }
 

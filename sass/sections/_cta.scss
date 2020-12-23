@@ -1,15 +1,15 @@
 .cta {
 	height: 100vh;
 	text-align: center;
-	display: flex;
+	display: grid;
 	justify-content: center;
+  justify-items: center;
 	align-items: center;
-	flex-direction: column;
 	position: relative;
 
   &__p {
-    flex: 0 1 10%;
     text-align: center;
+    align-self: end;
     width: 70%;
     font-size: 1.2rem;
 
@@ -19,7 +19,8 @@
   }
 
   &__main {
-    flex: 0 1 90%;
+    margin-top: 10rem;
+
   	h2 {
   		--minFontSize: 2.618rem;
       --maxFontSize: 6.854rem;
@@ -35,5 +36,23 @@
       --minFontSize: 1.618rem;
       --maxFontSize: 2.618rem;
     }
+  }
+
+  &__social {
+    display: none;
+
+    @include respond(phone) {
+      display: flex;
+    }
+
+    li {
+      padding: 0 4rem;
+    }
+
+    svg {
+      width: 3rem;
+      height: 3rem;
+    }
+
   }
 }
