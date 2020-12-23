@@ -7,7 +7,7 @@
 	align-items: center;
 	position: relative;
 
-  &__p {
+  &__legal {
     text-align: center;
     align-self: end;
     width: 70%;
@@ -22,6 +22,7 @@
     margin-top: 20%;
 
   	h2 {
+      text-align: center;
   		--minFontSize: 2.618rem;
       --maxFontSize: 6.854rem;
   		margin: 0 0 2rem;
