@@ -108,6 +108,16 @@ main {
   }
 }
 
+@supports not (font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) )) {
+  .info__nav li {
+    font-size: 1.4remrem;
+
+    @include respond(phone) {
+      font-size: 1.2rem;
+    }
+  }
+}
+
 .footer {
   width: 100vw;
   position: fixed;
