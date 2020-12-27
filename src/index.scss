@@ -1,15 +1,14 @@
+@import "./sass/mixins";
+@import "./sass/base";
+@import "./sass/typography";
+@import "./sass/variables";
+@import "./sass/layout";
+@import "./sass/animations";
 
-@import './sass/mixins';
-@import './sass/base';
-@import './sass/typography';
-@import './sass/variables';
-@import './sass/layout';
-@import './sass/animations';
+@import "./sass/sections/header";
+@import "./sass/sections/about";
+@import "./sass/sections/portfolio";
+@import "./sass/sections/competences";
+@import "./sass/sections/cta";
 
-@import './sass/sections/header';
-@import './sass/sections/about';
-@import './sass/sections/portfolio';
-@import './sass/sections/competences';
-@import './sass/sections/cta';
-
-@import './sass/componants/paragraph';
+@import "./sass/componants/paragraph";

@@ -1,406 +1,615 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta name= "robots" content="noindex, nofollow">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:url" content="https://sybrlab.com" />
-	<meta property="og:description" content="Création de site internet - Developpement front-end à Nantes." />
-	<meta property="og:title" content="SybR Lab" />
-	<meta property="og:image" content="./images/sybrlab-1200.jpg" />
-	<meta property="og:image:type" content="image/jpg" />
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="628" />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:image" content="./images/sybrlab-150.jpg" />
-	<title>SybR Lab - Developpeuse Web Nantes</title>
-	<meta name="description" content="Développement front-end et création de site WordPress à Nantes." />
-	<link rel="icon" type="image/png" href="./images/favicon_lab.png" />
-</head>
-<body>
-	<div class="cursor">
-	</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://sybrlab.com" />
+    <meta
+      property="og:description"
+      content="Création de site internet - Developpement front-end à Nantes."
+    />
+    <meta property="og:title" content="SybR Lab" />
+    <meta property="og:image" content="./images/sybrlab-1200.jpg" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="./images/sybrlab-150.jpg" />
+    <title>SybR Lab - Developpeuse Web Nantes</title>
+    <meta
+      name="description"
+      content="Développement front-end et création de site WordPress à Nantes."
+    />
+    <link rel="icon" type="image/png" href="./images/favicon_lab.png" />
+  </head>
+  <body>
+    <div class="cursor"></div>
 
-	<nav class="info">
-    <div class="info__top">
-      <a href="#section1" class="info__top--logo body-link">
-        <svg xmlns:xlink="http://www.w3.org/2000/svg" class="logoLab">
-          <use xlink:href="./images/sprite.svg#logoLab_ferme"></use>
-        </svg>
-      </a>
-      <div class="info__top--btn body-link" data-state="close">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-          <path class='close-btn' d="M33,28.11c1.32.91,8.93,6,4.85,8.06-1.77.88-6.77-4.58-8.33-5.72-3.55-2.59-6-6.4-8.63-9.85A140.58,140.58,0,0,0,9.67,30c-1.5,1.44-5.62,8-8,6.24-4.13-3.1,14.55-17,16.75-18.68A73.35,73.35,0,0,0,8.87,8.67C7.08,7.19.08,4.61,2.29,1.82c2.38-3,8.21,3.08,9.89,4.5,1.87,1.57,3.71,3.19,5.53,4.83q1.34,1.2,2.55,2.52c2,2.18,2.25.66,4.26-.94S36.35,0,38.21,3.3,26.33,16.32,24,18.18C26.7,21.8,29.19,25.48,33,28.11Z"/>
-          <circle class='circle' cx="20" cy="20" r="20"/>
-        </svg>
+    <nav class="info">
+      <div class="info__top">
+        <a
+          href="#section1"
+          class="info__top--logo body-link"
+          aria-label="Logo SybR Lab"
+        >
+          <svg xmlns:xlink="http://www.w3.org/2000/svg" class="logoLab">
+            <use xlink:href="./images/sprite.svg#logoLab_ferme"></use>
+          </svg>
+        </a>
+        <div class="info__top--btn body-link" data-state="close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+            <path
+              class="close-btn"
+              d="M33,28.11c1.32.91,8.93,6,4.85,8.06-1.77.88-6.77-4.58-8.33-5.72-3.55-2.59-6-6.4-8.63-9.85A140.58,140.58,0,0,0,9.67,30c-1.5,1.44-5.62,8-8,6.24-4.13-3.1,14.55-17,16.75-18.68A73.35,73.35,0,0,0,8.87,8.67C7.08,7.19.08,4.61,2.29,1.82c2.38-3,8.21,3.08,9.89,4.5,1.87,1.57,3.71,3.19,5.53,4.83q1.34,1.2,2.55,2.52c2,2.18,2.25.66,4.26-.94S36.35,0,38.21,3.3,26.33,16.32,24,18.18C26.7,21.8,29.19,25.48,33,28.11Z"
+            />
+            <circle class="circle" cx="20" cy="20" r="20" />
+          </svg>
+        </div>
       </div>
-    </div>
-    <ul class="info__nav">
-      <li><a href="#section2" class="nav-link nav-about">À propos</a></li>
-      <li><a href="#section3" class="nav-link nav-portfolio">Portfolio</a></li>
-      <li><a href="#section4" class="nav-link nav-skills">Compétences</a></li>
-      <li><a href="#section5" class="nav-link nav-contact">Contact</a></li>
-    </ul>
-  </nav>
+      <ul class="info__nav">
+        <li><a href="#section2" class="nav-link nav-about">À propos</a></li>
+        <li>
+          <a href="#section3" class="nav-link nav-portfolio">Portfolio</a>
+        </li>
+        <li><a href="#section4" class="nav-link nav-skills">Compétences</a></li>
+        <li><a href="#section5" class="nav-link nav-contact">Contact</a></li>
+      </ul>
+    </nav>
 
-	<header class="intro" id="section1">
+    <header class="intro" id="section1">
       <div class="portrait-svg">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1052.7 1394.45"><path class="draw-portrait" d="M565.58,590.76S540,543.9,536.16,512.3s16.34-31.6,45.22-31.6,77.38,1.08,93.18,12.53,24.52,33.23-13.08,34.32-84.56,4.65-87.18,15.81c7.63,14.16,68.11,6,86.63.54s43.59-12,55-11.44c0,0-25.07-17.44-50.13-17.44s-86.6,6.54-102.62-8.9-6.36-36.87,17.07-46.68,94.27-6,135.68,22.34c0,0-5.45-131.86-24.52-167.82,0,0-46.32,90.45-69.75,107.89,0,0,21.34-75.19,4.13-93.18,0,0-74.42,116.61-187.2,163.47,0,0,91.53-159.65,111.15-162.38S522.54,398.42,459.33,448,376,530.28,376,530.28s.55-76.28,54-136.22c0,0-76.29,85-123.69,176,0,0-32.15-203.23,29.42-269.71,0,0,3.27,109-41.95,215.23S243,608.2,243,608.2s-63.2-59.4-58.84-182.54S319.63,134.15,450,94.92s189.18,21.8,266,73S847.28,242,841.83,352.1s-33.78,244.11-19.61,299.69,22.88,42.5,25.06,8.71-22.88-80.64-46.86-112.24-55.57-99.53-47.95-103.89,24,41.41,25.79,94.08,5.09,96.26-14.16,146.76-49,90.44-67.57,72.65,1.09-56.31,32.33-74.83,63.93-33.42,66.48-22.89,16.71,58.12-15.26,154-41.23,222.31-16.71,281.16,62.12,107.88,123.42,129.13,18,26.15,0,25.34-103-21.25-148.76-55.58-65.38-52.31-82.54-4.9-30.24,101.34-61.3,89.08,13.89-77.64-38.42-109.52-76.82,20.44-183.07,3.27S233.05,1097.77,184,1083.87s-132.46-9-126.74-23.7,76-30.24,117.7-27.79,131.58,8.18,177.35-25.33,53.13-17.17,71.11,3.26,14.25,58.85,64.34,48.23,105.66-36,104.84,10.62-2.45,98.08,22.07,73.56S712.7,929.4,714.33,915.51s-9-2.46-18.8,10.62-95.62,80.92-125,79.28-24.8-9.81-44.41-12.26-32.42,11.44-49.31,4.36S437.26,949,420.64,911.42s12.81-17.71,39-10.9,83.91,25.07,117.7,1.64-7.9-40-39.23-42.5-81.19,4.08-83.1,9.8,36.51,15,67.29,13.9,62.39-16.35,80.65-35.69-51.5-55-65.39-55.31-22.88,10.08-36,10.08-22.89-8.17-38.14-3S419.28,836,419.28,836a216.39,216.39,0,0,0,49.59-15c25.88-11.44,76-15,118.23-9.26s50.13,7.35,50.13,7.35-25.88,19.07-44.68,21.53-104.34,6.81-128.86,9.53-61,1.91-88.54-16.62S307,767.84,311.94,736.79s28.61-4.63,44.41,18.25,21.52,32.69,17.16,34.05S332.1,780.38,307,730.25,270.26,650.7,317.94,587s91.53-30.52,148.2-49.86c0,0,3.27,24.52-7.9,84.46s-13.62,67.56,25.07,67.83,58.57-15,65.11-11.44-15.8,33.24-44.68,47.13-44.95,9.26-58-7.35,1.09-18.53,22.61-11.72,56.94,21.25,83.91,12.81,25.88-31.06,25.88-31.06" fill="none" stroke="var(--grey-dark)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1052.7 1394.45">
+          <path
+            class="draw-portrait"
+            d="M565.58,590.76S540,543.9,536.16,512.3s16.34-31.6,45.22-31.6,77.38,1.08,93.18,12.53,24.52,33.23-13.08,34.32-84.56,4.65-87.18,15.81c7.63,14.16,68.11,6,86.63.54s43.59-12,55-11.44c0,0-25.07-17.44-50.13-17.44s-86.6,6.54-102.62-8.9-6.36-36.87,17.07-46.68,94.27-6,135.68,22.34c0,0-5.45-131.86-24.52-167.82,0,0-46.32,90.45-69.75,107.89,0,0,21.34-75.19,4.13-93.18,0,0-74.42,116.61-187.2,163.47,0,0,91.53-159.65,111.15-162.38S522.54,398.42,459.33,448,376,530.28,376,530.28s.55-76.28,54-136.22c0,0-76.29,85-123.69,176,0,0-32.15-203.23,29.42-269.71,0,0,3.27,109-41.95,215.23S243,608.2,243,608.2s-63.2-59.4-58.84-182.54S319.63,134.15,450,94.92s189.18,21.8,266,73S847.28,242,841.83,352.1s-33.78,244.11-19.61,299.69,22.88,42.5,25.06,8.71-22.88-80.64-46.86-112.24-55.57-99.53-47.95-103.89,24,41.41,25.79,94.08,5.09,96.26-14.16,146.76-49,90.44-67.57,72.65,1.09-56.31,32.33-74.83,63.93-33.42,66.48-22.89,16.71,58.12-15.26,154-41.23,222.31-16.71,281.16,62.12,107.88,123.42,129.13,18,26.15,0,25.34-103-21.25-148.76-55.58-65.38-52.31-82.54-4.9-30.24,101.34-61.3,89.08,13.89-77.64-38.42-109.52-76.82,20.44-183.07,3.27S233.05,1097.77,184,1083.87s-132.46-9-126.74-23.7,76-30.24,117.7-27.79,131.58,8.18,177.35-25.33,53.13-17.17,71.11,3.26,14.25,58.85,64.34,48.23,105.66-36,104.84,10.62-2.45,98.08,22.07,73.56S712.7,929.4,714.33,915.51s-9-2.46-18.8,10.62-95.62,80.92-125,79.28-24.8-9.81-44.41-12.26-32.42,11.44-49.31,4.36S437.26,949,420.64,911.42s12.81-17.71,39-10.9,83.91,25.07,117.7,1.64-7.9-40-39.23-42.5-81.19,4.08-83.1,9.8,36.51,15,67.29,13.9,62.39-16.35,80.65-35.69-51.5-55-65.39-55.31-22.88,10.08-36,10.08-22.89-8.17-38.14-3S419.28,836,419.28,836a216.39,216.39,0,0,0,49.59-15c25.88-11.44,76-15,118.23-9.26s50.13,7.35,50.13,7.35-25.88,19.07-44.68,21.53-104.34,6.81-128.86,9.53-61,1.91-88.54-16.62S307,767.84,311.94,736.79s28.61-4.63,44.41,18.25,21.52,32.69,17.16,34.05S332.1,780.38,307,730.25,270.26,650.7,317.94,587s91.53-30.52,148.2-49.86c0,0,3.27,24.52-7.9,84.46s-13.62,67.56,25.07,67.83,58.57-15,65.11-11.44-15.8,33.24-44.68,47.13-44.95,9.26-58-7.35,1.09-18.53,22.61-11.72,56.94,21.25,83.91,12.81,25.88-31.06,25.88-31.06"
+            fill="none"
+            stroke="var(--grey-dark)"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="5"
+          />
+        </svg>
       </div>
-			<h1>
-				Je suis Sybil Rondeau,<br><span class="outline">Developpeuse Web</span><br>à Nantes.
-			</h1>
-	</header>
+      <h1>
+        Je suis Sybil Rondeau,<br /><span class="outline">Developpeuse Web</span
+        ><br />à Nantes.
+      </h1>
+    </header>
 
-  <main>
-	<section class="about anim-text" id="section2">
-    <h2><span class="outline">À Propos</span></h2>
-    <div class="paragraphes">
-      <div class="paragraph">
-        <div class="paragraph__title">
-          <h3>Expertise</h3>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 521.78 450.53"><path class="draw-svg" d="M202.29,157.67c-11.09,5.5-11.09,14.42,0,19.92,13.94,6.91,36.59,6.87,50.42-.13,17.09-8.65,16.92-22.48-.24-31-21.69-10.77-56.91-10.75-78.55.07-26.13,13.06-26,35.62.19,48.59,33.83,16.76,88.65,16.76,122.46,0,41.57-20.63,41.36-55.56-.25-76.11-52.87-26.11-138.39-26.07-191.16.12-33,16.4-49.55,37.32-49.55,58.81,0,43,60.74,77.35,135.67,77.35H482.69V361.1H433.55a4,4,0,0,1-4-4V301.84a7,7,0,0,0-6.95-6.95h0a7,7,0,0,0-6.95,6.95v55.28a4,4,0,0,1-4,4h-58a4,4,0,0,1-4-4V301.84a7,7,0,0,0-6.94-6.95h0a7,7,0,0,0-6.95,6.95v55.27a4,4,0,0,1-4,4h-58a4,4,0,0,1-4-4V301.84a7,7,0,0,0-6.95-6.95h0a7,7,0,0,0-7,6.95v55.28a4,4,0,0,1-4,4h-58a4,4,0,0,1-4-4V301.84a7,7,0,0,0-6.94-6.95h0a7,7,0,0,0-7,6.95v54.57a4,4,0,0,1-4.31,3.95c-21.07-1.87-44.39-6.73-59.32-13.57a3.94,3.94,0,0,1-2.3-3.6V285.34a7,7,0,0,0-3.55-6.06h0a7,7,0,0,0-10.34,6.06v51.45a1.25,1.25,0,0,1-1.87,1.08c-23.89-14.06-38.91-33.51-38.91-54.69"/>
-          </svg>
+    <main>
+      <section class="about anim-text" id="section2">
+        <h2><span class="outline">À Propos</span></h2>
+        <div class="paragraphes">
+          <div class="paragraph">
+            <div class="paragraph__title">
+              <h3>Expertise</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 521.78 450.53"
+              >
+                <path
+                  class="draw-svg"
+                  d="M202.29,157.67c-11.09,5.5-11.09,14.42,0,19.92,13.94,6.91,36.59,6.87,50.42-.13,17.09-8.65,16.92-22.48-.24-31-21.69-10.77-56.91-10.75-78.55.07-26.13,13.06-26,35.62.19,48.59,33.83,16.76,88.65,16.76,122.46,0,41.57-20.63,41.36-55.56-.25-76.11-52.87-26.11-138.39-26.07-191.16.12-33,16.4-49.55,37.32-49.55,58.81,0,43,60.74,77.35,135.67,77.35H482.69V361.1H433.55a4,4,0,0,1-4-4V301.84a7,7,0,0,0-6.95-6.95h0a7,7,0,0,0-6.95,6.95v55.28a4,4,0,0,1-4,4h-58a4,4,0,0,1-4-4V301.84a7,7,0,0,0-6.94-6.95h0a7,7,0,0,0-6.95,6.95v55.27a4,4,0,0,1-4,4h-58a4,4,0,0,1-4-4V301.84a7,7,0,0,0-6.95-6.95h0a7,7,0,0,0-7,6.95v55.28a4,4,0,0,1-4,4h-58a4,4,0,0,1-4-4V301.84a7,7,0,0,0-6.94-6.95h0a7,7,0,0,0-7,6.95v54.57a4,4,0,0,1-4.31,3.95c-21.07-1.87-44.39-6.73-59.32-13.57a3.94,3.94,0,0,1-2.3-3.6V285.34a7,7,0,0,0-3.55-6.06h0a7,7,0,0,0-10.34,6.06v51.45a1.25,1.25,0,0,1-1.87,1.08c-23.89-14.06-38.91-33.51-38.91-54.69"
+                />
+              </svg>
+            </div>
+            <div class="paragraph__text">
+              <p>
+                Je suis spécialisée en développement
+                <strong>Front-end</strong> avec une appétence pour
+                <strong>l'animation</strong>. <br />Depuis ma certification au
+                Wagon Nantes en mars 2020, je continue à me former activement
+                dans ce domaine.
+              </p>
+            </div>
+          </div>
+          <div class="paragraph">
+            <div class="paragraph__title">
+              <h3>Bonnes pratiques</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 521.78 450.53"
+              >
+                <path
+                  class="draw-svg"
+                  d="M249.18,123.55,168.56,50.47A7.39,7.39,0,0,0,156.2,56l2.35,213.34a40.59,40.59,0,0,0,11.88,28.25L237,364.16a2.46,2.46,0,0,1-2.58,4l-99-36.18a31.54,31.54,0,0,1-20.7-29l-3.93-197.46s.55-22.34,18.53-18.53c20,4.24,6,49.59-31.06,51.22C73.12,139.37,77,153,77,188.39c0,27.47-.12,130-.18,174.62a21,21,0,0,0,21,21H423.45a21.34,21.34,0,0,0,21.34-21.34V174.77s4.36-37.6-27.24-38.14c0,0-30-1.64-33.24-32.7S411,80,411,106.11c0,20.68,1.7,141.46,2.42,191.16A31.46,31.46,0,0,1,394,326.78L289.24,370.11a2.55,2.55,0,0,1-2.81-4.12l65.23-68.15A40.71,40.71,0,0,0,363,269.43l-1.41-208A7.39,7.39,0,0,0,349.23,56l-78.8,70.13a29.9,29.9,0,0,0-10,22.31V357.3"
+                />
+              </svg>
+            </div>
+            <div class="paragraph__text">
+              <p>
+                Dans tous les sites que je développe, je porte une attention
+                particulière aux notions de
+                <strong>performance, accessibilité, sécurité, SEO</strong> : un
+                ensemble de bonnes pratiques à implémenter dès la construction
+                d'un site, indispensable à sa longévité et une base solide à un
+                référencement naturel de qualité.
+              </p>
+            </div>
+          </div>
+          <div class="paragraph">
+            <div class="paragraph__title">
+              <h3>Équipe</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 521.78 450.53"
+              >
+                <path
+                  class="draw-svg"
+                  d="M382.09,158.56q.39-4.77.39-9.64a117.66,117.66,0,1,0-229.09,37.91l-1.64.37a117.6,117.6,0,1,0,139.33,77.27l-1.8-.43A117.83,117.83,0,0,1,153.78,188l.9-1.41A117.85,117.85,0,0,1,290.4,262.48l1.35,1q2.69-.63,5.32-1.38a117.93,117.93,0,0,0,79.43-76.05h0a117.6,117.6,0,1,1-134.43,79.68l.79-2.39a117.79,117.79,0,0,1,111.3-79.4"
+                />
+              </svg>
+            </div>
+            <div class="paragraph__text">
+              <p>
+                Je travaille en <strong>collaboration</strong> avec des
+                développeurs Back-end, web Designers, Directeurs Artistique,
+                Graphistes, Rédacteurs, Photographes, Vidéastes...<br />
+                Pour créer des <strong>sites</strong> internet ou des
+                <strong>applications</strong> uniques.
+              </p>
+            </div>
+          </div>
+          <div class="paragraph">
+            <div class="paragraph__title">
+              <h3>Passion</h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 521.78 450.53"
+              >
+                <path
+                  class="draw-svg"
+                  d="M403.52,251.38a111.71,111.71,0,0,0-113.3-111.69c-60.16.84-109.26,49.94-110.1,110.1a111.71,111.71,0,0,0,111.69,113.3l72.19.35c31.2,0,60.58-.76,60.58-.76a32.23,32.23,0,0,0,33-32.22V157.11a32.26,32.26,0,0,0-32.26-32.26H387.73a27.46,27.46,0,0,1-27.46-27.46h0a38.61,38.61,0,0,0-38.61-38.61H269.88s-39-1.84-44,25.23-2.11,42.16,34.1,32.81c28.36-7.32,59.78-14.29,60-26.87.14-9.72-7.18-12.48-30.91-13l-41-.33a68.89,68.89,0,0,0-51.9,23.59l-14.24,16.31a63.07,63.07,0,0,1-47.51,21.59H86.68A32.44,32.44,0,0,0,54.23,170.6V327.46a32.31,32.31,0,0,0,32.31,32.31l35.71-.25A45.63,45.63,0,0,1,154.6,372.6a111.39,111.39,0,0,0,80.14,32.06c60.08-1,109.05-50,109.89-110.11A111.71,111.71,0,1,0,121.23,293"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="paragraph__text">
+              <p>
+                Je suis aussi SybR,
+                <strong
+                  ><a
+                    class="body-link"
+                    href="https://sybilrondeau.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >photographe</a
+                  ></strong
+                >
+                documentaire de famille depuis plus de 10 ans.<br />
+                Ce métier était ma première reconversion, après 12 ans en tant
+                que manipulatrice en radiologie médicale aux urgences (et de
+                nuit !).
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="paragraph__text">
-          <p>Je suis spécialisée en développement <strong>Front-end</strong> avec une appétence pour <strong>l'animation</strong>.
-            <br>Depuis ma certification au Wagon Nantes en mars 2020, je continue à me former activement dans ce domaine.
-          </p>
-        </div>
-      </div>
-      <div class="paragraph">
-        <div class="paragraph__title">
-          <h3>Bonnes pratiques</h3>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 521.78 450.53"><path class="draw-svg"  d="M249.18,123.55,168.56,50.47A7.39,7.39,0,0,0,156.2,56l2.35,213.34a40.59,40.59,0,0,0,11.88,28.25L237,364.16a2.46,2.46,0,0,1-2.58,4l-99-36.18a31.54,31.54,0,0,1-20.7-29l-3.93-197.46s.55-22.34,18.53-18.53c20,4.24,6,49.59-31.06,51.22C73.12,139.37,77,153,77,188.39c0,27.47-.12,130-.18,174.62a21,21,0,0,0,21,21H423.45a21.34,21.34,0,0,0,21.34-21.34V174.77s4.36-37.6-27.24-38.14c0,0-30-1.64-33.24-32.7S411,80,411,106.11c0,20.68,1.7,141.46,2.42,191.16A31.46,31.46,0,0,1,394,326.78L289.24,370.11a2.55,2.55,0,0,1-2.81-4.12l65.23-68.15A40.71,40.71,0,0,0,363,269.43l-1.41-208A7.39,7.39,0,0,0,349.23,56l-78.8,70.13a29.9,29.9,0,0,0-10,22.31V357.3"/>
-          </svg>
-        </div>
-        <div class="paragraph__text">
-          <p>Dans tous les sites que je développe, je porte une attention particulière aux notions de <strong>performance, accessibilité, sécurité, SEO</strong> : un ensemble de bonnes pratiques à implémenter dès la construction d'un site, indispensable à sa longévité et une base solide à un référencement naturel de qualité.</p>
-        </div>
-      </div>
-      <div class="paragraph">
-        <div class="paragraph__title">
-          <h3>Équipe</h3>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 521.78 450.53"><path class="draw-svg" d="M382.09,158.56q.39-4.77.39-9.64a117.66,117.66,0,1,0-229.09,37.91l-1.64.37a117.6,117.6,0,1,0,139.33,77.27l-1.8-.43A117.83,117.83,0,0,1,153.78,188l.9-1.41A117.85,117.85,0,0,1,290.4,262.48l1.35,1q2.69-.63,5.32-1.38a117.93,117.93,0,0,0,79.43-76.05h0a117.6,117.6,0,1,1-134.43,79.68l.79-2.39a117.79,117.79,0,0,1,111.3-79.4"/>
-          </svg>
-        </div>
-        <div class="paragraph__text">
-          <p>
-            Je travaille en <strong>collaboration</strong> avec des développeurs Back-end, web Designers, Directeurs Artistique, Graphistes, Rédacteurs, Photographes, Vidéastes...<br> Pour créer des <strong>sites</strong> internet ou des <strong>applications</strong> uniques.
-          </p>
-        </div>
-      </div>
-      <div class="paragraph">
-        <div class="paragraph__title">
-          <h3>Passion</h3>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 521.78 450.53"><path class="draw-svg" d="M403.52,251.38a111.71,111.71,0,0,0-113.3-111.69c-60.16.84-109.26,49.94-110.1,110.1a111.71,111.71,0,0,0,111.69,113.3l72.19.35c31.2,0,60.58-.76,60.58-.76a32.23,32.23,0,0,0,33-32.22V157.11a32.26,32.26,0,0,0-32.26-32.26H387.73a27.46,27.46,0,0,1-27.46-27.46h0a38.61,38.61,0,0,0-38.61-38.61H269.88s-39-1.84-44,25.23-2.11,42.16,34.1,32.81c28.36-7.32,59.78-14.29,60-26.87.14-9.72-7.18-12.48-30.91-13l-41-.33a68.89,68.89,0,0,0-51.9,23.59l-14.24,16.31a63.07,63.07,0,0,1-47.51,21.59H86.68A32.44,32.44,0,0,0,54.23,170.6V327.46a32.31,32.31,0,0,0,32.31,32.31l35.71-.25A45.63,45.63,0,0,1,154.6,372.6a111.39,111.39,0,0,0,80.14,32.06c60.08-1,109.05-50,109.89-110.11A111.71,111.71,0,1,0,121.23,293" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="paragraph__text">
-          <p>
-            Je suis aussi SybR, <strong><a class="body-link" href="https://sybilrondeau.com" target="_blank" rel="noopener noreferrer">photographe</a></strong> documentaire de famille depuis plus de 10 ans.<br> Ce métier était ma première reconversion, après 12 ans en tant que manipulatrice en radiologie médicale aux urgences (et de nuit !).
-          </p>
-        </div>
-      </div>
-  	</div>
-  </section>
+      </section>
 
-  <section class="portfolio-section" id="section3">
-    <h2><span class="outline">Portfolio</span></h2>
-    <div class="portfolio">
-      <div class="portfolio__item portfolio__item01">
-        <div class="portfolio__item--image portfolio__item--image01"></div>
-        <div class="portfolio__item--title">
-          <div class='title-arrow'>
-            <h3>SybR Lab</h3>
-            <svg class="arrow-rounded" xmlns:xlink="http://www.w3.org/2000/svg">
-              <use xlink:href="./images/sprite.svg#arrow-straight"></use>
-            </svg>
+      <section class="portfolio-section" id="section3">
+        <h2><span class="outline">Portfolio</span></h2>
+        <div class="portfolio">
+          <div class="portfolio__item portfolio__item01">
+            <div class="portfolio__item--image portfolio__item--image01"></div>
+            <div class="portfolio__item--title">
+              <div class="title-arrow">
+                <h3>SybR Lab</h3>
+                <svg
+                  class="arrow-rounded"
+                  xmlns:xlink="http://www.w3.org/2000/svg"
+                >
+                  <use xlink:href="./images/sprite.svg#arrow-straight"></use>
+                </svg>
+              </div>
+              <p>01.</p>
+            </div>
+            <div class="portfolio__item--credits">
+              <div class="credits-makers">
+                <ul>
+                  <li>Site sur-mesure</li>
+                  <li>Web Design : Sybil Rondeau</li>
+                  <li>Icônes - portrait One line : Loeiza Coccolini</li>
+                </ul>
+              </div>
+              <div class="credits-tech">
+                <ul>
+                  <li>Parcel Bundle</li>
+                  <li>HTML5 SASS JS</li>
+                  <li>GSAP</li>
+                </ul>
+              </div>
+            </div>
+            <div class="portfolio__item--description">
+              <p>
+                J’aime les sites <strong>sobres</strong>, épurés, fluides, qui
+                laissent une belle place à la typographie et au
+                <strong>design</strong>. <br />J'ai utilisé une échelle
+                modulaire basée sur le nombre d'Or pour la typographie, en clin
+                d'oeil à ma carrière de photographe. <br />Le site est un
+                One-page simple réalisé sans framework, avec le bundler Parcel
+                et la librairie Javascript Greensock pour certaines animations.
+              </p>
+            </div>
           </div>
-          <p>01.</p>
-        </div>
-        <div class="portfolio__item--credits">
-          <div class="credits-makers">
-            <ul>
-              <li>Site sur-mesure</li>
-              <li>Web Design : Sybil Rondeau</li>
-              <li>Icônes - portrait One line : Loeiza Coccolini</li>
-            </ul>
-          </div>
-          <div class="credits-tech">
-            <ul>
-              <li>Parcel Bundle</li>
-              <li>HTML5 SASS JS</li>
-              <li>GSAP</li>
-            </ul>
-          </div>
-        </div>
-        <div class="portfolio__item--description">
-          <p>J’aime les sites <strong>sobres</strong>, épurés, fluides, qui laissent une belle place à la typographie et au <strong>design</strong>.
-          <br>La typographie est responsive, s'adaptant aux écrans de façon fluide, avec une échelle modulaire basée sur le nombre d'Or, en clin d'oeil à ma carrière de photographe.
-          <br>Un partie des animations utilisent la bibliothèque JavaScript GreenSock.
-          </p>
-        </div>
-      </div>
 
-      <div class="portfolio__item portfolio__item02">
-        <div class="portfolio__item--image portfolio__item--image02"></div>
-        <div class="portfolio__item--title">
-          <div class='title-arrow'>
-            <h3>Amime Records</h3>
-              <a class="body-link" href="https://amimerecords.com" target="_blank" rel="noopener noreferrer">
-              <svg class="arrow-rounded" xmlns:xlink="http://www.w3.org/2000/svg">
-              <use xlink:href="./images/sprite.svg#arrow-straight"></use>
-            </svg></a>
+          <div class="portfolio__item portfolio__item02">
+            <div class="portfolio__item--image portfolio__item--image02"></div>
+            <div class="portfolio__item--title">
+              <div class="title-arrow">
+                <h3>Amime Records</h3>
+                <a
+                  class="body-link"
+                  href="https://amimerecords.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Site de Amime Records"
+                >
+                  <svg
+                    class="arrow-rounded"
+                    xmlns:xlink="http://www.w3.org/2000/svg"
+                  >
+                    <use
+                      xlink:href="./images/sprite.svg#arrow-straight"
+                    ></use></svg
+                ></a>
+              </div>
+              <p>02.</p>
+            </div>
+            <div class="portfolio__item--credits">
+              <div class="credits-makers">
+                <ul>
+                  <li>Site e-commerce</li>
+                  <li>Photo - Web design : Sybil Rondeau</li>
+                  <li>Graphisme : Adrien Thiot Rader</li>
+                </ul>
+              </div>
+              <div class="credits-tech">
+                <ul>
+                  <li>WordPress</li>
+                  <li>WooCommerce</li>
+                </ul>
+              </div>
+            </div>
+            <div class="portfolio__item--description">
+              <p>
+                Un site ludique pour un label de musique rétro-gaming. Les
+                couleurs se basent sur les dessins d'Adrien Thiot-Rader. La
+                typographie pixellisée rappelle l'univers du jeu, ainsi que les
+                animations. Ce site WordPress
+                <strong>e-commerce</strong> utilise le plugin Woocommerce pour
+                la vente des albums.
+              </p>
+            </div>
           </div>
-          <p>02.</p>
-        </div>
-        <div class="portfolio__item--credits">
-          <div class="credits-makers">
-            <ul>
-              <li>Site e-commerce</li>
-              <li>Photo - Web design : Sybil Rondeau</li>
-              <li>Graphisme : Adrien Thiot Rader</li>
-            </ul>
-          </div>
-          <div class="credits-tech">
-            <ul>
-              <li>WordPress</li>
-              <li>WooCommerce</li>
-            </ul>
-          </div>
-        </div>
-        <div class="portfolio__item--description">
-          <p>Un site ludique pour un label de musique rétro-gaming. Les couleurs se basent sur les dessins d'Adrien Thiot-Rader. La typographie pixellisée rappelle l'univers du jeu, ainsi que les animations.
-          Ce site WordPress <strong>e-commerce</strong> utilise le plugin Woocommerce pour la vente des albums.</p>
-        </div>
-      </div>
 
-      <div class="portfolio__item portfolio__item03">
-        <div class="portfolio__item--image portfolio__item--image03"></div>
-        <div class="portfolio__item--title">
-          <div class='title-arrow'>
-            <h3>WSSA</h3>
-            <svg class="arrow-rounded" xmlns:xlink="http://www.w3.org/2000/svg">
-              <use xlink:href="./images/sprite.svg#arrow-straight"></use>
-            </svg>
+          <div class="portfolio__item portfolio__item03">
+            <div class="portfolio__item--image portfolio__item--image03"></div>
+            <div class="portfolio__item--title">
+              <div class="title-arrow">
+                <h3>WSSA</h3>
+                <svg
+                  class="arrow-rounded"
+                  xmlns:xlink="http://www.w3.org/2000/svg"
+                >
+                  <use xlink:href="./images/sprite.svg#arrow-straight"></use>
+                </svg>
+              </div>
+              <p>03.</p>
+            </div>
+            <div class="portfolio__item--credits">
+              <div class="credits-makers">
+                <ul>
+                  <li>Application DrakkR - Nantes</li>
+                  <li>Web Design : Ambroise Nicolao</li>
+                </ul>
+              </div>
+              <div class="credits-tech">
+                <ul>
+                  <li>Ruby on Rails</li>
+                  <li>Datatables</li>
+                </ul>
+              </div>
+            </div>
+            <div class="portfolio__item--description">
+              <p>
+                Un travail d’implémentation du Front-end pour une
+                <strong>application</strong> qui recense les résultats des
+                compétitions de de la World Slalom Skaters Association. Le
+                palmarès est affiché par des tables gérées par le plugin
+                Datatables en Javascript dans le framework
+                <strong>Ruby on Rails</strong>.
+              </p>
+            </div>
           </div>
-          <p>03.</p>
-        </div>
-        <div class="portfolio__item--credits">
-          <div class="credits-makers">
-            <ul>
-              <li>Application DrakkR - Nantes</li>
-              <li>Web Design : Ambroise Nicolao</li>
-            </ul>
-          </div>
-          <div class="credits-tech">
-            <ul>
-              <li>Ruby on Rails</li>
-              <li>Datatables</li>
-            </ul>
-          </div>
-        </div>
-        <div class="portfolio__item--description">
-          <p>Un travail d’implémentation du Front-end pour une <strong>application</strong> qui recense les résultats des compétitions de de la World Slalom Skaters Association. Le palmarès est affiché par des tables gérées par le plugin Datatables en Javascript dans le framework <strong>Ruby on Rails</strong>.</p>
-        </div>
-      </div>
 
-      <div class="portfolio__item portfolio__item04">
-        <div class="portfolio__item--image portfolio__item--image04"></div>
-        <div class="portfolio__item--title">
-          <div class='title-arrow'>
-            <h3>SGPA</h3>
-            <a class="body-link" href="https://sgpa.fr" target="_blank" rel="noopener noreferrer">
-            <svg class="arrow-rounded" xmlns:xlink="http://www.w3.org/2000/svg">
-              <use xlink:href="./images/sprite.svg#arrow-straight"></use>
-            </svg></a>
+          <div class="portfolio__item portfolio__item04">
+            <div class="portfolio__item--image portfolio__item--image04"></div>
+            <div class="portfolio__item--title">
+              <div class="title-arrow">
+                <h3>SGPA</h3>
+                <a
+                  class="body-link"
+                  href="https://sgpa.fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="site de SGPA"
+                >
+                  <svg
+                    class="arrow-rounded"
+                    xmlns:xlink="http://www.w3.org/2000/svg"
+                  >
+                    <use
+                      xlink:href="./images/sprite.svg#arrow-straight"
+                    ></use></svg
+                ></a>
+              </div>
+              <p>04.</p>
+            </div>
+            <div class="portfolio__item--credits">
+              <div class="credits-makers">
+                <ul>
+                  <li>Site Vitrine Bilingue</li>
+                  <li>Gestion de projet : Raphaëlle du Boÿs</li>
+                  <li>Web Design : Myriam le Barbier</li>
+                </ul>
+              </div>
+              <div class="credits-tech">
+                <ul>
+                  <li>WordPress</li>
+                  <li>Site Bilingue</li>
+                </ul>
+              </div>
+            </div>
+            <div class="portfolio__item--description">
+              <p>
+                Le site vitrine de la SGPA promeut le travail de Jean Paul
+                Guisset, Business Angel à Paris. L’équipe du collectif
+                Elles@Meudon a fait appel à moi pour l’implémentation WordPress
+                du design. Le client souhaitait pouvoir administrer totalement
+                le site. J’ai donc opté pour Elementor pour son ergonomie
+                intuitive et codé des
+                <strong>widgets personnalisés</strong> pour respecter
+                parfaitement le design.<br />
+                Le site est également <strong>bilingue</strong> français -
+                anglais.
+              </p>
+            </div>
           </div>
-          <p>04.</p>
         </div>
-        <div class="portfolio__item--credits">
-          <div class="credits-makers">
-            <ul>
-              <li>Site Vitrine Bilingue</li>
-              <li>Gestion de projet : Raphaëlle du Boÿs</li>
-              <li>Web Design : Myriam le Barbier</li>
-            </ul>
-          </div>
-          <div class="credits-tech">
-            <ul>
-              <li>WordPress</li>
-              <li>Site Bilingue</li>
-            </ul>
-          </div>
-        </div>
-        <div class="portfolio__item--description">
-          <p>Le site vitrine de la SGPA promeut le travail de Jean Paul Guisset, Business Angel à Paris.
-          L’équipe du collectif Elles@Meudon a fait appel à moi pour l’implémentation WordPress du design.
-          Le client souhaitait pouvoir administrer totalement le site. J’ai donc opté pour Elementor pour son ergonomie intuitive et codé des <strong>widgets personnalisés</strong> pour respecter parfaitement le design.<br>
-          Le site est également <strong>bilingue</strong> français - anglais.</p>
-        </div>
-      </div>
+      </section>
 
-    </div>
-	</section>
-
-  <section class="competences-section" id="section4">
-    <h2><span class="outline">Compétences</span></h2>
-      <div class="competences">
-        <div class="competences__item">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#html-5"></use>
-          </svg>
-        </div>
-        <div class="competences__item">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#css-3"></use>
-          </svg>
-        </div>
-        <div class="competences__item">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#sass"></use>
-          </svg>
-        </div>
-        <div class="competences__item">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#figma"></use>
-          </svg>
-        </div>
-        <div class="competences__item">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#javascript"></use>
-          </svg>
-        </div>
-        <div class="competences__item">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#gsap"></use>
-          </svg>
-        </div>
-        <div class="competences__item">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#rails"></use>
-          </svg>
-        </div>
-        <div class="competences__item">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#mysql"></use>
-          </svg>
-        </div>
-        <div class="competences__item">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#wordpress"></use>
-          </svg>
-        </div>
-        <div class="competences__item">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#php"></use>
-          </svg>
-        </div>
-        <div class="competences__item">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#gatsby"></use>
-          </svg>
-        </div>
-        <div class="competences__item">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#react"></use>
-          </svg>
-        </div>
-      </div>
-  </section>
-
-  <section class="contact-section anim-text" id="section5">
-    <h2><span class="outline">Contact</span></h2>
-    <div class="contact">
-      <div class="paragraphes">
-        <div class="paragraph">
-          <div class="paragraph__title">
-            <h3>Missions Front-end</h3>
-          </div>
-          <div class="paragraph__text">
-            <p>
-              Vous êtes <strong>Agence</strong> Web ou <strong>Développeur</strong> et vous avez besoin d’une développeuse Front-end freelance ?<br> Je suis disponible pour des <strong>missions</strong> de courte ou longue durée.
-            </p>
-          </div>
-        </div>
-        <div class="paragraph">
-          <div class="paragraph__title">
-            <h3>Création de site</h3>
-          </div>
-          <div class="paragraph__text">
-            <p>
-              Vous êtes <strong>entrepreneur</strong> et avez besoin d’un site vitrine ?<br> Je travaille avec une équipe de freelance pour répondre à tous vos besoins afin de <strong>créer un site internet</strong> qui vous ressemble.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta">
-    <div class="cta__main">
-  		<h2 class=cta__title>Un projet ?</h2>
-  		<p class=cta__p><a class="body-link" href="mailto:hello@sybrlab.com" rel="noopener noreferrer" target="_blank" id="email">Écrivez-moi !</a></p>
-  		<p class=cta__p><a class="body-link" href="tel:+33629426276" rel="noopener noreferrer" target="_blank" id="tel">06 29 42 62 76</a></p>
-    </div>
-    <div>
-      <ul class="cta__social">
-        <li>
-          <a class="body-link" href="https://codepen.io/sybilrondeau" alt="Codepen" rel="noopener noreferrer" target="_blank">
+      <section class="competences-section" id="section4">
+        <h2><span class="outline">Compétences</span></h2>
+        <div class="competences">
+          <div class="competences__item">
             <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#codepen"></use>
+              <use xlink:href="./images/sprite.svg#html-5"></use>
+            </svg>
+          </div>
+          <div class="competences__item">
+            <svg xmlns:xlink="http://www.w3.org/2000/svg">
+              <use xlink:href="./images/sprite.svg#css-3"></use>
+            </svg>
+          </div>
+          <div class="competences__item">
+            <svg xmlns:xlink="http://www.w3.org/2000/svg">
+              <use xlink:href="./images/sprite.svg#sass"></use>
+            </svg>
+          </div>
+          <div class="competences__item">
+            <svg xmlns:xlink="http://www.w3.org/2000/svg">
+              <use xlink:href="./images/sprite.svg#figma"></use>
+            </svg>
+          </div>
+          <div class="competences__item">
+            <svg xmlns:xlink="http://www.w3.org/2000/svg">
+              <use xlink:href="./images/sprite.svg#javascript"></use>
+            </svg>
+          </div>
+          <div class="competences__item">
+            <svg xmlns:xlink="http://www.w3.org/2000/svg">
+              <use xlink:href="./images/sprite.svg#gsap"></use>
+            </svg>
+          </div>
+          <div class="competences__item">
+            <svg xmlns:xlink="http://www.w3.org/2000/svg">
+              <use xlink:href="./images/sprite.svg#rails"></use>
+            </svg>
+          </div>
+          <div class="competences__item">
+            <svg xmlns:xlink="http://www.w3.org/2000/svg">
+              <use xlink:href="./images/sprite.svg#mysql"></use>
+            </svg>
+          </div>
+          <div class="competences__item">
+            <svg xmlns:xlink="http://www.w3.org/2000/svg">
+              <use xlink:href="./images/sprite.svg#wordpress"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="competences">
+          <h3>En cours</h3>
+          <div class="competences__item">
+            <svg xmlns:xlink="http://www.w3.org/2000/svg">
+              <use xlink:href="./images/sprite.svg#php"></use>
+            </svg>
+          </div>
+          <div class="competences__item">
+            <svg xmlns:xlink="http://www.w3.org/2000/svg">
+              <use xlink:href="./images/sprite.svg#gatsby"></use>
+            </svg>
+          </div>
+          <div class="competences__item">
+            <svg xmlns:xlink="http://www.w3.org/2000/svg">
+              <use xlink:href="./images/sprite.svg#react"></use>
+            </svg>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="contact-section anim-text" id="section5">
+        <h2><span class="outline">Contact</span></h2>
+        <div class="contact">
+          <div class="paragraphes">
+            <div class="paragraph">
+              <div class="paragraph__title">
+                <h3>Missions Front-end</h3>
+              </div>
+              <div class="paragraph__text">
+                <p>
+                  Vous êtes <strong>Agence</strong> Web ou
+                  <strong>Développeur</strong> et vous avez besoin d’une
+                  développeuse Front-end freelance ?<br />
+                  Je suis disponible pour des <strong>missions</strong> de
+                  courte ou longue durée.
+                </p>
+              </div>
+            </div>
+            <div class="paragraph">
+              <div class="paragraph__title">
+                <h3>Création de site</h3>
+              </div>
+              <div class="paragraph__text">
+                <p>
+                  Vous êtes <strong>entrepreneur</strong> et avez besoin d’un
+                  site vitrine ?<br />
+                  Je travaille avec une équipe de freelance pour répondre à tous
+                  vos besoins afin de
+                  <strong>créer un site internet</strong> qui vous ressemble.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="cta__main">
+          <h2 class="cta__title">Un projet ?</h2>
+          <p class="cta__p">
+            <a
+              class="body-link"
+              href="mailto:hello@sybrlab.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              id="email"
+              >Écrivez-moi !</a
+            >
+          </p>
+          <p class="cta__p">
+            <a
+              class="body-link"
+              href="tel:+33629426276"
+              rel="noopener noreferrer"
+              target="_blank"
+              id="tel"
+              >06 29 42 62 76</a
+            >
+          </p>
+        </div>
+        <div>
+          <ul class="cta__social">
+            <li>
+              <a
+                class="body-link"
+                href="https://codepen.io/sybilrondeau"
+                alt="Codepen"
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="Codepen de Sybrlab"
+              >
+                <svg xmlns:xlink="http://www.w3.org/2000/svg">
+                  <use xlink:href="./images/sprite.svg#codepen"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="body-link"
+                href="https://www.linkedin.com/in/sybil-rondeau-6ba54312a/"
+                alt="Linkedin"
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="Linkekin de Sybil Rondeau"
+              >
+                <svg xmlns:xlink="http://www.w3.org/2000/svg">
+                  <use xlink:href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="body-link"
+                href="https://www.instagram.com/sybil_rondeau"
+                alt="Instagram"
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="Instagram de Sybil Rondeau"
+              >
+                <svg xmlns:xlink="http://www.w3.org/2000/svg">
+                  <use xlink:href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="cta__legal">
+          Propriétaire du site Mme Sybil Rondeau 43G rue Georges Lafont 44300
+          Nantes - Hébergeur : O2switch - Immatriculation au répertoire des
+          métiers de Nantes 51273025000069 - TVA FR0A512730250
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer__links">
+        <li>
+          <a
+            class="body-link"
+            href="https://codepen.io/sybilrondeau"
+            alt="Codepen"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Codepen de Sybrlab"
+          >
+            <svg xmlns:xlink="http://www.w3.org/2000/svg">
+              <use xlink:href="./images/sprite.svg#codepen"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a class="body-link" href="https://www.linkedin.com/in/sybil-rondeau-6ba54312a/" alt="Codepen" rel="noopener noreferrer" target="_blank">
+          <a
+            class="body-link"
+            href="https://www.linkedin.com/in/sybil-rondeau-6ba54312a/"
+            alt="Linkedin"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Linkekin de Sybil Rondeau"
+          >
             <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#linkedin"></use>
+              <use xlink:href="./images/sprite.svg#linkedin"></use>
             </svg>
           </a>
         </li>
         <li>
-          <a class="body-link" href="https://www.instagram.com/sybil_rondeau" alt="Instagram" rel="noopener noreferrer" target="_blank">
+          <a
+            class="body-link"
+            href="https://www.instagram.com/sybil_rondeau"
+            alt="Instagram"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Instagram de Sybil Rondeau"
+          >
             <svg xmlns:xlink="http://www.w3.org/2000/svg">
-            <use xlink:href="./images/sprite.svg#instagram"></use>
+              <use xlink:href="./images/sprite.svg#instagram"></use>
             </svg>
           </a>
         </li>
       </ul>
-    </div>
-    <p class="cta__legal">
-      Propriétaire du site Mme Sybil Rondeau 43G rue Georges Lafont 44300 Nantes - Hébergeur : O2switch - Immatriculation au répertoire des métiers de Nantes 51273025000069 - TVA FR0A512730250
-    </p>
-	</section>
-  </main>
+    </footer>
 
-  <footer class="footer">
-    <ul class="footer__links">
-      <li>
-        <a class="body-link" href="https://codepen.io/sybilrondeau" alt="Codepen" rel="noopener noreferrer" target="_blank">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-          <use xlink:href="./images/sprite.svg#codepen"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="body-link" href="https://www.linkedin.com/in/sybil-rondeau-6ba54312a/" alt="Codepen" rel="noopener noreferrer" target="_blank">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-          <use xlink:href="./images/sprite.svg#linkedin"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="body-link" href="https://www.instagram.com/sybil_rondeau" alt="Instagram" rel="noopener noreferrer" target="_blank">
-          <svg xmlns:xlink="http://www.w3.org/2000/svg">
-          <use xlink:href="./images/sprite.svg#instagram"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </footer>
-
- <script src="./index.js"></script>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>

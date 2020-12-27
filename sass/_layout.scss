@@ -40,30 +40,29 @@ main {
       z-index: 100;
       padding: 2rem 0;
 
-    @include respond(phone) {
-      right: 2rem;
-    }
-
-    svg {
-      width: 2rem;
-      height: 4rem;
-
       @include respond(phone) {
-        width: 1.5rem;
-        height: 2rem;
+        right: 2rem;
       }
 
-      .close-btn {
-        visibility: hidden;
+      svg {
+        width: 2rem;
+        height: 4rem;
+
+        @include respond(phone) {
+          width: 1.5rem;
+          height: 2rem;
+        }
+
+        .close-btn {
+          visibility: hidden;
+        }
       }
     }
-  }
 
-  &__btn:hover svg {
-    fill: var(--primary);
+    &__btn:hover svg {
+      fill: var(--primary);
+    }
   }
-  }
-
 
   &__nav {
     height: 8rem;
@@ -85,13 +84,11 @@ main {
     }
 
     li {
-      // background-color: var(--backg);
       padding: 4rem 1.618rem;
       font-style: normal;
       font-weight: 400;
       text-transform: uppercase;
-      --minFontSize: 1.2rem;
-      --maxFontSize: 1.4rem;
+      font-size: 1.4rem;
 
       @include respond(tabSmall) {
         padding: 1.618rem;
@@ -104,16 +101,6 @@ main {
 
     .nav-link:hover {
       color: var(--primary);
-    }
-  }
-}
-
-@supports not (font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) )) {
-  .info__nav li {
-    font-size: 1.4remrem;
-
-    @include respond(phone) {
-      font-size: 1.2rem;
     }
   }
 }

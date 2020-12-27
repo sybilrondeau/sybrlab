@@ -1,96 +1,75 @@
 @font-face {
-	font-family: 'Exo';
-	font-weight: 100 900;
-	font-style: normal;
-	display: swap;
-	src: url('./fonts/Exo-VariableFont_wght.woff2') format('woff2');
+  font-family: "Exo";
+  font-weight: 100 900;
+  font-style: normal;
+  display: swap;
+  src: url("./fonts/Exo-VariableFont_wght.woff2") format("woff2"),
+    url("./fonts/Exo-VariableFont_wght.ttf") format("ttf");
 }
 
 @font-face {
-	font-family: 'Muli';
-	font-weight: 200 900;
-	font-style: normal;
-	display: swap;
-	src: url('./fonts/Muli-VariableFont_wght.woff2') format('woff2');
+  font-family: "Muli";
+  font-weight: 200 900;
+  font-style: normal;
+  display: swap;
+  src: url("./fonts/Muli-VariableFont_wght.woff2") format("woff2"),
+    url("./fonts/Muli-VariableFont_wght.ttf") format("tff");
 }
 
 @font-face {
-    font-family: 'Muli';
-    font-weight: 200 900;
-    font-style: italic;
-    font-display: swap;
-    src: url('./fonts/Muli-Italic.woff2') format('woff2');
+  font-family: "Muli";
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+  src: url("./fonts/Muli-Italic.woff2") format("woff2"),
+    url("./fonts/Muli-Italic-VariableFont_wght.ttf") format("ttf");
 }
 
 h1 {
-	font-family: 'Exo', sans-serif;
-	font-variation-settings: 'wght' 900;
-  --minFontSize: 2.618rem;
-  --maxFontSize: 6.854rem;
+  font-family: "Exo", sans-serif;
+  font-weight: 900;
+  font-variation-settings: "wght" 900;
+  font-size: 6.854rem;
+
+  @include respond(phone) {
+    font-size: 4.236rem;
+  }
 }
 
 h2 {
-  font-family: 'Exo', sans-serif;
-  font-variation-settings: 'wght' 900;
+  font-family: "Exo", sans-serif;
+  font-weight: 900;
+  font-variation-settings: "wght" 900;
   margin: 30rem 0 10rem;
   text-transform: uppercase;
   text-align: center;
-  --minFontSize: 2.618rem;
-  --maxFontSize: 4.236rem;
+  font-size: 4.236rem;
 
   @include respond(phone) {
     margin: 20rem 0 10rem;
+    font-size: 2.618rem;
   }
 }
 
 h3 {
-	font-family: 'Exo', sans-serif;
-	font-variation-settings: 'wght' 600;
-	--minFontSize: 1.618rem;
-  --maxFontSize: 2.618rem;
+  font-family: "Exo", sans-serif;
+  font-weight: 600;
+  font-variation-settings: "wght" 600;
+  font-size: 2.618rem;
 }
 
 ul li {
-  font-family:  'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   list-style: none;
 }
 
-h1, h2, h3, li, #email, #tel {
-  --scaler: 10vw;
-  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
-}
-
-@supports not (font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) )) {
-  h1 {
-    font-size: 6.854rem;
-
-    @include respond(phone) {
-      font-size: 2.618rem;
-    }
-  }
-  h2 {
-    font-size: 4.236rem;
-
-    @include respond(phone) {
-      font-size: 2.618rem;
-    }
-  }
-  h3 {
-    font-size: 2.618rem;
-
-    @include respond(phone) {
-      font-size: 1.618rem;
-    }
-  }
-}
-
 p {
-	font-family: 'Muli', sans-serif;
-	font-size: 1.618rem;
-	font-weight: 400;
-	font-kerning: normal;
-	hyphens: none;
-	color: var(--grey-dark);
+  font-family: "Muli", sans-serif;
+  font-size: 1.618rem;
+  font-weight: 400;
+  font-kerning: normal;
+  hyphens: none;
+  color: var(--grey-dark);
   line-height: 1.618;
   margin-bottom: 1rem;
 }
@@ -104,7 +83,7 @@ strong {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--grey-dark);
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 a {
@@ -112,5 +91,3 @@ a {
   color: var(--primary);
   font-weight: 800;
 }
-
-

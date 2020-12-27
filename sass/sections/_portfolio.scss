@@ -1,5 +1,4 @@
 .portfolio-section {
-
   h2 {
     text-align: center;
   }
@@ -15,7 +14,6 @@
       width: 100%;
     }
 
-
     &__item01 {
       margin-right: 25.89rem;
 
@@ -23,21 +21,21 @@
         background-image: url("./images/sybrlab-650.jpg");
       }
     }
-     &__item02 {
+    &__item02 {
       margin-left: 25.89rem;
 
       .portfolio__item--image02 {
         background-image: url("./images/amime-650.jpg");
       }
     }
-     &__item03 {
+    &__item03 {
       margin-right: 25.89rem;
 
       .portfolio__item--image03 {
         background-image: url("./images/wssa-650.jpg");
       }
     }
-     &__item04 {
+    &__item04 {
       margin-left: 25.89rem;
 
       .portfolio__item--image04 {
@@ -58,7 +56,7 @@
         background-repeat: no-repeat;
         width: 100%;
         height: 30rem;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
       }
 
       &--title {
@@ -96,8 +94,7 @@
         li {
           font-style: italic;
           color: var(--grey-dark);
-          --minFontSize: 1rem;
-          --maxFontSize: 1.4rem;
+          font-size: 1.4rem;
         }
 
         .credits-makers {
@@ -115,5 +112,3 @@
     }
   }
 }
-
-

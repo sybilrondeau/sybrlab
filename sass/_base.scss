@@ -1,43 +1,42 @@
 *::after,
 *::before,
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 body {
-	box-sizing: border-box;
+  box-sizing: border-box;
   overflow-x: hidden;
-	background: var(--backg);
+  background: var(--backg);
 }
 
 html {
-	font-size: 62.5%; // 1rem = 10px et 1em = 10px
-	color: var(--grey-dark);
-	scroll-behavior: smooth !important;
-  // cursor: none;
+  font-size: 62.5%; // 1rem = 10px et 1em = 10px
+  color: var(--grey-dark);
+  scroll-behavior: smooth !important;
 }
 
 .cursor {
-	width: 2rem;
-	height: 2rem;
-	border-radius: 50%;
-	background-color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: white;
   border: 1px solid white;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	pointer-events: none;
-	z-index: -20;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -20;
   opacity: 1;
-	transition: transform .2s, background-color .2s;
+  transition: transform 0.2s, background-color 0.2s;
 
-	@media (any-pointer: none) {
-		display: none;
-	}
+  @media (any-pointer: none) {
+    display: none;
+  }
 }
 
 .link-grow {
-	transform: scale(6) translate(-10%, -10%);
+  transform: scale(6) translate(-10%, -10%);
   animation: blob 3s linear infinite alternate;
 }
