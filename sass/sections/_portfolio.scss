@@ -25,21 +25,16 @@
       margin-left: 25.89rem;
 
       .portfolio__item--image02 {
-        background-image: url("./images/amime-650.jpg");
+        background-image: url("./images/wssa-650.jpg");
       }
     }
     &__item03 {
       margin-right: 25.89rem;
 
-      .portfolio__item--image03 {
-        background-image: url("./images/wssa-650.jpg");
-      }
-    }
-    &__item04 {
-      margin-left: 25.89rem;
-
-      .portfolio__item--image04 {
-        background-image: url("./images/sgpa-650.jpg");
+      iframe {
+        width: 100%;
+        height: 30rem;
+        border-radius: 5px;
       }
     }
 

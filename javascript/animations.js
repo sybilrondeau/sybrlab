@@ -46,5 +46,3 @@ animSections(competencesItems, ".competences-section", {
   grid: "auto",
 });
 animSections(ctaItems, ".cta__title", 0.5);
-
-console.log("it works");

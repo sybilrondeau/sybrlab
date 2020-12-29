@@ -15,7 +15,8 @@ navTl.to(".circle", { morphSVG: ".close-btn" });
 navTl.to(".circle", { attr: { fill: "var(--primary" }, duration: 0.1 }, "<");
 
 infoButton.addEventListener("click", (e) => {
-  if (e.currentTarget.dataset.state === "close") {
+  // no need for === here as I know the types !
+  if (e.currentTarget.dataset.state == "close") {
     infoNav.classList.remove("closeNav");
     infoNav.classList.add("openNav");
     navTl.play();
