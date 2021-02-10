@@ -31,11 +31,15 @@
     &__item03 {
       margin-right: 25.89rem;
 
-      iframe {
-        width: 100%;
-        height: 30rem;
-        border-radius: 5px;
+      .portfolio__item--image03 {
+        background-image: url("./images/photographr-650.jpg");
       }
+
+      // iframe {
+      //   width: 100%;
+      //   height: 30rem;
+      //   border-radius: 5px;
+      // }
     }
 
     &__item {
